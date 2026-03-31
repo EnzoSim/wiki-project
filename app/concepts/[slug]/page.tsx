@@ -8,6 +8,8 @@ type ConceptPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return loadWikiConcepts().map((concept) => ({ slug: concept.slug }));
 }
@@ -25,6 +27,7 @@ export async function generateMetadata({ params }: ConceptPageProps): Promise<Me
   return {
     title: concept.title,
     description: concept.summary,
+    keywords: [concept.category, ...concept.keywords],
     openGraph: {
       title: `${concept.title} | Wiki Master`,
       description: concept.summary,
@@ -38,7 +41,9 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
   const concept = getConceptBySlug(slug);
   if (!concept) return notFound();
   const allConcepts = loadWikiConcepts();
-  const relatedConcepts = allConcepts.filter((item) => concept.related.includes(item.slug));
+  const relatedConcepts = allConcepts
+    .filter((item) => concept.related.includes(item.slug))
+    .slice(0, 6);
   const sameCategory = allConcepts.filter(
     (item) => item.category === concept.category && item.slug !== concept.slug,
   );

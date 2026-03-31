@@ -20,8 +20,12 @@ export const metadata: Metadata = {
     default: 'Wiki Master',
     template: '%s | Wiki Master',
   },
+  applicationName: 'Wiki Master',
   description:
     'Editorial economics wiki prototype with searchable concepts, category mapping, and generated concept art.',
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     title: 'Wiki Master',
     description:
@@ -33,9 +37,6 @@ export const metadata: Metadata = {
     title: 'Wiki Master',
     description:
       'Explore economics concepts through a visually led, searchable wiki seeded from markdown.',
-  },
-  icons: {
-    icon: '/favicon.svg',
   },
 };
 
