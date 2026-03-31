@@ -8,10 +8,11 @@ Run locally:
 - npm run start
 
 Railway:
-- create a Railway project with `railway init --name wiki-project`
-- add a GitHub-linked service with `railway add --service wiki-project --repo EnzoSim/wiki-project`
+- create a Railway project with `railway init --name wiki-master`
+- if your Railway account has GitHub access configured, add a GitHub-linked service with `railway add --service wiki-master-web --repo EnzoSim/wiki-project`
+- otherwise create an empty service and deploy the repo with `railway up --service wiki-master-web`
 - Railway will pick up the standalone Next.js build from `package.json`
-- generate a Railway public domain with `railway domain --service wiki-project` once the deploy succeeds
+- generate a Railway public domain with `railway domain --service wiki-master-web` once the deploy succeeds
 
 Features:
 - Parses the wiki_master.md seed
