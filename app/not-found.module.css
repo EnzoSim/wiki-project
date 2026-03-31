@@ -2,22 +2,22 @@
   display: grid;
   gap: 1rem;
   margin: 0 auto;
-  max-width: 44rem;
+  max-width: 40rem;
   min-height: 100svh;
-  padding: 5rem 1.5rem;
+  padding: 4rem 1.25rem;
   place-content: center;
 }
 
 .eyebrow {
-  color: var(--accent-strong);
+  color: var(--accent);
   font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.28em;
+  font-weight: 600;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
 .page h1 {
-  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-size: clamp(2.7rem, 6vw, 4.8rem);
   line-height: 0.96;
 }
 
@@ -30,13 +30,14 @@
 
 .action {
   align-items: center;
-  background: var(--accent);
+  border: 1px solid var(--line);
   border-radius: 999px;
-  color: #17110d;
+  color: var(--text);
   display: inline-flex;
-  font-weight: 800;
+  font-weight: 600;
   justify-content: center;
   margin-top: 0.5rem;
   max-width: max-content;
-  padding: 0.9rem 1.25rem;
+  min-height: 2.9rem;
+  padding: 0 1.15rem;
 }

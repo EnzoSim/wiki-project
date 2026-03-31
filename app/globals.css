@@ -1,17 +1,14 @@
 :root {
-  color-scheme: dark;
-  --bg: #09111f;
-  --bg-soft: rgba(13, 28, 50, 0.76);
-  --panel: rgba(8, 17, 33, 0.72);
-  --panel-strong: rgba(14, 25, 43, 0.92);
-  --line: rgba(188, 200, 216, 0.12);
-  --line-strong: rgba(188, 200, 216, 0.2);
-  --text: #f5f1e8;
-  --text-muted: #bac5d6;
-  --accent: #f0a661;
-  --accent-strong: #ffd8af;
-  --success: #87d8af;
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+  color-scheme: light;
+  --bg: #f3eee5;
+  --surface: #faf6ef;
+  --surface-strong: #fffdf9;
+  --line: rgba(29, 24, 20, 0.12);
+  --line-strong: rgba(29, 24, 20, 0.24);
+  --text: #171311;
+  --text-muted: #6f655d;
+  --accent: #4a695d;
+  --shadow: 0 12px 30px rgba(23, 19, 17, 0.05);
 }
 
 *,
@@ -32,17 +29,11 @@ body {
 
 body {
   background:
-    radial-gradient(circle at top left, rgba(240, 166, 97, 0.14), transparent 28%),
-    radial-gradient(circle at top right, rgba(125, 192, 231, 0.15), transparent 32%),
-    var(--bg);
+    radial-gradient(circle at top left, rgba(74, 105, 93, 0.06), transparent 26%),
+    linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
   color: var(--text);
   font-family: var(--font-body), sans-serif;
   text-rendering: optimizeLegibility;
-}
-
-body.appBody {
-  position: relative;
-  overflow-x: hidden;
 }
 
 a {
@@ -68,53 +59,7 @@ img {
 }
 
 ::selection {
-  background: rgba(240, 166, 97, 0.28);
-}
-
-.siteBackground {
-  inset: 0;
-  pointer-events: none;
-  position: fixed;
-  z-index: 0;
-}
-
-.siteAura {
-  border-radius: 999px;
-  filter: blur(80px);
-  opacity: 0.7;
-  position: absolute;
-}
-
-.siteAuraLeft {
-  background: rgba(240, 166, 97, 0.22);
-  height: 20rem;
-  left: -4rem;
-  top: 4rem;
-  width: 20rem;
-}
-
-.siteAuraRight {
-  background: rgba(108, 160, 216, 0.2);
-  height: 24rem;
-  right: -6rem;
-  top: 18rem;
-  width: 24rem;
-}
-
-.siteGrid {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-position: center;
-  background-size: 4.5rem 4.5rem;
-  inset: 0;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.22), transparent 70%);
-  position: absolute;
-}
-
-.siteFrame {
-  position: relative;
-  z-index: 1;
+  background: rgba(74, 105, 93, 0.18);
 }
 
 h1,
@@ -125,7 +70,7 @@ h5,
 h6 {
   font-family: var(--font-display), serif;
   font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   margin: 0;
 }
 

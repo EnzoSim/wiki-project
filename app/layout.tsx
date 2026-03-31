@@ -21,32 +21,25 @@ export const metadata: Metadata = {
     template: '%s | Wiki Master',
   },
   description:
-    'Editorial economics wiki prototype with searchable concepts, category mapping, and generated concept art.',
+    'A minimal reference index of three terms across law, public policy, and urban economics.',
   openGraph: {
     title: 'Wiki Master',
     description:
-      'Explore economics concepts through a visually led, searchable wiki seeded from markdown.',
+      'A minimal reference index of three terms across law, public policy, and urban economics.',
     type: 'website',
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'Wiki Master',
     description:
-      'Explore economics concepts through a visually led, searchable wiki seeded from markdown.',
+      'A minimal reference index of three terms across law, public policy, and urban economics.',
   },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${display.variable} ${body.variable} appBody`}>
-        <div className="siteBackground" aria-hidden="true">
-          <div className="siteAura siteAuraLeft" />
-          <div className="siteAura siteAuraRight" />
-          <div className="siteGrid" />
-        </div>
-        <div className="siteFrame">{children}</div>
-      </body>
+      <body className={`${display.variable} ${body.variable}`}>{children}</body>
     </html>
   );
 }

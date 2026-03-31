@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import styles from './page.module.css';
-import { buildConceptImageSvg, buildConceptPrompt, getConceptBySlug, loadWikiConcepts } from '../../../lib/wiki';
+import { getConceptBySlug, loadWikiConcepts } from '../../../lib/wiki';
 
 type ConceptPageProps = {
   params: Promise<{ slug: string }>;
@@ -39,124 +39,79 @@ export async function generateMetadata({ params }: ConceptPageProps): Promise<Me
 export default async function ConceptPage({ params }: ConceptPageProps) {
   const { slug } = await params;
   const concept = getConceptBySlug(slug);
+
   if (!concept) return notFound();
-  const allConcepts = loadWikiConcepts();
-  const relatedConcepts = allConcepts
-    .filter((item) => concept.related.includes(item.slug))
-    .slice(0, 6);
-  const sameCategory = allConcepts.filter(
-    (item) => item.category === concept.category && item.slug !== concept.slug,
-  );
-  const imageSrc = buildConceptImageSvg(concept);
-  const prompt = buildConceptPrompt(concept);
+
+  const otherConcepts = loadWikiConcepts()
+    .filter((item) => item.slug !== concept.slug)
+    .sort((left, right) => left.title.localeCompare(right.title));
+
   return (
     <main className={styles.page}>
-      <div className={styles.header}>
-        <Link href="/" className={styles.backLink}>
-          Back to wiki
-        </Link>
-        <p className={styles.kicker}>{concept.category}</p>
-        <h1>{concept.title}</h1>
-        <p className={styles.summary}>{concept.summary}</p>
-      </div>
+      <article className={styles.article}>
+        <header className={styles.header}>
+          <Link href="/" className={styles.backLink}>
+            Back to index
+          </Link>
+          <p className={styles.kicker}>{concept.category}</p>
+          <h1>{concept.title}</h1>
+          <p className={styles.summary}>{concept.summary}</p>
+        </header>
 
-      <div className={styles.layout}>
-        <section className={styles.mainColumn}>
-          <div className={styles.heroImage}>
-            <img src={imageSrc} alt={concept.title} />
+        <section className={styles.note}>
+          <div className={styles.sectionHeading}>
+            <p className={styles.sectionLabel}>Entry</p>
+            <h2>Current definition</h2>
           </div>
-
-          <section className={styles.storyBlock}>
-            <div className={styles.sectionHeading}>
-              <p>Why it matters</p>
-              <h2>The concept, framed for fast scanning.</h2>
+          <p className={styles.bodyCopy}>{concept.summary}</p>
+          <dl className={styles.definitionList}>
+            <div>
+              <dt>Category</dt>
+              <dd>{concept.category}</dd>
             </div>
-            <p>{concept.summary}</p>
-            <ul className={styles.signalList}>
-              {concept.keywords.slice(0, 4).map((keyword) => (
-                <li key={keyword}>{keyword}</li>
-              ))}
-            </ul>
-          </section>
-
-          <section className={styles.storyBlock}>
-            <div className={styles.sectionHeading}>
-              <p>Prompt trace</p>
-              <h2>How the editorial visual is derived.</h2>
+            <div>
+              <dt>Slug</dt>
+              <dd>{concept.slug}</dd>
             </div>
-            <p className={styles.prompt}>{prompt}</p>
-          </section>
+            <div>
+              <dt>Keywords</dt>
+              <dd className={styles.keywordList}>
+                {concept.keywords.map((keyword) => (
+                  <span key={keyword}>{keyword}</span>
+                ))}
+              </dd>
+            </div>
+          </dl>
         </section>
 
-        <aside className={styles.sideColumn}>
-          <section className={styles.infoBlock}>
-            <div className={styles.sectionHeading}>
-              <p>Metadata</p>
-              <h2>Seed attributes</h2>
-            </div>
-            <dl className={styles.definitionList}>
-              <div>
-                <dt>Slug</dt>
-                <dd>{concept.slug}</dd>
-              </div>
-              <div>
-                <dt>Keywords</dt>
-                <dd className={styles.keywordList}>
-                  {concept.keywords.map((keyword) => (
-                    <span key={keyword}>{keyword}</span>
-                  ))}
-                </dd>
-              </div>
-              <div>
-                <dt>Seed text</dt>
-                <dd>{concept.source}</dd>
-              </div>
-            </dl>
-          </section>
+        <section className={styles.note}>
+          <div className={styles.sectionHeading}>
+            <p className={styles.sectionLabel}>Source</p>
+            <h2>Seeded from the archive.</h2>
+          </div>
+          <p className={styles.bodyCopy}>{concept.source}</p>
+        </section>
 
-          <section className={styles.infoBlock}>
+        {otherConcepts.length > 0 ? (
+          <nav className={styles.more} aria-labelledby="continue-heading">
             <div className={styles.sectionHeading}>
-              <p>Related reading</p>
-              <h2>Follow the concept graph.</h2>
+              <p className={styles.sectionLabel}>See also</p>
+              <h2 id="continue-heading">Other terms in the archive.</h2>
             </div>
             <div className={styles.linkStack}>
-              {relatedConcepts.length > 0 ? (
-                relatedConcepts.map((item) => (
-                  <Link key={item.slug} href={`/concepts/${item.slug}`} className={styles.relatedLink}>
+              {otherConcepts.map((item) => (
+                <Link key={item.slug} href={`/concepts/${item.slug}`} className={styles.relatedLink}>
+                  <div className={styles.relatedTopline}>
                     <strong>{item.title}</strong>
                     <span>{item.category}</span>
-                  </Link>
-                ))
-              ) : (
-                <p className={styles.emptyCopy}>
-                  Add more connected concepts to the markdown seed to deepen the graph.
-                </p>
-              )}
+                  </div>
+                  <p>{item.summary}</p>
+                </Link>
+              ))}
             </div>
-          </section>
-
-          <section className={styles.infoBlock}>
-            <div className={styles.sectionHeading}>
-              <p>Same category</p>
-              <h2>Continue browsing</h2>
-            </div>
-            <div className={styles.linkStack}>
-              {sameCategory.length > 0 ? (
-                sameCategory.slice(0, 4).map((item) => (
-                  <Link key={item.slug} href={`/concepts/${item.slug}`} className={styles.relatedLink}>
-                    <strong>{item.title}</strong>
-                    <span>{item.summary}</span>
-                  </Link>
-                ))
-              ) : (
-                <p className={styles.emptyCopy}>
-                  This category only has one concept so far.
-                </p>
-              )}
-            </div>
-          </section>
-        </aside>
-      </div>
+          </nav>
+        ) : null}
+      </article>
     </main>
   );
 }
