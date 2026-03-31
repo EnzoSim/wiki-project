@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Wiki Master</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0a661" />
+      <stop offset="100%" stop-color="#7dc0e7" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#09111f" />
+  <path d="M17 16h12.5c6.8 0 11.5 3.6 11.5 9.2 0 4.2-2.6 7.4-6.8 8.4l8.3 14.4H34.6l-7.3-13.2h-3.8V48H17V16zm6.5 14h5.1c3.4 0 5.5-1.7 5.5-4.4 0-2.8-2.1-4.4-5.5-4.4h-5.1V30z" fill="url(#bg)" />
+  <path d="M44.5 16h2.7v32h-2.7z" fill="#f5f1e8" opacity=".55" />
+</svg>

@@ -1,17 +1,21 @@
 # wiki-project
-Interactive economics wiki prototype from wiki_master.md
+Interactive economics wiki prototype from `wiki_master.md`, now styled as a polished editorial browsing experience and ready to self-host on Railway.
 
 Run locally:
 - npm install
 - npm run dev
+- npm run build
+- npm run start
 
 Railway:
-- create a new Railway project from this repo
-- Railway will pick up package.json
-- set the generated public domain
+- create a new Railway project from this repo or run `railway add -r EnzoSim/wiki-project`
+- Railway will pick up the standalone Next.js build from `package.json`
+- generate a Railway public domain in Settings → Networking once the deploy succeeds
 
 Features:
 - Parses the wiki_master.md seed
 - Auto-groups concepts by category
 - Generates a concept-specific SVG illustration
 - Supports search/filtering in the browser
+- Adds category-driven discovery and richer concept pages
+- Uses Next.js standalone output for Railway-friendly deployments

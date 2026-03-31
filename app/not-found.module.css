@@ -1,0 +1,42 @@
+.page {
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 44rem;
+  min-height: 100svh;
+  padding: 5rem 1.5rem;
+  place-content: center;
+}
+
+.eyebrow {
+  color: var(--accent-strong);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.page h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 0.96;
+}
+
+.copy {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 32rem;
+}
+
+.action {
+  align-items: center;
+  background: var(--accent);
+  border-radius: 999px;
+  color: #17110d;
+  display: inline-flex;
+  font-weight: 800;
+  justify-content: center;
+  margin-top: 0.5rem;
+  max-width: max-content;
+  padding: 0.9rem 1.25rem;
+}
