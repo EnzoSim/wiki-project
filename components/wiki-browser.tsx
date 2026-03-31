@@ -69,10 +69,10 @@ export default function WikiBrowser({ concepts }: { concepts: Concept[] }) {
 
   return (
     <div className={styles.browser}>
-      <div className={styles.toolbar}>
-        <div className={styles.searchWrap}>
+      <div className={styles.controls}>
+        <div className={styles.searchRow}>
           <label className={styles.searchLabel} htmlFor="concept-search">
-            Search the index
+            Search
           </label>
           <input
             id="concept-search"
@@ -81,29 +81,33 @@ export default function WikiBrowser({ concepts }: { concepts: Concept[] }) {
               const nextQuery = event.target.value;
               startTransition(() => setQuery(nextQuery));
             }}
-            placeholder="Search terra nullius, safetyism, NIMBYism"
+            placeholder="Search terms, categories, or keywords"
             className={styles.searchInput}
           />
         </div>
-        <div className={styles.filterGroup} aria-label="Filter by category">
-          {categories.map((category) => (
-            <button
-              key={category}
-              type="button"
-              className={category === selectedCategory ? styles.filterActive : styles.filter}
-              onClick={() => {
-                startTransition(() => setSelectedCategory(category));
-              }}
-            >
-              {category}
-            </button>
-          ))}
+
+        <div className={styles.filterBlock}>
+          <span className={styles.filterLabel}>Filter by category</span>
+          <div className={styles.filterGroup} aria-label="Filter by category">
+            {categories.map((category) => (
+              <button
+                key={category}
+                type="button"
+                className={category === selectedCategory ? styles.filterActive : styles.filter}
+                onClick={() => {
+                  startTransition(() => setSelectedCategory(category));
+                }}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
       <div className={styles.statusRow}>
         <p>
-          Showing <strong>{filtered.length}</strong> of <strong>{concepts.length}</strong> terms
+          Showing <strong>{filtered.length}</strong> of <strong>{concepts.length}</strong> entries
         </p>
         {hasActiveFilters ? (
           <button
@@ -116,50 +120,29 @@ export default function WikiBrowser({ concepts }: { concepts: Concept[] }) {
               });
             }}
           >
-            Reset
+            Clear filters
           </button>
         ) : null}
       </div>
 
       {filtered.length > 0 ? (
         <div className={styles.list}>
-          {filtered.map((concept, index) => (
-            <Link key={concept.slug} href={`/concepts/${concept.slug}`} className={styles.item}>
-              <span className={styles.itemIndex}>{String(index + 1).padStart(2, '0')}</span>
-              <div className={styles.itemBody}>
-                <div className={styles.itemHeader}>
-                  <h3>{concept.title}</h3>
-                  <span className={styles.itemCategory}>{concept.category}</span>
-                </div>
-                <p>{concept.summary}</p>
-                <div className={styles.itemKeywords}>
-                  {concept.keywords.slice(0, 3).map((keyword) => (
-                    <span key={keyword}>{keyword}</span>
-                  ))}
-                </div>
+          {filtered.map((concept) => (
+            <article key={concept.slug} className={styles.item}>
+              <div className={styles.itemHeader}>
+                <Link className={styles.itemTitle} href={`/concepts/${concept.slug}`}>
+                  {concept.title}
+                </Link>
+                <span className={styles.itemCategory}>{concept.category}</span>
               </div>
-              <span className={styles.itemAction}>Open</span>
-            </Link>
+              <p className={styles.itemSummary}>{concept.summary}</p>
+            </article>
           ))}
         </div>
       ) : (
         <div className={styles.emptyState}>
-          <h3>No terms match that search.</h3>
-          <p>Try a broader word or reset the filters to return to the full index.</p>
-          {hasActiveFilters ? (
-            <button
-              type="button"
-              className={styles.resetButton}
-              onClick={() => {
-                startTransition(() => {
-                  setQuery('');
-                  setSelectedCategory('All');
-                });
-              }}
-            >
-              Reset filters
-            </button>
-          ) : null}
+          <h3>No entries match that search.</h3>
+          <p>Try a broader term or clear the filters to return to the full index.</p>
         </div>
       )}
     </div>

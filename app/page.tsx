@@ -1,58 +1,33 @@
 import WikiBrowser from '../components/wiki-browser';
 import styles from './page.module.css';
-import { getWikiOverview, loadWikiConcepts } from '../lib/wiki';
+import { loadWikiConcepts } from '../lib/wiki';
 
 export default function HomePage() {
   const concepts = loadWikiConcepts();
-  const overview = getWikiOverview(concepts);
+  const categories = Array.from(new Set(concepts.map((concept) => concept.category)));
 
   return (
     <main className={styles.page}>
-      <section className={styles.hero}>
-        <div className={styles.heroCopy}>
-          <p className={styles.eyebrow}>Wiki Master</p>
-          <h1 className={styles.title}>Three short entries, kept deliberately spare.</h1>
-          <p className={styles.lede}>
-            A compact reference on law, public policy, and urban economics. Search the index,
-            filter by category, and move directly into a term without extra visual noise.
-          </p>
-          <div className={styles.heroActions}>
-            <a className={styles.primaryAction} href="#browse">
-              Browse the index
-            </a>
-          </div>
-        </div>
-        <aside className={styles.heroMeta} aria-label="Archive summary">
-          <div>
-            <p className={styles.sectionLabel}>Archive</p>
-            <div className={styles.statRow}>
-              <div className={styles.statBlock}>
-                <span className={styles.statLabel}>Entries</span>
-                <strong className={styles.statValue}>{overview.totalConcepts}</strong>
-              </div>
-              <div className={styles.statBlock}>
-                <span className={styles.statLabel}>Categories</span>
-                <strong className={styles.statValue}>{overview.totalCategories}</strong>
-              </div>
-            </div>
-          </div>
-          <ul className={styles.categoryList}>
-            {overview.categories.map((category) => (
-              <li key={category.category}>{category.category}</li>
-            ))}
-          </ul>
-        </aside>
-      </section>
+      <header className={styles.header}>
+        <p className={styles.kicker}>Wiki Master</p>
+        <h1>Reference index</h1>
+        <p className={styles.intro}>
+          A small encyclopedia-style index covering three terms across law, public policy, and
+          urban economics.
+        </p>
+        <p className={styles.meta}>
+          {concepts.length} entries across {categories.length} categories.
+        </p>
+      </header>
 
-      <section className={styles.indexSection} id="browse">
+      <section className={styles.indexSection} aria-labelledby="index-heading">
         <div className={styles.sectionHeader}>
           <div>
             <p className={styles.sectionLabel}>Index</p>
-            <h2>Browse the current archive.</h2>
+            <h2 id="index-heading">Current entries</h2>
           </div>
           <p className={styles.sectionCopy}>
-            The dataset is intentionally small: three live terms, one search field, and category
-            filters that stay out of the way.
+            Use the search field or filter by category to move directly to a term.
           </p>
         </div>
         <WikiBrowser concepts={concepts} />
