@@ -48,23 +48,46 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
 
   return (
     <main className={styles.page}>
-      <article className={styles.article}>
-        <header className={styles.header}>
-          <Link href="/" className={styles.backLink}>
-            Back to index
-          </Link>
-          <p className={styles.kicker}>{concept.category}</p>
-          <h1>{concept.title}</h1>
-          <p className={styles.summary}>{concept.summary}</p>
-        </header>
+      <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
+        <Link href="/">Back to index</Link>
+      </nav>
 
-        <section className={styles.note}>
-          <div className={styles.sectionHeading}>
-            <p className={styles.sectionLabel}>Entry</p>
-            <h2>Current definition</h2>
-          </div>
-          <p className={styles.bodyCopy}>{concept.summary}</p>
-          <dl className={styles.definitionList}>
+      <header className={styles.header}>
+        <p className={styles.category}>{concept.category}</p>
+        <h1>{concept.title}</h1>
+        <p className={styles.lead}>{concept.summary}</p>
+      </header>
+
+      <div className={styles.layout}>
+        <article className={styles.article}>
+          <section className={styles.section}>
+            <h2>Overview</h2>
+            <p>{concept.summary}</p>
+          </section>
+
+          <section className={styles.section}>
+            <h2>Archive source</h2>
+            <p>{concept.source}</p>
+          </section>
+
+          {otherConcepts.length > 0 ? (
+            <section className={styles.section}>
+              <h2>See also</h2>
+              <ul className={styles.relatedList}>
+                {otherConcepts.map((item) => (
+                  <li key={item.slug}>
+                    <Link href={`/concepts/${item.slug}`}>{item.title}</Link>
+                    <span>{item.summary}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+        </article>
+
+        <aside className={styles.infobox} aria-label="Entry details">
+          <h2>At a glance</h2>
+          <dl className={styles.metaList}>
             <div>
               <dt>Category</dt>
               <dd>{concept.category}</dd>
@@ -75,43 +98,11 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
             </div>
             <div>
               <dt>Keywords</dt>
-              <dd className={styles.keywordList}>
-                {concept.keywords.map((keyword) => (
-                  <span key={keyword}>{keyword}</span>
-                ))}
-              </dd>
+              <dd>{concept.keywords.join(', ')}</dd>
             </div>
           </dl>
-        </section>
-
-        <section className={styles.note}>
-          <div className={styles.sectionHeading}>
-            <p className={styles.sectionLabel}>Source</p>
-            <h2>Seeded from the archive.</h2>
-          </div>
-          <p className={styles.bodyCopy}>{concept.source}</p>
-        </section>
-
-        {otherConcepts.length > 0 ? (
-          <nav className={styles.more} aria-labelledby="continue-heading">
-            <div className={styles.sectionHeading}>
-              <p className={styles.sectionLabel}>See also</p>
-              <h2 id="continue-heading">Other terms in the archive.</h2>
-            </div>
-            <div className={styles.linkStack}>
-              {otherConcepts.map((item) => (
-                <Link key={item.slug} href={`/concepts/${item.slug}`} className={styles.relatedLink}>
-                  <div className={styles.relatedTopline}>
-                    <strong>{item.title}</strong>
-                    <span>{item.category}</span>
-                  </div>
-                  <p>{item.summary}</p>
-                </Link>
-              ))}
-            </div>
-          </nav>
-        ) : null}
-      </article>
+        </aside>
+      </div>
     </main>
   );
 }

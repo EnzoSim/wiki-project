@@ -1,18 +1,18 @@
 import type { Metadata } from 'next';
-import { Fraunces, Manrope } from 'next/font/google';
+import { Source_Sans_3, Source_Serif_4 } from 'next/font/google';
 import type { ReactNode } from 'react';
 import './globals.css';
 
-const display = Fraunces({
+const display = Source_Serif_4({
   subsets: ['latin'],
   variable: '--font-display',
-  weight: ['600', '700'],
+  weight: ['400', '600', '700'],
 });
 
-const body = Manrope({
+const body = Source_Sans_3({
   subsets: ['latin'],
   variable: '--font-body',
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -21,18 +21,18 @@ export const metadata: Metadata = {
     template: '%s | Wiki Master',
   },
   description:
-    'A minimal reference index of three terms across law, public policy, and urban economics.',
+    'A compact encyclopedia-style index of three terms across law, public policy, and urban economics.',
   openGraph: {
     title: 'Wiki Master',
     description:
-      'A minimal reference index of three terms across law, public policy, and urban economics.',
+      'A compact encyclopedia-style index of three terms across law, public policy, and urban economics.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
     title: 'Wiki Master',
     description:
-      'A minimal reference index of three terms across law, public policy, and urban economics.',
+      'A compact encyclopedia-style index of three terms across law, public policy, and urban economics.',
   },
 };
 
