@@ -15,6 +15,7 @@ export default function HomePage() {
           A small encyclopedia-style index covering three terms across law, public policy, and
           urban economics.
         </p>
+        <p className={styles.credit}>Curated by Enzo Simier.</p>
         <p className={styles.meta}>
           {concepts.length} entries across {categories.length} categories.
         </p>
