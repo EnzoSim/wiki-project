@@ -60,16 +60,6 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
 
       <div className={styles.layout}>
         <article className={styles.article}>
-          <section className={styles.section}>
-            <h2>Overview</h2>
-            <p>{concept.summary}</p>
-          </section>
-
-          <section className={styles.section}>
-            <h2>Archive source</h2>
-            <p>{concept.source}</p>
-          </section>
-
           {otherConcepts.length > 0 ? (
             <section className={styles.section}>
               <h2>See also</h2>
