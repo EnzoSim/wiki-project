@@ -1,19 +1,14 @@
 :root {
   color-scheme: light;
-  --bg: #f3f0e8;
-  --bg-soft: #f7f4ed;
-  --surface: rgba(255, 252, 247, 0.88);
-  --surface-strong: #fffdf8;
-  --line: rgba(45, 51, 59, 0.14);
-  --line-strong: rgba(30, 36, 44, 0.3);
-  --text: #17191c;
-  --text-muted: #5f646c;
-  --text-soft: #7b8189;
-  --link: #154da7;
-  --link-hover: #0f3d85;
-  --accent: #b8884d;
-  --shadow-soft: 0 20px 60px rgba(21, 25, 28, 0.08);
-  --selection: rgba(21, 77, 167, 0.18);
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --line: #d8dde3;
+  --line-strong: #b9c2cc;
+  --text: #202122;
+  --text-muted: #54595d;
+  --link: #0645ad;
+  --link-hover: #0b0080;
+  --selection: rgba(6, 69, 173, 0.16);
 }
 
 *,
@@ -33,10 +28,7 @@ body {
 }
 
 body {
-  background:
-    radial-gradient(circle at top, rgba(184, 136, 77, 0.12), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.4), transparent 18rem),
-    var(--bg);
+  background: var(--bg);
   color: var(--text);
   font-family: var(--font-body), sans-serif;
   line-height: 1.6;
@@ -89,8 +81,4 @@ h6 {
 
 p {
   margin: 0;
-}
-
-main {
-  position: relative;
 }

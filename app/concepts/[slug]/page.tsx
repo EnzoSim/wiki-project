@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import ConceptScene from '../../../components/concept-scene';
 import styles from './page.module.css';
 import { getConceptBySlug, loadWikiConcepts } from '../../../lib/wiki';
 
@@ -28,7 +27,7 @@ export async function generateMetadata({ params }: ConceptPageProps): Promise<Me
   return {
     title: concept.title,
     description: concept.summary,
-    keywords: [concept.category, ...concept.visualMotifs, ...concept.keywords.slice(0, 6)],
+    keywords: [concept.category, ...concept.keywords],
     openGraph: {
       title: `${concept.title} | Wiki Master`,
       description: concept.summary,
@@ -43,11 +42,9 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
 
   if (!concept) return notFound();
 
-  const relatedConcepts = concept.related
-    .map((relatedSlug) => getConceptBySlug(relatedSlug))
-    .filter((item): item is NonNullable<typeof item> => Boolean(item));
-
-  const visualTags = concept.visualMotifs.slice(0, 4);
+  const otherConcepts = loadWikiConcepts()
+    .filter((item) => item.slug !== concept.slug)
+    .sort((left, right) => left.title.localeCompare(right.title));
 
   return (
     <main className={styles.page}>
@@ -55,48 +52,29 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
         <Link href="/">Back to index</Link>
       </nav>
 
-      <section className={styles.hero}>
-        <header className={styles.header}>
-          <p className={styles.category}>{concept.category}</p>
-          <h1>{concept.title}</h1>
-          <p className={styles.lead}>{concept.summary}</p>
-          <dl className={styles.heroMeta}>
-            <div>
-              <dt>Format</dt>
-              <dd>Essay + sculpture</dd>
-            </div>
-            <div>
-              <dt>Slug</dt>
-              <dd>{concept.slug}</dd>
-            </div>
-          </dl>
-        </header>
-
-        <ConceptScene className={styles.scene} concept={concept} />
-      </section>
+      <header className={styles.header}>
+        <p className={styles.category}>{concept.category}</p>
+        <h1>{concept.title}</h1>
+        <p className={styles.lead}>{concept.summary}</p>
+      </header>
 
       <div className={styles.layout}>
-        <article className={styles.article} aria-label="Entry text">
+        <article className={styles.article}>
           <section className={styles.section}>
-            <h2>Definition</h2>
-            <p>{concept.definition}</p>
+            <h2>Overview</h2>
+            <p>{concept.summary}</p>
           </section>
 
           <section className={styles.section}>
-            <h2>Why it matters</h2>
-            <p>{concept.whyItMatters}</p>
+            <h2>Archive source</h2>
+            <p>{concept.source}</p>
           </section>
 
-          <section className={styles.section}>
-            <h2>Debate / limits</h2>
-            <p>{concept.debate}</p>
-          </section>
-
-          {relatedConcepts.length > 0 ? (
+          {otherConcepts.length > 0 ? (
             <section className={styles.section}>
               <h2>See also</h2>
               <ul className={styles.relatedList}>
-                {relatedConcepts.map((item) => (
+                {otherConcepts.map((item) => (
                   <li key={item.slug}>
                     <Link href={`/concepts/${item.slug}`}>{item.title}</Link>
                     <span>{item.summary}</span>
@@ -107,41 +85,22 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
           ) : null}
         </article>
 
-        <aside className={styles.sidebar} aria-label="Entry details">
-          <section className={styles.sidebarSection}>
-            <p className={styles.sidebarLabel}>Entry details</p>
-            <dl className={styles.metaList}>
-              <div>
-                <dt>Category</dt>
-                <dd>{concept.category}</dd>
-              </div>
-              <div>
-                <dt>Title</dt>
-                <dd>{concept.title}</dd>
-              </div>
-              <div>
-                <dt>Related</dt>
-                <dd>{relatedConcepts.length}</dd>
-              </div>
-            </dl>
-          </section>
-
-          <section className={styles.sidebarSection}>
-            <p className={styles.sidebarLabel}>Visual cues</p>
-            <ul className={styles.tagList}>
-              {visualTags.map((tag) => (
-                <li key={tag}>{tag}</li>
-              ))}
-            </ul>
-          </section>
-
-          <section className={styles.sidebarSection}>
-            <p className={styles.sidebarLabel}>Current note</p>
-            <p className={styles.sidebarCopy}>
-              The 3D scene above is procedurally rebuilt from this entry&apos;s text and motifs on
-              each visit.
-            </p>
-          </section>
+        <aside className={styles.infobox} aria-label="Entry details">
+          <h2>At a glance</h2>
+          <dl className={styles.metaList}>
+            <div>
+              <dt>Category</dt>
+              <dd>{concept.category}</dd>
+            </div>
+            <div>
+              <dt>Slug</dt>
+              <dd>{concept.slug}</dd>
+            </div>
+            <div>
+              <dt>Keywords</dt>
+              <dd>{concept.keywords.join(', ')}</dd>
+            </div>
+          </dl>
         </aside>
       </div>
     </main>

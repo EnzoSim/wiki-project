@@ -1,125 +1,59 @@
 .page {
   margin: 0 auto;
-  max-width: 78rem;
-  padding: 2rem 1.5rem 4rem;
+  max-width: 72rem;
+  padding: 1.5rem 1.5rem 3rem;
 }
 
 .header {
-  align-items: end;
   border-bottom: 1px solid var(--line);
-  column-gap: 3rem;
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(15rem, 20rem);
-  min-height: 19rem;
-  padding: 1.2rem 0 1.8rem;
-  position: relative;
+  gap: 0.7rem;
+  padding: 0.5rem 0 1.5rem;
 }
 
 .kicker,
 .sectionLabel {
-  color: var(--text-soft);
+  color: var(--text-muted);
   font-size: 0.78rem;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-}
-
-.headerCopy {
-  display: grid;
-  gap: 0.9rem;
-  max-width: 46rem;
 }
 
 .header h1 {
-  font-size: clamp(2.8rem, 7vw, 5.2rem);
-  line-height: 0.96;
-  max-width: 10ch;
+  font-size: clamp(2.2rem, 4vw, 3.1rem);
+  line-height: 1.05;
 }
 
 .intro,
-.sectionCopy {
+.sectionCopy,
+.meta {
   color: var(--text-muted);
-  font-size: 1.02rem;
-  line-height: 1.72;
-  max-width: 38rem;
+  line-height: 1.65;
+  max-width: 44rem;
 }
 
-.metaRail {
-  align-self: stretch;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.18));
-  border: 1px solid var(--line);
-  border-radius: 1.3rem;
-  box-shadow: var(--shadow-soft);
-  display: grid;
-  gap: 0.9rem;
-  margin: 0;
-  padding: 1.2rem 1.1rem;
-}
-
-.metaRail div {
-  border-bottom: 1px solid var(--line);
-  display: grid;
-  gap: 0.15rem;
-  padding-bottom: 0.8rem;
-}
-
-.metaRail div:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.metaRail dt {
-  color: var(--text-soft);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.metaRail dd {
-  font-family: var(--font-display), serif;
-  font-size: 1.25rem;
-  margin: 0;
+.meta {
+  font-size: 0.95rem;
 }
 
 .indexSection {
-  padding-top: 1.75rem;
+  padding-top: 1.5rem;
 }
 
 .sectionHeader {
   align-items: end;
-  column-gap: 2.4rem;
+  column-gap: 2rem;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(16rem, 24rem);
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .sectionHeader h2 {
-  font-size: clamp(1.7rem, 3vw, 2.2rem);
-  line-height: 1.06;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.1;
 }
 
 @media (max-width: 800px) {
-  .header {
-    grid-template-columns: minmax(0, 1fr);
-    min-height: auto;
-    row-gap: 1.4rem;
-  }
-
-  .metaRail {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .metaRail div {
-    border-bottom: none;
-    border-right: 1px solid var(--line);
-    padding-bottom: 0;
-    padding-right: 0.8rem;
-  }
-
-  .metaRail div:last-child {
-    border-right: none;
-    padding-right: 0;
-  }
-
   .sectionHeader {
     grid-template-columns: minmax(0, 1fr);
     row-gap: 0.75rem;
@@ -129,26 +63,5 @@
 @media (max-width: 640px) {
   .page {
     padding-inline: 1rem;
-  }
-
-  .header h1 {
-    max-width: none;
-  }
-
-  .metaRail {
-    border-radius: 1rem;
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .metaRail div {
-    border-bottom: 1px solid var(--line);
-    border-right: none;
-    padding-bottom: 0.8rem;
-    padding-right: 0;
-  }
-
-  .metaRail div:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
   }
 }

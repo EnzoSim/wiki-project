@@ -9,39 +9,25 @@ export default function HomePage() {
   return (
     <main className={styles.page}>
       <header className={styles.header}>
-        <div className={styles.headerCopy}>
-          <p className={styles.kicker}>Wiki Master</p>
-          <h1>Reference index</h1>
-          <p className={styles.intro}>
-            Three terms, kept deliberately small: readable entries with premium visual studies
-            rather than a noisy archive.
-          </p>
-        </div>
-        <dl className={styles.metaRail}>
-          <div>
-            <dt>Entries</dt>
-            <dd>{concepts.length}</dd>
-          </div>
-          <div>
-            <dt>Categories</dt>
-            <dd>{categories.length}</dd>
-          </div>
-          <div>
-            <dt>Format</dt>
-            <dd>Essay + 3D study</dd>
-          </div>
-        </dl>
+        <p className={styles.kicker}>Wiki Master</p>
+        <h1>Reference index</h1>
+        <p className={styles.intro}>
+          A small encyclopedia-style index covering three terms across law, public policy, and
+          urban economics.
+        </p>
+        <p className={styles.meta}>
+          {concepts.length} entries across {categories.length} categories.
+        </p>
       </header>
 
       <section className={styles.indexSection} aria-labelledby="index-heading">
         <div className={styles.sectionHeader}>
           <div>
-            <p className={styles.sectionLabel}>Current index</p>
-            <h2 id="index-heading">Browse the published terms</h2>
+            <p className={styles.sectionLabel}>Index</p>
+            <h2 id="index-heading">Current entries</h2>
           </div>
           <p className={styles.sectionCopy}>
-            Search, filter by category, then open a term to read the essay and inspect its 3D
-            interpretation.
+            Use the search field or filter by category to move directly to a term.
           </p>
         </div>
         <WikiBrowser concepts={concepts} />
