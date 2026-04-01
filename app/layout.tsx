@@ -21,18 +21,18 @@ export const metadata: Metadata = {
     template: '%s | Wiki Master',
   },
   description:
-    'A compact encyclopedia-style index of three terms across law, public policy, and urban economics.',
+    'A compact encyclopedia pairing three terms with readable essays and procedural 3D studies.',
   openGraph: {
     title: 'Wiki Master',
     description:
-      'A compact encyclopedia-style index of three terms across law, public policy, and urban economics.',
+      'A compact encyclopedia pairing three terms with readable essays and procedural 3D studies.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
     title: 'Wiki Master',
     description:
-      'A compact encyclopedia-style index of three terms across law, public policy, and urban economics.',
+      'A compact encyclopedia pairing three terms with readable essays and procedural 3D studies.',
   },
 };
 

@@ -12,7 +12,11 @@ function scoreConcept(concept: Concept, query: string) {
     title: concept.title.toLowerCase(),
     category: concept.category.toLowerCase(),
     summary: concept.summary.toLowerCase(),
+    definition: concept.definition.toLowerCase(),
+    whyItMatters: concept.whyItMatters.toLowerCase(),
+    debate: concept.debate.toLowerCase(),
     keywords: concept.keywords.join(' ').toLowerCase(),
+    motifs: concept.visualMotifs.join(' ').toLowerCase(),
   };
 
   let score = 0;
@@ -20,7 +24,11 @@ function scoreConcept(concept: Concept, query: string) {
   if (haystacks.title.includes(query)) score += 5;
   if (haystacks.category.includes(query)) score += 3;
   if (haystacks.summary.includes(query)) score += 2;
+  if (haystacks.definition.includes(query)) score += 2;
+  if (haystacks.whyItMatters.includes(query)) score += 2;
+  if (haystacks.debate.includes(query)) score += 1;
   if (haystacks.keywords.includes(query)) score += 4;
+  if (haystacks.motifs.includes(query)) score += 3;
 
   return score;
 }
@@ -49,6 +57,10 @@ export default function WikiBrowser({ concepts }: { concepts: Concept[] }) {
             concept.title,
             concept.category,
             concept.summary,
+            concept.definition,
+            concept.whyItMatters,
+            concept.debate,
+            concept.visualMotifs.join(' '),
             concept.keywords.join(' '),
           ]
             .join(' ')

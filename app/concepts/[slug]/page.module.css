@@ -1,101 +1,105 @@
 .page {
   margin: 0 auto;
-  max-width: 72rem;
-  padding: 1rem 1.5rem 3rem;
+  max-width: 82rem;
+  padding: 1rem 1.5rem 4rem;
 }
 
 .breadcrumbs {
   font-size: 0.95rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero {
+  align-items: end;
+  border-bottom: 1px solid var(--line);
+  column-gap: 2.4rem;
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.72fr) minmax(0, 1.28fr);
+  padding-bottom: 1.8rem;
 }
 
 .header {
-  border-bottom: 1px solid var(--line);
   display: grid;
-  gap: 0.65rem;
-  padding-bottom: 1rem;
+  gap: 0.9rem;
+  max-width: 34rem;
 }
 
 .category,
+.heroMeta dt,
+.sidebarLabel,
 .metaList dt {
-  color: var(--text-muted);
-  font-size: 0.84rem;
-  letter-spacing: 0.04em;
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .header h1 {
-  font-size: clamp(2.1rem, 4vw, 3rem);
-  line-height: 1.05;
+  font-size: clamp(2.9rem, 7vw, 5.4rem);
+  line-height: 0.94;
 }
 
 .lead {
-  font-size: 1.06rem;
-  line-height: 1.75;
-  max-width: 72ch;
+  font-size: 1.08rem;
+  line-height: 1.82;
+  max-width: 31rem;
+}
+
+.heroMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 1.8rem;
+  margin: 0.2rem 0 0;
+}
+
+.heroMeta div {
+  display: grid;
+  gap: 0.18rem;
+}
+
+.heroMeta dd {
+  font-family: var(--font-display), serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.scene {
+  min-width: 0;
 }
 
 .layout {
-  align-items: start;
-  column-gap: 2rem;
+  column-gap: 2.4rem;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 17rem;
-  padding-top: 1.25rem;
+  grid-template-columns: minmax(0, 1.25fr) minmax(14rem, 18rem);
+  padding-top: 1.9rem;
 }
 
 .article {
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .section {
   display: grid;
-  gap: 0.75rem;
+  gap: 0.8rem;
 }
 
-.section h2,
-.infobox h2 {
-  border-bottom: 1px solid var(--line);
-  font-size: 1.45rem;
-  font-weight: 600;
-  line-height: 1.15;
-  padding-bottom: 0.35rem;
+.section h2 {
+  border-top: 1px solid var(--line);
+  font-size: clamp(1.55rem, 2.3vw, 2rem);
+  line-height: 1.08;
+  padding-top: 0.9rem;
 }
 
 .section p {
-  line-height: 1.8;
-  margin: 0;
-  max-width: 76ch;
-}
-
-.infobox {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 0.2rem;
-  display: grid;
-  gap: 0.9rem;
-  padding: 0.9rem;
-}
-
-.metaList {
-  display: grid;
-  gap: 0.8rem;
-  margin: 0;
-}
-
-.metaList div {
-  display: grid;
-  gap: 0.2rem;
-}
-
-.metaList dd {
-  line-height: 1.6;
-  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.84;
+  max-width: 70ch;
 }
 
 .relatedList {
   display: grid;
-  gap: 0.8rem;
+  gap: 1rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -103,35 +107,96 @@
 
 .relatedList li {
   display: grid;
-  gap: 0.25rem;
+  gap: 0.28rem;
 }
 
 .relatedList a {
-  color: var(--link);
   font-weight: 600;
-}
-
-.relatedList a:hover {
-  color: var(--link-hover);
 }
 
 .relatedList span {
   color: var(--text-muted);
-  line-height: 1.65;
+  line-height: 1.72;
 }
 
-@media (max-width: 900px) {
-  .layout {
+.sidebar {
+  align-content: start;
+  display: grid;
+  gap: 1.4rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.sidebarSection {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 0.8rem;
+  padding-top: 0.85rem;
+}
+
+.metaList {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0;
+}
+
+.metaList div {
+  display: grid;
+  gap: 0.16rem;
+}
+
+.metaList dd {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tagList li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text-muted);
+  padding: 0.25rem 0.62rem;
+}
+
+.sidebarCopy {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 980px) {
+  .hero {
     grid-template-columns: minmax(0, 1fr);
+    row-gap: 1.5rem;
   }
 
-  .infobox {
-    order: -1;
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 1.8rem;
+  }
+
+  .sidebar {
+    position: static;
   }
 }
 
 @media (max-width: 640px) {
   .page {
     padding-inline: 1rem;
+  }
+
+  .header h1 {
+    max-width: none;
+  }
+
+  .heroMeta {
+    gap: 1rem 1.2rem;
   }
 }
