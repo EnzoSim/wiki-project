@@ -35,6 +35,12 @@
   max-width: 72ch;
 }
 
+.credit {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
 .layout {
   align-items: start;
   column-gap: 2rem;

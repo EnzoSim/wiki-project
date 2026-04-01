@@ -32,6 +32,13 @@
   max-width: 44rem;
 }
 
+.credit {
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
 .meta {
   font-size: 0.95rem;
 }

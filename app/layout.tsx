@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   },
   description:
     'A compact encyclopedia-style index of three terms across law, public policy, and urban economics.',
+  authors: [{ name: 'Enzo Simier' }],
+  creator: 'Enzo Simier',
+  publisher: 'Enzo Simier',
   openGraph: {
     title: 'Wiki Master',
     description:

@@ -56,6 +56,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
         <p className={styles.category}>{concept.category}</p>
         <h1>{concept.title}</h1>
         <p className={styles.lead}>{concept.summary}</p>
+        <p className={styles.credit}>Curated by Enzo Simier.</p>
       </header>
 
       <div className={styles.layout}>
