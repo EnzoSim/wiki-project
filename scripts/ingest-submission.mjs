@@ -91,6 +91,58 @@ function firstSentence(value) {
   return sentence?.[1]?.trim() ?? value.trim();
 }
 
+function extractPdfCandidate(html, baseUrl) {
+  const patterns = [
+    /(?:href|src)=["'"]([^"'"]+\.pdf(?:\?[^"'"<>\s]*)?)["'"]/i,
+    /https?://[^"'"<> ]+\.pdf(?:\?[^"'"<>\s]*)?/i,
+  ];
+
+  for (const pattern of patterns) {
+    const match = html.match(pattern);
+    if (match) {
+      const candidate = match[1] ?? match[0];
+      try {
+        return new URL(candidate, baseUrl).href;
+      } catch {
+        return candidate;
+      }
+    }
+  }
+
+  return null;
+}
+
+async function maybeCreatePdfAsset(sourceUrl, slug) {
+  try {
+    const sourceResponse = await fetch(sourceUrl, { redirect: 'follow' });
+    if (!sourceResponse.ok) return null;
+
+    const contentType = (sourceResponse.headers.get('content-type') ?? '').toLowerCase();
+    const pdfDir = path.join(projectRoot, 'public', 'pdfs');
+    mkdirSync(pdfDir, { recursive: true });
+    const filePath = path.join(pdfDir, `${slug}.pdf`);
+
+    if (contentType.includes('pdf')) {
+      writeFileSync(filePath, Buffer.from(await sourceResponse.arrayBuffer()));
+      return `/pdfs/${slug}.pdf`;
+    }
+
+    const html = await sourceResponse.text();
+    const pdfUrl = extractPdfCandidate(html, sourceResponse.url);
+    if (!pdfUrl) return null;
+
+    const pdfResponse = await fetch(pdfUrl, { redirect: 'follow' });
+    if (!pdfResponse.ok) return null;
+
+    const pdfContentType = (pdfResponse.headers.get('content-type') ?? '').toLowerCase();
+    if (!pdfContentType.includes('pdf') && !pdfUrl.toLowerCase().includes('.pdf')) return null;
+
+    writeFileSync(filePath, Buffer.from(await pdfResponse.arrayBuffer()));
+    return `/pdfs/${slug}.pdf`;
+  } catch {
+    return null;
+  }
+}
 function heuristicClassification(payload) {
   const normalizedText = payload.submissionText.trim();
   const title = extractTitleFromSubmission(normalizedText);
@@ -274,8 +326,9 @@ function buildTermEntry(classification, payload) {
   };
 }
 
-function buildReadEntry(classification, payload) {
+async function buildReadEntry(classification, payload) {
   const slug = ensureUniqueSlug(readsDir, slugify(classification.slugHint || classification.title));
+  const pdfUrl = payload.sourceUrl ? await maybeCreatePdfAsset(payload.sourceUrl, slug) : null;
 
   return {
     filePath: path.join(readsDir, `${slug}.json`),
@@ -295,6 +348,7 @@ function buildReadEntry(classification, payload) {
         ...(classification.sourceUrl ? { url: classification.sourceUrl } : {}),
         ...(payload.submitter ? { label: payload.submitter } : {}),
       },
+      ...(pdfUrl ? { pdfUrl } : {}),
       addedVia: payload.addedVia,
       submittedAt: new Date().toISOString(),
     },
@@ -314,7 +368,7 @@ async function main() {
   const target =
     classification.entryType === 'term'
       ? buildTermEntry(classification, payload)
-      : buildReadEntry(classification, payload);
+      : await buildReadEntry(classification, payload);
 
   writeFileSync(target.filePath, `${JSON.stringify(target.entry, null, 2)}\n`, 'utf8');
   execFileSync('node', ['scripts/sync-library.mjs'], { cwd: projectRoot, stdio: 'inherit' });

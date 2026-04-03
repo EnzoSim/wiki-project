@@ -123,6 +123,16 @@ export default async function ReadPage({ params }: ReadPageProps) {
                 </dd>
               </div>
             ) : null}
+            {entry.pdfUrl ? (
+              <div>
+                <dt>PDF</dt>
+                <dd>
+                  <a href={entry.pdfUrl} target="_blank" rel="noreferrer">
+                    Open PDF
+                  </a>
+                </dd>
+              </div>
+            ) : null}
             {entry.addedVia ? (
               <div>
                 <dt>Added via</dt>

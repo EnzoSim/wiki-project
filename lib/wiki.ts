@@ -30,6 +30,7 @@ export type Concept = {
   keywords: string[];
   related: string[];
   source?: LibrarySource;
+  pdfUrl?: string;
   addedVia?: string;
   submittedAt?: string;
 };
@@ -279,6 +280,7 @@ function parseConcept(value: unknown) {
     keywords: keywords.length > 0 ? keywords : extractKeywords(`${category} ${subthemes.join(' ')} ${summary}`),
     related: [],
     source: normalizeSource(entry.source),
+    pdfUrl: typeof entry.pdfUrl === 'string' && entry.pdfUrl.trim() ? entry.pdfUrl.trim() : undefined,
     addedVia: typeof entry.addedVia === 'string' ? entry.addedVia.trim() : undefined,
     submittedAt: typeof entry.submittedAt === 'string' ? entry.submittedAt.trim() : undefined,
   };

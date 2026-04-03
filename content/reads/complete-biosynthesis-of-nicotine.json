@@ -20,9 +20,10 @@
   ],
   "status": "to-read",
   "source": {
-    "type": "webpage",
+    "type": "paper",
     "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1"
   },
   "addedVia": "poke",
-  "submittedAt": "2026-04-03T23:08:12.741Z"
+  "submittedAt": "2026-04-03T23:08:12.741Z",
+  "pdfUrl": "/pdfs/complete-biosynthesis-of-nicotine.pdf"
 }
