@@ -30,7 +30,6 @@ export type Concept = {
   keywords: string[];
   related: string[];
   source?: LibrarySource;
-  pdfUrl?: string;
   addedVia?: string;
   submittedAt?: string;
 };
@@ -47,6 +46,7 @@ export type ReadingEntry = {
   keywords: string[];
   status: 'to-read' | 'published';
   source?: LibrarySource;
+  pdfUrl?: string;
   addedVia?: string;
   submittedAt?: string;
 };
@@ -317,6 +317,7 @@ function parseReading(value: unknown) {
     keywords: keywords.length > 0 ? keywords : extractKeywords(`${theme} ${subthemes.join(' ')} ${summary}`),
     status,
     source: normalizeSource(entry.source),
+    pdfUrl: typeof entry.pdfUrl === 'string' && entry.pdfUrl.trim() ? entry.pdfUrl.trim() : undefined,
     addedVia: typeof entry.addedVia === 'string' ? entry.addedVia.trim() : undefined,
     submittedAt: typeof entry.submittedAt === 'string' ? entry.submittedAt.trim() : undefined,
   };
