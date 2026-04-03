@@ -8,6 +8,8 @@ const staticSource = path.join(projectRoot, '.next', 'static');
 const staticTarget = path.join(standaloneNextRoot, 'static');
 const publicSource = path.join(projectRoot, 'public');
 const publicTarget = path.join(standaloneRoot, 'public');
+const contentSource = path.join(projectRoot, 'content');
+const contentTarget = path.join(standaloneRoot, 'content');
 const wikiSource = path.join(projectRoot, 'wiki_master.md');
 const wikiTarget = path.join(standaloneRoot, 'wiki_master.md');
 
@@ -23,6 +25,10 @@ if (existsSync(staticSource)) {
 
 if (existsSync(publicSource)) {
   cpSync(publicSource, publicTarget, { force: true, recursive: true });
+}
+
+if (existsSync(contentSource)) {
+  cpSync(contentSource, contentTarget, { force: true, recursive: true });
 }
 
 if (existsSync(wikiSource)) {

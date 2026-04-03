@@ -1,0 +1,27 @@
+{
+  "type": "term",
+  "title": "terra nullius",
+  "slug": "terra-nullius",
+  "category": "Law",
+  "subthemes": [
+    "Colonial law",
+    "Sovereignty",
+    "Imperial doctrine"
+  ],
+  "summary": "Latin for \"nobody's land\"; a principle used in international law to describe territory that has never been subject to the sovereignty of any state.",
+  "whyItMatters": "The phrase matters because it reveals how legal language was used to turn inhabited places into supposedly empty territory. It remains central to debates about colonization, recognition, and the legitimacy of historical land claims.",
+  "notes": "In practice, the doctrine has been heavily criticized for erasing Indigenous presence and political order. It now often appears as an example of how legal categories can naturalize conquest.",
+  "keywords": [
+    "terra nullius",
+    "colonial law",
+    "sovereignty",
+    "indigenous dispossession",
+    "land claims"
+  ],
+  "source": {
+    "type": "term",
+    "label": "Curated note"
+  },
+  "addedVia": "manual",
+  "submittedAt": "2026-03-31T12:00:00.000Z"
+}

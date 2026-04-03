@@ -1,0 +1,27 @@
+{
+  "type": "term",
+  "title": "safetyism",
+  "slug": "safetyism",
+  "category": "Public policy",
+  "subthemes": [
+    "Risk management",
+    "Institutional culture",
+    "Political psychology"
+  ],
+  "summary": "The tacit ideology that the government’s main goal should be to minimize risks rather than balance them against benefits.",
+  "whyItMatters": "The concept is useful because it names a governing style in which caution becomes the default answer even when tradeoffs are unavoidable. It often appears in debates about regulation, public health, speech, and education.",
+  "notes": "Used carefully, the term points to a real tension between resilience and protection. Used lazily, it can flatten serious moral disagreements into a single accusation of overprotection.",
+  "keywords": [
+    "safetyism",
+    "risk management",
+    "public policy",
+    "precaution",
+    "institutional culture"
+  ],
+  "source": {
+    "type": "term",
+    "label": "Curated note"
+  },
+  "addedVia": "manual",
+  "submittedAt": "2026-03-31T12:00:00.000Z"
+}
