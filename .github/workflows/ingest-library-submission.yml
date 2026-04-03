@@ -1,0 +1,103 @@
+name: Ingest Library Submission
+
+on:
+  workflow_dispatch:
+    inputs:
+      submission_text:
+        description: Raw note, URL, term, or reading prompt
+        required: true
+        type: string
+      source_url:
+        description: Optional canonical source URL
+        required: false
+        type: string
+      source_type:
+        description: Optional source type
+        required: false
+        type: choice
+        options:
+          - article
+          - book
+          - essay
+          - note
+          - paper
+          - podcast
+          - term
+          - video
+          - webpage
+      added_via:
+        description: Origin channel label
+        required: false
+        default: workflow_dispatch
+        type: string
+      submitter:
+        description: Optional submitter label
+        required: false
+        type: string
+      auto_merge:
+        description: Auto-merge the generated PR after CI passes
+        required: false
+        default: false
+        type: boolean
+  repository_dispatch:
+    types:
+      - ingest-library-submission
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Ingest submission
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          INGEST_MODEL: ${{ vars.INGEST_MODEL }}
+        run: npm run ingest:submission
+
+      - name: Validate generated content
+        run: npm run validate:content
+
+      - name: Open pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain -- content wiki_master.md)" ]; then
+            echo "No content changes detected."
+            exit 0
+          fi
+
+          BRANCH="automation/library-ingest-$(date +%Y%m%d%H%M%S)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$BRANCH"
+          git add content wiki_master.md .ingest-result.json
+          git reset .ingest-result.json
+          git commit -m "Ingest library submission"
+          git push --set-upstream origin "$BRANCH"
+
+          TITLE="$(node -e "const fs=require('node:fs'); const data=JSON.parse(fs.readFileSync('.ingest-result.json','utf8')); process.stdout.write((data.type === 'term' ? 'Add term: ' : 'Queue read: ') + data.title);")"
+          BODY="$(node -e "const fs=require('node:fs'); const data=JSON.parse(fs.readFileSync('.ingest-result.json','utf8')); process.stdout.write('## Summary\\n- classify the inbox submission as a ' + data.type + '\\n- add ' + data.filePath + ' to the library\\n- sync wiki_master.md so the published index stays current\\n');")"
+          PR_URL="$(gh pr create --base main --head "$BRANCH" --title "$TITLE" --body "$BODY")"
+
+          SHOULD_AUTO_MERGE="$(node -e "const fs=require('node:fs'); const data=JSON.parse(fs.readFileSync('.ingest-result.json','utf8')); process.stdout.write(String(Boolean(data.autoMerge)));")"
+          if [ "$SHOULD_AUTO_MERGE" = "true" ]; then
+            gh pr merge "$PR_URL" --auto --squash
+          fi

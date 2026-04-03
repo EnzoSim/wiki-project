@@ -61,6 +61,20 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
 
       <div className={styles.layout}>
         <article className={styles.article}>
+          {concept.whyItMatters ? (
+            <section className={styles.section}>
+              <h2>Why it matters</h2>
+              <p>{concept.whyItMatters}</p>
+            </section>
+          ) : null}
+
+          {concept.notes ? (
+            <section className={styles.section}>
+              <h2>Notes</h2>
+              <p>{concept.notes}</p>
+            </section>
+          ) : null}
+
           {otherConcepts.length > 0 ? (
             <section className={styles.section}>
               <h2>See also</h2>
@@ -91,6 +105,12 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
               <dt>Keywords</dt>
               <dd>{concept.keywords.join(', ')}</dd>
             </div>
+            {concept.subthemes.length > 0 ? (
+              <div>
+                <dt>Subthemes</dt>
+                <dd>{concept.subthemes.join(', ')}</dd>
+              </div>
+            ) : null}
           </dl>
         </aside>
       </div>

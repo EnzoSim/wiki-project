@@ -47,6 +47,10 @@
   padding-top: 1.5rem;
 }
 
+.queueSection {
+  padding-top: 2rem;
+}
+
 .sectionHeader {
   align-items: end;
   column-gap: 2rem;

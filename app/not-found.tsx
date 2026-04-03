@@ -7,7 +7,7 @@ export default function NotFound() {
       <p className={styles.kicker}>Not found</p>
       <h1>This entry is not in the current index.</h1>
       <p className={styles.copy}>
-        Return to the index to browse the terms currently published on the site.
+        Return to the index to browse the published terms and the queued reading list.
       </p>
       <Link className={styles.link} href="/">
         Back to index

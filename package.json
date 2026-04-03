@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "node scripts/prepare-standalone.mjs",
-    "start": "HOSTNAME=0.0.0.0 node .next/standalone/server.js"
+    "start": "HOSTNAME=0.0.0.0 node .next/standalone/server.js",
+    "sync:library": "node scripts/sync-library.mjs",
+    "validate:content": "node scripts/validate-library.mjs",
+    "ingest:submission": "node scripts/ingest-submission.mjs"
   },
   "dependencies": {
     "next": "^15.4.0",

@@ -1,0 +1,27 @@
+{
+  "type": "term",
+  "title": "NIMBYism",
+  "slug": "nimbyism",
+  "category": "Urban Economics",
+  "subthemes": [
+    "Housing",
+    "Land use",
+    "Local politics"
+  ],
+  "summary": "An acronym for \"Not In My Back Yard,\" referring to opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally.",
+  "whyItMatters": "The term matters because it captures the gap between abstract support for growth and concrete resistance to nearby change. It is especially useful in arguments about housing supply, infrastructure bottlenecks, and local veto power.",
+  "notes": "The label can illuminate a real pattern, but it can also oversimplify local concerns by treating every objection as selfish or irrational. The most interesting debates are often about where genuine externalities end and exclusionary politics begin.",
+  "keywords": [
+    "nimbyism",
+    "urban economics",
+    "housing",
+    "land use",
+    "local veto"
+  ],
+  "source": {
+    "type": "term",
+    "label": "Curated note"
+  },
+  "addedVia": "manual",
+  "submittedAt": "2026-03-31T12:00:00.000Z"
+}

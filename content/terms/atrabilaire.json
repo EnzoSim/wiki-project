@@ -1,0 +1,27 @@
+{
+  "type": "term",
+  "title": "atrabilaire",
+  "slug": "atrabilaire",
+  "category": "Temperament",
+  "subthemes": [
+    "Intellectual history",
+    "Mood",
+    "Literary language"
+  ],
+  "summary": "Having a gloomy, irritable, or melancholy disposition; literally rooted in the old theory of black bile (atrabilis), which was once thought to produce a morose temperament.",
+  "whyItMatters": "The word connects older medical theories of temperament to modern descriptions of personality and tone. It carries historical texture that makes it richer than a simple synonym for gloomy or sour.",
+  "notes": "Its value is partly stylistic: the term often signals a literary, historical, or high-register voice. It is less a technical diagnosis than a compact way of naming a dark or bile-tinged disposition.",
+  "keywords": [
+    "atrabilaire",
+    "melancholy",
+    "temperament",
+    "black bile",
+    "intellectual history"
+  ],
+  "source": {
+    "type": "term",
+    "label": "Curated note"
+  },
+  "addedVia": "github",
+  "submittedAt": "2026-04-03T14:00:00.000Z"
+}

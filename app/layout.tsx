@@ -21,21 +21,21 @@ export const metadata: Metadata = {
     template: '%s | Wiki Master',
   },
   description:
-    'A compact encyclopedia-style index of unusual terms across law, public policy, urban economics, and adjacent domains.',
+    'A compact encyclopedia-style library of published terms and queued reading leads, grouped into themes and subthemes.',
   authors: [{ name: 'Enzo Simier' }],
   creator: 'Enzo Simier',
   publisher: 'Enzo Simier',
   openGraph: {
     title: 'Wiki Master',
     description:
-      'A compact encyclopedia-style index of unusual terms across law, public policy, urban economics, and adjacent domains.',
+      'A compact encyclopedia-style library of published terms and queued reading leads, grouped into themes and subthemes.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
     title: 'Wiki Master',
     description:
-      'A compact encyclopedia-style index of unusual terms across law, public policy, urban economics, and adjacent domains.',
+      'A compact encyclopedia-style library of published terms and queued reading leads, grouped into themes and subthemes.',
   },
 };
 
