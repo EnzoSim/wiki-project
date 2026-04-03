@@ -21,21 +21,21 @@ export const metadata: Metadata = {
     template: '%s | Wiki Master',
   },
   description:
-    'A compact encyclopedia-style index of three terms across law, public policy, and urban economics.',
+    'A compact encyclopedia-style index of unusual terms across law, public policy, urban economics, and adjacent domains.',
   authors: [{ name: 'Enzo Simier' }],
   creator: 'Enzo Simier',
   publisher: 'Enzo Simier',
   openGraph: {
     title: 'Wiki Master',
     description:
-      'A compact encyclopedia-style index of three terms across law, public policy, and urban economics.',
+      'A compact encyclopedia-style index of unusual terms across law, public policy, urban economics, and adjacent domains.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
     title: 'Wiki Master',
     description:
-      'A compact encyclopedia-style index of three terms across law, public policy, and urban economics.',
+      'A compact encyclopedia-style index of unusual terms across law, public policy, urban economics, and adjacent domains.',
   },
 };
 

@@ -8,6 +8,8 @@ const staticSource = path.join(projectRoot, '.next', 'static');
 const staticTarget = path.join(standaloneNextRoot, 'static');
 const publicSource = path.join(projectRoot, 'public');
 const publicTarget = path.join(standaloneRoot, 'public');
+const wikiSource = path.join(projectRoot, 'wiki_master.md');
+const wikiTarget = path.join(standaloneRoot, 'wiki_master.md');
 
 if (!existsSync(standaloneRoot)) {
   throw new Error('Expected .next/standalone to exist. Run `next build` before preparing the standalone bundle.');
@@ -21,4 +23,8 @@ if (existsSync(staticSource)) {
 
 if (existsSync(publicSource)) {
   cpSync(publicSource, publicTarget, { force: true, recursive: true });
+}
+
+if (existsSync(wikiSource)) {
+  cpSync(wikiSource, wikiTarget, { force: true });
 }
