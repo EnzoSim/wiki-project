@@ -11,5 +11,8 @@
 ## Temperament
 - atrabilaire: Having a gloomy, irritable, or melancholy disposition; literally rooted in the old theory of black bile (atrabilis), which was once thought to produce a morose temperament.
 
+## To read
+- Complete biosynthesis of nicotine: Cell article published April 1, 2026, describing the complete nicotine biosynthesis pathway, including the final coupling reaction, a 5-component metabolon, and a MATE transporter. It matters because it clarifies a major plant alkaloid pathway and has implications for engineering pest resistance in crops. Source: https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1
+
 ## Urban Economics
 - NIMBYism: An acronym for "Not In My Back Yard," referring to opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally.
