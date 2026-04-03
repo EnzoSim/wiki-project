@@ -12,8 +12,8 @@ export default function HomePage() {
         <p className={styles.kicker}>Wiki Master</p>
         <h1>Reference index</h1>
         <p className={styles.intro}>
-          A small encyclopedia-style index covering three terms across law, public policy, and
-          urban economics.
+          A small encyclopedia-style index of unusual terms across law, public policy, urban
+          economics, and adjacent domains.
         </p>
         <p className={styles.credit}>Curated by Enzo Simier.</p>
         <p className={styles.meta}>

@@ -1,4 +1,5 @@
-import { wikiMasterMarkdown } from '../content/wiki_master_source';
+import { existsSync, readFileSync } from 'node:fs';
+import path from 'node:path';
 
 export type Concept = {
   title: string;
@@ -89,6 +90,25 @@ const phraseHints = [
 ];
 
 let cachedConcepts: Concept[] | null = null;
+let cachedMarkdown: string | null = null;
+
+function readWikiMasterMarkdown() {
+  if (cachedMarkdown) return cachedMarkdown;
+
+  const candidates = [
+    path.join(process.cwd(), 'wiki_master.md'),
+    path.join(process.cwd(), '.next', 'standalone', 'wiki_master.md'),
+  ];
+
+  const markdownPath = candidates.find((candidate) => existsSync(candidate));
+
+  if (!markdownPath) {
+    throw new Error('Expected wiki_master.md to exist at the project root or in the standalone bundle.');
+  }
+
+  cachedMarkdown = readFileSync(markdownPath, 'utf8');
+  return cachedMarkdown;
+}
 
 function slugify(value: string) {
   return value.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
@@ -156,7 +176,7 @@ function sortByFeatureScore(concepts: Concept[]) {
 export function loadWikiConcepts(): Concept[] {
   if (cachedConcepts) return cachedConcepts;
 
-  const lines = wikiMasterMarkdown.split(/\r?\n/);
+  const lines = readWikiMasterMarkdown().split(/\r?\n/);
   let currentCategory = 'Uncategorized';
   const concepts: Concept[] = [];
 
