@@ -1,0 +1,28 @@
+{
+  "type": "read",
+  "title": "Complete biosynthesis of nicotine",
+  "slug": "complete-biosynthesis-of-nicotine",
+  "theme": "Biology",
+  "subthemes": [
+    "Plant biochemistry",
+    "Natural products",
+    "Metabolism"
+  ],
+  "summary": "This Cell paper completes the nicotine biosynthesis pathway by identifying the final coupling reaction, a 5-component metabolon, and a MATE transporter required for efficient nicotine production and transport.",
+  "whyItMatters": "It clarifies a major plant alkaloid pathway and offers useful ideas for engineering pest resistance in crops.",
+  "notes": "Source: https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1",
+  "keywords": [
+    "nicotine",
+    "biosynthesis",
+    "plants",
+    "alkaloids",
+    "metabolism"
+  ],
+  "status": "to-read",
+  "source": {
+    "type": "webpage",
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1"
+  },
+  "addedVia": "poke",
+  "submittedAt": "2026-04-03T23:08:12.741Z"
+}
