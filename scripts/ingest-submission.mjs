@@ -93,8 +93,8 @@ function firstSentence(value) {
 
 function extractPdfCandidate(html, baseUrl) {
   const patterns = [
-    /(?:href|src)=["'"]([^"'"]+\.pdf(?:\?[^"'"<>\s]*)?)["'"]/i,
-    /https?://[^"'"<> ]+\.pdf(?:\?[^"'"<>\s]*)?/i,
+    new RegExp('(?:href|src)=["\']([^"\']+\.pdf(?:\?[^"\'<>\\s]*)?)["\']', 'i'),
+    new RegExp('https?:\/\/[^"\'<> ]+\.pdf(?:\?[^"\'<>\\s]*)?', 'i'),
   ];
 
   for (const pattern of patterns) {
