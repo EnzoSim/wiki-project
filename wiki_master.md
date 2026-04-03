@@ -1,0 +1,13 @@
+# Wiki Master
+
+## Law
+- terra nullius: Latin for "nobody's land"; a principle used in international law to describe territory that has never been subject to the sovereignty of any state.
+
+## Public policy
+- safetyism: the tacit ideology that the government’s main goal should be to minimize risks rather than balance them against benefits.
+
+## Temperament
+- atrabilaire: having a gloomy, irritable, or melancholy disposition; literally rooted in the old theory of black bile (atrabilis), which was once thought to produce a morose temperament.
+
+## Urban Economics
+- NIMBYism: An acronym for "Not In My Back Yard," refers to the opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally. It is a pejorative term used to describe a mindset—often associated with homeowners or established residents—that seeks to protect local property values, neighborhood character, or quality of life at the expense of broader community needs.
