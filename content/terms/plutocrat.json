@@ -1,0 +1,27 @@
+{
+  "type": "term",
+  "title": "plutocrat",
+  "slug": "plutocrat",
+  "category": "Politics",
+  "subthemes": [
+    "Wealth",
+    "Power",
+    "Political influence"
+  ],
+  "summary": "A person whose power or influence comes from their wealth.",
+  "whyItMatters": "It names a recurring political pattern in which money converts into influence, access, or authority.",
+  "notes": "The term is often used critically, especially when wealth appears to override merit, representation, or democratic accountability.",
+  "keywords": [
+    "plutocrat",
+    "wealth",
+    "power",
+    "influence",
+    "elite"
+  ],
+  "source": {
+    "type": "term",
+    "label": "Poke submission"
+  },
+  "addedVia": "poke",
+  "submittedAt": "2026-04-06T21:15:00.000Z"
+}

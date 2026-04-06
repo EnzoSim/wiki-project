@@ -16,3 +16,9 @@
 
 ## Urban Economics
 - NIMBYism: An acronym for "Not In My Back Yard," referring to opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally.
+
+## Religion
+- anathema: Something or someone that one vehemently dislikes; a formal curse by a pope or a council of the Church, excommunicating a person or denouncing a doctrine.
+
+## Politics
+- plutocrat: A person whose power or influence comes from their wealth.
