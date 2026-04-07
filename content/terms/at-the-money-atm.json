@@ -1,0 +1,27 @@
+{
+  "type": "term",
+  "title": "At the Money (ATM)",
+  "slug": "at-the-money-atm",
+  "category": "Finance",
+  "subthemes": [
+    "Options",
+    "Moneyness",
+    "Strike price"
+  ],
+  "summary": "An option where the strike price is identical to the current market price of the underlying asset.",
+  "whyItMatters": "At-the-money options sit at the boundary between intrinsic value and time value.",
+  "notes": "Used in derivatives pricing and trading when the strike and market price are approximately equal.",
+  "keywords": [
+    "ATM",
+    "options",
+    "strike price",
+    "market price",
+    "moneyness"
+  ],
+  "source": {
+    "type": "term",
+    "label": "Enzo"
+  },
+  "addedVia": "poke",
+  "submittedAt": "2026-04-07T18:30:16.745Z"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "term",
+  "title": "Out of the Money (OTM)",
+  "slug": "out-of-the-money-otm",
+  "category": "Finance",
+  "subthemes": [
+    "Options",
+    "Moneyness",
+    "Time value"
+  ],
+  "summary": "An option that has no intrinsic value, consisting only of time value. For a call option, this occurs when the strike price is above the market price.",
+  "whyItMatters": "Out-of-the-money options are valued only for their remaining time value and optionality.",
+  "notes": "Used in derivatives pricing and trading to describe options with zero intrinsic value.",
+  "keywords": [
+    "OTM",
+    "options",
+    "time value",
+    "call option",
+    "strike price"
+  ],
+  "source": {
+    "type": "term",
+    "label": "Enzo"
+  },
+  "addedVia": "poke",
+  "submittedAt": "2026-04-07T18:30:16.745Z"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "term",
+  "title": "In the Money (ITM)",
+  "slug": "in-the-money-itm",
+  "category": "Finance",
+  "subthemes": [
+    "Options",
+    "Moneyness",
+    "Intrinsic value"
+  ],
+  "summary": "An option that possesses intrinsic value. For a call option, this occurs when the strike price is below the market price of the underlying asset.",
+  "whyItMatters": "In-the-money status determines whether an option can be exercised for immediate value.",
+  "notes": "Used in derivatives pricing and trading to describe options with positive intrinsic value.",
+  "keywords": [
+    "ITM",
+    "options",
+    "intrinsic value",
+    "call option",
+    "strike price"
+  ],
+  "source": {
+    "type": "term",
+    "label": "Enzo"
+  },
+  "addedVia": "poke",
+  "submittedAt": "2026-04-07T18:30:16.745Z"
+}
