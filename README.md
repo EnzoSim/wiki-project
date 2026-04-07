@@ -1,5 +1,5 @@
 # wiki-project
-Interactive reference library with published terms, a queued reading list, and a GitHub-native ingestion workflow that can classify raw submissions before deploy.
+Interactive reference library with published terms, a queued reading list, and a GitHub-native ingestion workflow that can classify raw submissions before they land in the live site.
 
 Personal website: https://enzosimier.com
 
@@ -8,6 +8,7 @@ Run locally:
 - npm run dev
 - npm run validate:content
 - npm run sync:library
+- npm run migrate:supabase
 - npm run build
 - npm run start
 
@@ -19,7 +20,8 @@ Railway:
 - generate a Railway public domain with railway domain --service wiki-master-web once the deploy succeeds
 
 Features:
-- Uses structured JSON entries under `content/terms` and `content/reads`
+- Reads live content from Supabase when `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` are configured
+- Falls back to structured JSON entries under `content/terms` and `content/reads` when Supabase is not configured
 - Generates `wiki_master.md` from published terms for a compact export view
 - Supports search/filtering for published terms
 - Adds a themed `To read` queue with automatic subtheme grouping
@@ -27,9 +29,21 @@ Features:
 - Uses Next.js standalone output for Railway-friendly deployments
 
 Content model:
-- `content/terms/*.json` is the source of truth for published concepts
-- `content/reads/*.json` stores queued or published reading leads
-- `wiki_master.md` is generated from the term files via `npm run sync:library`
+- `content/terms/*.json` and `content/reads/*.json` are the seed/fallback content layer
+- `wiki_master.md` is generated from the local term files via `npm run sync:library`
+- When Supabase is connected, the production site reads from the database at request time instead of from the bundled files
+
+Supabase setup:
+- Create a Supabase project
+- Run [`supabase/schema.sql`](/Users/enzo_simier/Desktop/wiki-project/supabase/schema.sql) in the Supabase SQL editor
+- Set Railway variables:
+  - `NEXT_PUBLIC_SUPABASE_URL`
+  - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- Set GitHub Action secrets:
+  - `SUPABASE_URL`
+  - `SUPABASE_SERVICE_ROLE_KEY`
+- Optionally keep local equivalents in [`.env.example`](/Users/enzo_simier/Desktop/wiki-project/.env.example)
+- Seed the database from the current JSON files with `npm run migrate:supabase`
 
 Automation:
 - Workflow: `.github/workflows/ingest-library-submission.yml`
@@ -37,6 +51,7 @@ Automation:
 - Set repo secret `OPENAI_API_KEY` to enable AI classification
 - Optional repo variable `INGEST_MODEL` can override the default model
 - Without an API key, the ingestion script falls back to heuristic classification
+- When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are present in GitHub Actions, submissions are written straight to Supabase instead of opening a content PR
 
 `repository_dispatch` payload example:
 

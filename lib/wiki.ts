@@ -1,3 +1,4 @@
+import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 
@@ -85,6 +86,51 @@ export type ReadingThemeOverview = {
   items: ReadingEntry[];
 };
 
+type SupabaseTermRow = {
+  title: string;
+  slug: string;
+  category: string;
+  subthemes: string[] | null;
+  summary: string;
+  why_it_matters: string | null;
+  notes: string | null;
+  keywords: string[] | null;
+  source_type: string | null;
+  source_url: string | null;
+  source_label: string | null;
+  added_via: string | null;
+  submitted_at: string | null;
+};
+
+type SupabaseReadRow = {
+  title: string;
+  slug: string;
+  theme: string;
+  subthemes: string[] | null;
+  summary: string;
+  why_it_matters: string | null;
+  notes: string | null;
+  keywords: string[] | null;
+  status: string | null;
+  source_type: string | null;
+  source_url: string | null;
+  source_label: string | null;
+  added_via: string | null;
+  submitted_at: string | null;
+};
+
+const allowedSourceTypes = new Set<LibrarySourceType>([
+  'article',
+  'book',
+  'essay',
+  'note',
+  'paper',
+  'podcast',
+  'term',
+  'video',
+  'webpage',
+]);
+
 const stopWords = new Set([
   'the',
   'and',
@@ -146,8 +192,9 @@ const phraseHints = [
   'intellectual history',
 ];
 
-let cachedConcepts: Concept[] | null = null;
-let cachedReadings: ReadingEntry[] | null = null;
+let cachedLocalConcepts: Concept[] | null = null;
+let cachedLocalReadings: ReadingEntry[] | null = null;
+let supabaseReadClient: SupabaseClient | null = null;
 
 function slugify(value: string) {
   return value
@@ -198,6 +245,35 @@ function dedupeCategories(concepts: Concept[]) {
   return Array.from(new Set(concepts.map((concept) => concept.category)));
 }
 
+function getSupabaseUrl() {
+  return process.env.NEXT_PUBLIC_SUPABASE_URL?.trim() || process.env.SUPABASE_URL?.trim() || '';
+}
+
+function getSupabaseAnonKey() {
+  return process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.trim() || process.env.SUPABASE_ANON_KEY?.trim() || '';
+}
+
+function hasSupabaseReadConfig() {
+  return Boolean(getSupabaseUrl() && getSupabaseAnonKey());
+}
+
+function getSupabaseReadClient() {
+  if (!hasSupabaseReadConfig()) {
+    throw new Error('Supabase read config is missing.');
+  }
+
+  if (!supabaseReadClient) {
+    supabaseReadClient = createClient(getSupabaseUrl(), getSupabaseAnonKey(), {
+      auth: {
+        autoRefreshToken: false,
+        persistSession: false,
+      },
+    });
+  }
+
+  return supabaseReadClient;
+}
+
 function resolveContentRoot() {
   const candidates = [
     path.join(process.cwd(), 'content'),
@@ -236,17 +312,40 @@ function normalizeStringArray(value: unknown) {
     .filter(Boolean);
 }
 
+function normalizeSourceType(value: unknown, fallback: LibrarySourceType): LibrarySourceType {
+  if (typeof value === 'string' && allowedSourceTypes.has(value as LibrarySourceType)) {
+    return value as LibrarySourceType;
+  }
+
+  return fallback;
+}
+
+function buildSource(
+  type: unknown,
+  url: unknown,
+  label: unknown,
+  fallbackType: LibrarySourceType,
+): LibrarySource | undefined {
+  const normalizedUrl = typeof url === 'string' && url.trim() ? url.trim() : undefined;
+  const normalizedLabel = typeof label === 'string' && label.trim() ? label.trim() : undefined;
+  const shouldIncludeType = typeof type === 'string' && type.trim();
+
+  if (!shouldIncludeType && !normalizedUrl && !normalizedLabel) {
+    return undefined;
+  }
+
+  return {
+    type: normalizeSourceType(type, fallbackType),
+    url: normalizedUrl,
+    label: normalizedLabel,
+  };
+}
+
 function normalizeSource(value: unknown): LibrarySource | undefined {
   if (!value || typeof value !== 'object') return undefined;
 
   const source = value as { type?: unknown; url?: unknown; label?: unknown };
-  if (typeof source.type !== 'string') return undefined;
-
-  return {
-    type: source.type as LibrarySourceType,
-    url: typeof source.url === 'string' && source.url.trim() ? source.url.trim() : undefined,
-    label: typeof source.label === 'string' && source.label.trim() ? source.label.trim() : undefined,
-  };
+  return buildSource(source.type, source.url, source.label, 'webpage');
 }
 
 function parseConcept(value: unknown) {
@@ -320,6 +419,48 @@ function parseReading(value: unknown) {
   };
 }
 
+function mapSupabaseTerm(row: SupabaseTermRow): Concept {
+  const subthemes = normalizeStringArray(row.subthemes);
+  const keywords = normalizeStringArray(row.keywords);
+
+  return {
+    type: 'term',
+    title: row.title.trim(),
+    slug: row.slug.trim(),
+    category: row.category.trim(),
+    subthemes,
+    summary: row.summary.trim(),
+    whyItMatters: row.why_it_matters?.trim() || undefined,
+    notes: row.notes?.trim() || undefined,
+    keywords: keywords.length > 0 ? keywords : extractKeywords(`${row.category} ${subthemes.join(' ')} ${row.summary}`),
+    related: [],
+    source: buildSource(row.source_type, row.source_url, row.source_label, 'term'),
+    addedVia: row.added_via?.trim() || undefined,
+    submittedAt: row.submitted_at?.trim() || undefined,
+  };
+}
+
+function mapSupabaseRead(row: SupabaseReadRow): ReadingEntry {
+  const subthemes = normalizeStringArray(row.subthemes);
+  const keywords = normalizeStringArray(row.keywords);
+
+  return {
+    type: 'read',
+    title: row.title.trim(),
+    slug: row.slug.trim(),
+    theme: row.theme.trim(),
+    subthemes,
+    summary: row.summary.trim(),
+    whyItMatters: row.why_it_matters?.trim() || undefined,
+    notes: row.notes?.trim() || undefined,
+    keywords: keywords.length > 0 ? keywords : extractKeywords(`${row.theme} ${subthemes.join(' ')} ${row.summary}`),
+    status: row.status === 'published' ? 'published' : 'to-read',
+    source: buildSource(row.source_type, row.source_url, row.source_label, 'webpage'),
+    addedVia: row.added_via?.trim() || undefined,
+    submittedAt: row.submitted_at?.trim() || undefined,
+  };
+}
+
 function buildRelatedConcepts(concepts: Concept[]) {
   const allKeywords = concepts.map((concept) => new Set(concept.keywords));
 
@@ -365,24 +506,79 @@ function sortReadings(readings: ReadingEntry[]) {
   });
 }
 
-export function loadWikiConcepts(): Concept[] {
-  if (cachedConcepts) return cachedConcepts;
+function loadLocalConcepts() {
+  if (cachedLocalConcepts) return cachedLocalConcepts;
 
   const concepts = readJsonCollection<Record<string, unknown>>('terms').map(parseConcept);
-  cachedConcepts = buildRelatedConcepts(concepts);
-  return cachedConcepts;
+  cachedLocalConcepts = buildRelatedConcepts(concepts);
+  return cachedLocalConcepts;
 }
 
-export function loadReadingQueue(status: ReadingEntry['status'] | 'all' = 'to-read') {
-  if (!cachedReadings) {
-    cachedReadings = readJsonCollection<Record<string, unknown>>('reads').map(parseReading);
+function loadLocalReadings() {
+  if (cachedLocalReadings) return cachedLocalReadings;
+
+  cachedLocalReadings = readJsonCollection<Record<string, unknown>>('reads').map(parseReading);
+  return cachedLocalReadings;
+}
+
+async function loadSupabaseConcepts() {
+  const client = getSupabaseReadClient();
+  const { data, error } = await client.from('terms').select('*').order('title', { ascending: true });
+
+  if (error) {
+    throw error;
   }
+
+  return buildRelatedConcepts((data ?? []).map((row) => mapSupabaseTerm(row as SupabaseTermRow)));
+}
+
+async function loadSupabaseReadings() {
+  const client = getSupabaseReadClient();
+  const { data, error } = await client.from('reads').select('*').order('title', { ascending: true });
+
+  if (error) {
+    throw error;
+  }
+
+  return (data ?? []).map((row) => mapSupabaseRead(row as SupabaseReadRow));
+}
+
+async function loadConceptSource() {
+  if (hasSupabaseReadConfig()) {
+    try {
+      return await loadSupabaseConcepts();
+    } catch (error) {
+      console.error('Failed to load terms from Supabase, falling back to local content.', error);
+    }
+  }
+
+  return loadLocalConcepts();
+}
+
+async function loadReadingSource() {
+  if (hasSupabaseReadConfig()) {
+    try {
+      return await loadSupabaseReadings();
+    } catch (error) {
+      console.error('Failed to load reads from Supabase, falling back to local content.', error);
+    }
+  }
+
+  return loadLocalReadings();
+}
+
+export async function loadWikiConcepts(): Promise<Concept[]> {
+  return loadConceptSource();
+}
+
+export async function loadReadingQueue(status: ReadingEntry['status'] | 'all' = 'to-read') {
+  const readings = await loadReadingSource();
 
   if (status === 'all') {
-    return sortReadings(cachedReadings);
+    return sortReadings(readings);
   }
 
-  return sortReadings(cachedReadings.filter((entry) => entry.status === status));
+  return sortReadings(readings.filter((entry) => entry.status === status));
 }
 
 export function groupConceptsByCategory(concepts: Concept[]) {
@@ -393,7 +589,7 @@ export function groupConceptsByCategory(concepts: Concept[]) {
   }, {});
 }
 
-export function groupReadingsByTheme(readings: ReadingEntry[] = loadReadingQueue()) {
+export function groupReadingsByTheme(readings: ReadingEntry[]) {
   const themes = new Map<string, ReadingEntry[]>();
 
   readings.forEach((entry) => {
@@ -424,37 +620,37 @@ export function groupReadingsByTheme(readings: ReadingEntry[] = loadReadingQueue
     .sort((left, right) => right.count - left.count || left.theme.localeCompare(right.theme));
 }
 
-export function getConceptBySlug(slug: string) {
-  return loadWikiConcepts().find((concept) => concept.slug === slug);
+export async function getConceptBySlug(slug: string) {
+  return (await loadWikiConcepts()).find((concept) => concept.slug === slug);
 }
 
-export function getReadingBySlug(slug: string) {
-  return loadReadingQueue('all').find((entry) => entry.slug === slug);
+export async function getReadingBySlug(slug: string) {
+  return (await loadReadingQueue('all')).find((entry) => entry.slug === slug);
 }
 
-export function getConceptCountByCategory(concepts: Concept[] = loadWikiConcepts()) {
+export function getConceptCountByCategory(concepts: Concept[]) {
   return concepts.reduce<Record<string, number>>((acc, concept) => {
     acc[concept.category] = (acc[concept.category] ?? 0) + 1;
     return acc;
   }, {});
 }
 
-export function getTrendingKeywords(concepts: Concept[] = loadWikiConcepts(), limit = 8) {
+export function getTrendingKeywords(concepts: Concept[], limit = 8) {
   return buildKeywordFrequency(concepts).slice(0, limit);
 }
 
-export function getFeaturedConcepts(concepts: Concept[] = loadWikiConcepts(), limit = 4) {
+export function getFeaturedConcepts(concepts: Concept[], limit = 4) {
   return sortByFeatureScore(concepts).slice(0, limit);
 }
 
-export function getFeaturedCategories(concepts: Concept[] = loadWikiConcepts(), limit = 3) {
+export function getFeaturedCategories(concepts: Concept[], limit = 3) {
   return dedupeCategories(concepts)
     .map((category) => buildCategoryOverview(category, concepts))
     .sort((a, b) => b.count - a.count || a.category.localeCompare(b.category))
     .slice(0, limit);
 }
 
-export function getConceptsByKeyword(keyword: string, concepts: Concept[] = loadWikiConcepts()) {
+export function getConceptsByKeyword(keyword: string, concepts: Concept[]) {
   const normalized = keyword.trim().toLowerCase();
   if (!normalized) return [];
 
@@ -463,7 +659,7 @@ export function getConceptsByKeyword(keyword: string, concepts: Concept[] = load
   );
 }
 
-export function getWikiOverview(concepts: Concept[] = loadWikiConcepts()): WikiOverview {
+export function getWikiOverview(concepts: Concept[]): WikiOverview {
   const categories = dedupeCategories(concepts)
     .map((category) => buildCategoryOverview(category, concepts))
     .sort((a, b) => b.count - a.count || a.category.localeCompare(b.category));
@@ -492,6 +688,6 @@ export function buildConceptImageSvg(concept: Concept) {
   const accent = colors[1] ?? '#1d4ed8';
   const fill = colors[2] ?? '#06b6d4';
   const bg = colors[0] ?? '#0f172a';
-  const svg = `<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="${bg}"/><stop offset="100%" stop-color="${accent}"/></linearGradient></defs><rect width="1200" height="800" rx="48" fill="url(#bg)"/><circle cx="920" cy="170" r="130" fill="${fill}" opacity="0.2"/><rect x="140" y="150" width="920" height="500" rx="36" fill="#ffffff" opacity="0.12"/><rect x="190" y="210" width="340" height="250" rx="24" fill="#ffffff" opacity="0.92"/><rect x="580" y="210" width="430" height="110" rx="24" fill="#ffffff" opacity="0.12"/><rect x="580" y="350" width="430" height="110" rx="24" fill="#ffffff" opacity="0.12"/><rect x="190" y="500" width="820" height="90" rx="24" fill="#ffffff" opacity="0.16"/><text x="220" y="110" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff">${safeTitle}</text><text x="220" y="620" font-family="Inter, Arial, sans-serif" font-size="28" fill="#e2e8f0">${safeSummary.slice(0, 120)}</text><text x="610" y="278" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600" fill="#ffffff">Structured concept entry</text><text x="610" y="320" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0">Derived from the repo library metadata</text><text x="610" y="418" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0">Keywords: ${escapeSvgText(concept.keywords.slice(0, 4).join(' · '))}</text></svg>`;
+  const svg = `<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="${bg}"/><stop offset="100%" stop-color="${accent}"/></linearGradient></defs><rect width="1200" height="800" rx="48" fill="url(#bg)"/><circle cx="920" cy="170" r="130" fill="${fill}" opacity="0.2"/><rect x="140" y="150" width="920" height="500" rx="36" fill="#ffffff" opacity="0.12"/><rect x="190" y="210" width="340" height="250" rx="24" fill="#ffffff" opacity="0.92"/><rect x="580" y="210" width="430" height="110" rx="24" fill="#ffffff" opacity="0.12"/><rect x="580" y="350" width="430" height="110" rx="24" fill="#ffffff" opacity="0.12"/><rect x="190" y="500" width="820" height="90" rx="24" fill="#ffffff" opacity="0.16"/><text x="220" y="110" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff">${safeTitle}</text><text x="220" y="620" font-family="Inter, Arial, sans-serif" font-size="28" fill="#e2e8f0">${safeSummary.slice(0, 120)}</text><text x="610" y="278" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600" fill="#ffffff">Structured concept entry</text><text x="610" y="320" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0">Derived from the live wiki metadata</text><text x="610" y="418" font-family="Inter, Arial, sans-serif" font-size="22" fill="#e2e8f0">Keywords: ${escapeSvgText(concept.keywords.slice(0, 4).join(' · '))}</text></svg>`;
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 }

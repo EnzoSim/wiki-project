@@ -8,15 +8,11 @@ type ReadPageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export const dynamicParams = false;
-
-export async function generateStaticParams() {
-  return loadReadingQueue('all').map((entry) => ({ slug: entry.slug }));
-}
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: ReadPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const entry = getReadingBySlug(slug);
+  const entry = await getReadingBySlug(slug);
 
   if (!entry) {
     return { title: 'Reading not found' };
@@ -36,11 +32,11 @@ export async function generateMetadata({ params }: ReadPageProps): Promise<Metad
 
 export default async function ReadPage({ params }: ReadPageProps) {
   const { slug } = await params;
-  const entry = getReadingBySlug(slug);
+  const entry = await getReadingBySlug(slug);
 
   if (!entry) return notFound();
 
-  const related = groupReadingsByTheme(loadReadingQueue('all'))
+  const related = groupReadingsByTheme(await loadReadingQueue('all'))
     .flatMap((theme) => theme.items)
     .filter((item) => item.slug !== entry.slug)
     .filter((item) => item.theme === entry.theme || item.subthemes.some((subtheme) => entry.subthemes.includes(subtheme)))

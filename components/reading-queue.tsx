@@ -19,7 +19,7 @@ export default function ReadingQueue({ readings, themes }: ReadingQueueProps) {
       <div className={styles.emptyState}>
         <h3>No reading leads are queued yet.</h3>
         <p>
-          New links or notes sent through the GitHub ingestion workflow will land here and be
+          New links or notes sent through the ingestion workflow will land here and be
           grouped automatically by theme and subtheme.
         </p>
       </div>
