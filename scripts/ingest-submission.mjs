@@ -7,7 +7,7 @@ const projectRoot = process.cwd();
 const termsDir = path.join(projectRoot, 'content', 'terms');
 const readsDir = path.join(projectRoot, 'content', 'reads');
 const publicPdfDir = path.join(projectRoot, 'public', 'pdfs');
-const resultPath = path.join(projectRoot, '.ingest-result.json');
+const resultPath = process.env.INGEST_RESULT_PATH?.trim() || path.join(projectRoot, '.ingest-result.json');
 
 function slugify(value) {
   return String(value)
