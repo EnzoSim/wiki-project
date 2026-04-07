@@ -13,6 +13,7 @@ type PokePayload = {
   source_url?: unknown;
   source_type?: unknown;
   category?: unknown;
+  subthemes?: unknown;
   added_via?: unknown;
   submitter?: unknown;
   auto_merge?: unknown;
@@ -54,6 +55,37 @@ function isAuthorized(request: Request) {
   return timingSafeEqual(expectedBuffer, receivedBuffer);
 }
 
+function normalizeSubthemes(input: unknown) {
+  if (Array.isArray(input)) {
+    return input
+      .filter((value): value is string => typeof value === 'string')
+      .map((value) => value.trim())
+      .filter(Boolean);
+  }
+
+  if (typeof input !== 'string') {
+    return [];
+  }
+
+  const trimmed = input.trim();
+  if (!trimmed) {
+    return [];
+  }
+
+  if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
+    try {
+      return normalizeSubthemes(JSON.parse(trimmed));
+    } catch {
+      return [];
+    }
+  }
+
+  return trimmed
+    .split(/\r?\n|,/)
+    .map((value) => value.trim())
+    .filter(Boolean);
+}
+
 function normalizePayload(input: unknown) {
   const candidate = (input && typeof input === 'object' && 'client_payload' in input
     ? (input as { client_payload?: unknown }).client_payload
@@ -64,6 +96,7 @@ function normalizePayload(input: unknown) {
     sourceUrl: typeof candidate?.source_url === 'string' ? candidate.source_url.trim() : '',
     sourceType: typeof candidate?.source_type === 'string' ? candidate.source_type.trim() : '',
     category: typeof candidate?.category === 'string' ? candidate.category.trim() : '',
+    subthemes: normalizeSubthemes(candidate?.subthemes),
     addedVia: typeof candidate?.added_via === 'string' && candidate.added_via.trim() ? candidate.added_via.trim() : 'poke-bridge',
     submitter: typeof candidate?.submitter === 'string' ? candidate.submitter.trim() : 'Enzo',
     autoMerge: candidate?.auto_merge === true || candidate?.auto_merge === 'true',
@@ -105,6 +138,7 @@ export async function POST(request: Request) {
         SUBMISSION_SOURCE_URL: payload.sourceUrl,
         SUBMISSION_SOURCE_TYPE: payload.sourceType,
         SUBMISSION_CATEGORY: payload.category,
+        SUBMISSION_SUBTHEMES: JSON.stringify(payload.subthemes),
         SUBMISSION_ADDED_VIA: payload.addedVia,
         SUBMISSION_SUBMITTER: payload.submitter,
         SUBMISSION_AUTO_MERGE: String(payload.autoMerge),

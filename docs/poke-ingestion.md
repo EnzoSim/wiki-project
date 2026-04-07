@@ -24,6 +24,7 @@ Body:
   "source_url": "https://example.com/paper",
   "source_type": "paper",
   "category": "",
+  "subthemes": ["Housing", "Zoning"],
   "added_via": "poke",
   "submitter": "Enzo"
 }
@@ -53,6 +54,7 @@ Use this when you want the item to become a published concept page:
   "submission_text": "renege: to go back on a promise, undertaking, or commitment.",
   "source_type": "term",
   "category": "Language",
+  "subthemes": ["Commitment", "Rhetoric"],
   "added_via": "poke",
   "submitter": "Enzo"
 }
@@ -67,6 +69,7 @@ Use this when you want the item to go to the reading queue:
   "submission_text": "https://example.com/article\nWhy it matters: strong piece on zoning politics and local veto power.",
   "source_url": "https://example.com/article",
   "source_type": "article",
+  "subthemes": ["Housing", "Local politics"],
   "added_via": "poke",
   "submitter": "Enzo"
 }
@@ -81,10 +84,13 @@ This works, but the classifier has less context. Better results come from adding
   "submission_text": "https://example.com/article",
   "source_url": "https://example.com/article",
   "source_type": "webpage",
+  "subthemes": ["Inbox"],
   "added_via": "poke",
   "submitter": "Enzo"
 }
 ```
+
+`subthemes` can be sent either as a JSON array or as a plain string. When sent as a string, the bridge accepts comma-separated values or one subtheme per line.
 
 ## Response Format
 
