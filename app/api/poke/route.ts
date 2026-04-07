@@ -12,6 +12,7 @@ type PokePayload = {
   submission_text?: unknown;
   source_url?: unknown;
   source_type?: unknown;
+  category?: unknown;
   added_via?: unknown;
   submitter?: unknown;
   auto_merge?: unknown;
@@ -62,6 +63,7 @@ function normalizePayload(input: unknown) {
     submissionText: typeof candidate?.submission_text === 'string' ? candidate.submission_text.trim() : '',
     sourceUrl: typeof candidate?.source_url === 'string' ? candidate.source_url.trim() : '',
     sourceType: typeof candidate?.source_type === 'string' ? candidate.source_type.trim() : '',
+    category: typeof candidate?.category === 'string' ? candidate.category.trim() : '',
     addedVia: typeof candidate?.added_via === 'string' && candidate.added_via.trim() ? candidate.added_via.trim() : 'poke-bridge',
     submitter: typeof candidate?.submitter === 'string' ? candidate.submitter.trim() : 'Enzo',
     autoMerge: candidate?.auto_merge === true || candidate?.auto_merge === 'true',
@@ -102,6 +104,7 @@ export async function POST(request: Request) {
         SUBMISSION_TEXT: payload.submissionText,
         SUBMISSION_SOURCE_URL: payload.sourceUrl,
         SUBMISSION_SOURCE_TYPE: payload.sourceType,
+        SUBMISSION_CATEGORY: payload.category,
         SUBMISSION_ADDED_VIA: payload.addedVia,
         SUBMISSION_SUBMITTER: payload.submitter,
         SUBMISSION_AUTO_MERGE: String(payload.autoMerge),
