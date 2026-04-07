@@ -70,6 +70,8 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           INGEST_MODEL: ${{ vars.INGEST_MODEL }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: npm run ingest:submission
 
       - name: Validate generated content
@@ -80,7 +82,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           if [ -z "$(git status --porcelain -- content wiki_master.md)" ]; then
-            echo "No content changes detected."
+            node -e "const fs=require('node:fs'); const data=JSON.parse(fs.readFileSync('.ingest-result.json','utf8')); console.log(data.persistedTo === 'supabase' ? 'Submission persisted to Supabase; no content PR needed.' : 'No content changes detected.');"
             exit 0
           fi
 

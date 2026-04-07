@@ -8,15 +8,11 @@ type ConceptPageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export const dynamicParams = false;
-
-export async function generateStaticParams() {
-  return loadWikiConcepts().map((concept) => ({ slug: concept.slug }));
-}
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: ConceptPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const concept = getConceptBySlug(slug);
+  const concept = await getConceptBySlug(slug);
 
   if (!concept) {
     return {
@@ -38,11 +34,11 @@ export async function generateMetadata({ params }: ConceptPageProps): Promise<Me
 
 export default async function ConceptPage({ params }: ConceptPageProps) {
   const { slug } = await params;
-  const concept = getConceptBySlug(slug);
+  const concept = await getConceptBySlug(slug);
 
   if (!concept) return notFound();
 
-  const otherConcepts = loadWikiConcepts()
+  const otherConcepts = (await loadWikiConcepts())
     .filter((item) => item.slug !== concept.slug)
     .sort((left, right) => left.title.localeCompare(right.title));
 

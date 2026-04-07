@@ -1,3 +1,4 @@
+import { createClient } from '@supabase/supabase-js';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -5,6 +6,7 @@ import { execFileSync } from 'node:child_process';
 const projectRoot = process.cwd();
 const termsDir = path.join(projectRoot, 'content', 'terms');
 const readsDir = path.join(projectRoot, 'content', 'reads');
+const publicPdfDir = path.join(projectRoot, 'public', 'pdfs');
 const resultPath = path.join(projectRoot, '.ingest-result.json');
 
 function slugify(value) {
@@ -13,6 +15,31 @@ function slugify(value) {
     .replace(/&/g, ' and ')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
+}
+
+function getSupabaseUrl() {
+  return process.env.SUPABASE_URL?.trim() || process.env.NEXT_PUBLIC_SUPABASE_URL?.trim() || '';
+}
+
+function getSupabaseServiceRoleKey() {
+  return process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() || '';
+}
+
+function hasSupabaseWriteConfig() {
+  return Boolean(getSupabaseUrl() && getSupabaseServiceRoleKey());
+}
+
+function createSupabaseAdminClient() {
+  if (!hasSupabaseWriteConfig()) {
+    throw new Error('Supabase write config is missing.');
+  }
+
+  return createClient(getSupabaseUrl(), getSupabaseServiceRoleKey(), {
+    auth: {
+      autoRefreshToken: false,
+      persistSession: false,
+    },
+  });
 }
 
 function readEventPayload() {
@@ -46,7 +73,7 @@ function readEventPayload() {
   };
 }
 
-function ensureUniqueSlug(directoryPath, candidateSlug) {
+function ensureUniqueSlugInDirectory(directoryPath, candidateSlug) {
   const existingSlugs = new Set(
     readdirSync(directoryPath)
       .filter((fileName) => fileName.endsWith('.json'))
@@ -63,6 +90,25 @@ function ensureUniqueSlug(directoryPath, candidateSlug) {
   }
 
   return `${candidateSlug}-${suffix}`;
+}
+
+async function ensureUniqueSlugInSupabase(client, tableName, candidateSlug) {
+  let suffix = 1;
+
+  while (true) {
+    const slug = suffix === 1 ? candidateSlug : `${candidateSlug}-${suffix}`;
+    const { data, error } = await client.from(tableName).select('slug').eq('slug', slug).maybeSingle();
+
+    if (error) {
+      throw error;
+    }
+
+    if (!data) {
+      return slug;
+    }
+
+    suffix += 1;
+  }
 }
 
 function extractTitleFromSubmission(submissionText) {
@@ -93,8 +139,8 @@ function firstSentence(value) {
 
 function extractPdfCandidate(html, baseUrl) {
   const patterns = [
-    new RegExp('(?:href|src)=["\']([^"\']+\.pdf(?:\?[^"\'<>\\s]*)?)["\']', 'i'),
-    new RegExp('https?:\/\/[^"\'<> ]+\.pdf(?:\?[^"\'<>\\s]*)?', 'i'),
+    new RegExp('(?:href|src)=["\']([^"\']+\\.pdf(?:\\?[^"\'<>\\s]*)?)["\']', 'i'),
+    new RegExp('https?:\\/\\/[^"\'<> ]+\\.pdf(?:\\?[^"\'<>\\s]*)?', 'i'),
   ];
 
   for (const pattern of patterns) {
@@ -112,37 +158,44 @@ function extractPdfCandidate(html, baseUrl) {
   return null;
 }
 
-async function maybeCreatePdfAsset(sourceUrl, slug) {
+async function resolvePdfSourceUrl(sourceUrl) {
   try {
     const sourceResponse = await fetch(sourceUrl, { redirect: 'follow' });
     if (!sourceResponse.ok) return null;
 
     const contentType = (sourceResponse.headers.get('content-type') ?? '').toLowerCase();
-    const pdfDir = path.join(projectRoot, 'public', 'pdfs');
-    mkdirSync(pdfDir, { recursive: true });
-    const filePath = path.join(pdfDir, `${slug}.pdf`);
-
     if (contentType.includes('pdf')) {
-      writeFileSync(filePath, Buffer.from(await sourceResponse.arrayBuffer()));
-      return `/pdfs/${slug}.pdf`;
+      return sourceResponse.url;
     }
 
     const html = await sourceResponse.text();
-    const pdfUrl = extractPdfCandidate(html, sourceResponse.url);
-    if (!pdfUrl) return null;
+    return extractPdfCandidate(html, sourceResponse.url);
+  } catch {
+    return null;
+  }
+}
 
-    const pdfResponse = await fetch(pdfUrl, { redirect: 'follow' });
-    if (!pdfResponse.ok) return null;
+async function downloadPdfToPublic(sourceUrl, slug) {
+  const pdfSourceUrl = await resolvePdfSourceUrl(sourceUrl);
+  if (!pdfSourceUrl) return null;
 
-    const pdfContentType = (pdfResponse.headers.get('content-type') ?? '').toLowerCase();
-    if (!pdfContentType.includes('pdf') && !pdfUrl.toLowerCase().includes('.pdf')) return null;
+  try {
+    const response = await fetch(pdfSourceUrl, { redirect: 'follow' });
+    if (!response.ok) return null;
 
-    writeFileSync(filePath, Buffer.from(await pdfResponse.arrayBuffer()));
+    const contentType = (response.headers.get('content-type') ?? '').toLowerCase();
+    if (!contentType.includes('pdf') && !pdfSourceUrl.toLowerCase().includes('.pdf')) {
+      return null;
+    }
+
+    mkdirSync(publicPdfDir, { recursive: true });
+    writeFileSync(path.join(publicPdfDir, `${slug}.pdf`), Buffer.from(await response.arrayBuffer()));
     return `/pdfs/${slug}.pdf`;
   } catch {
     return null;
   }
 }
+
 function heuristicClassification(payload) {
   const normalizedText = payload.submissionText.trim();
   const title = extractTitleFromSubmission(normalizedText);
@@ -300,90 +353,198 @@ async function classifyWithAI(payload) {
   return JSON.parse(content);
 }
 
-function buildTermEntry(classification, payload) {
-  const slug = ensureUniqueSlug(termsDir, slugify(classification.slugHint || classification.title));
-
+function buildTermEntry(classification, payload, slug) {
   return {
-    filePath: path.join(termsDir, `${slug}.json`),
-    entry: {
-      type: 'term',
-      title: classification.title.trim(),
-      slug,
-      category: (classification.category || 'Uncategorized').trim(),
-      subthemes: Array.isArray(classification.subthemes) ? classification.subthemes.filter(Boolean) : [],
-      summary: classification.summary.trim(),
-      whyItMatters: classification.whyItMatters.trim(),
-      notes: classification.notes.trim(),
-      keywords: Array.isArray(classification.keywords) ? classification.keywords.filter(Boolean) : [],
-      source: {
-        type: classification.sourceType || 'term',
-        ...(classification.sourceUrl ? { url: classification.sourceUrl } : {}),
-        ...(payload.submitter ? { label: payload.submitter } : {}),
-      },
-      addedVia: payload.addedVia,
-      submittedAt: new Date().toISOString(),
+    type: 'term',
+    title: classification.title.trim(),
+    slug,
+    category: (classification.category || 'Uncategorized').trim(),
+    subthemes: Array.isArray(classification.subthemes) ? classification.subthemes.filter(Boolean) : [],
+    summary: classification.summary.trim(),
+    whyItMatters: classification.whyItMatters.trim(),
+    notes: classification.notes.trim(),
+    keywords: Array.isArray(classification.keywords) ? classification.keywords.filter(Boolean) : [],
+    source: {
+      type: classification.sourceType || 'term',
+      ...(classification.sourceUrl ? { url: classification.sourceUrl } : {}),
+      ...(payload.submitter ? { label: payload.submitter } : {}),
     },
+    addedVia: payload.addedVia,
+    submittedAt: new Date().toISOString(),
   };
 }
 
-async function buildReadEntry(classification, payload) {
-  const slug = ensureUniqueSlug(readsDir, slugify(classification.slugHint || classification.title));
-  const pdfUrl = payload.sourceUrl ? await maybeCreatePdfAsset(payload.sourceUrl, slug) : null;
+async function buildReadEntry(classification, payload, slug, mode) {
+  const pdfUrl = payload.sourceUrl
+    ? mode === 'files'
+      ? await downloadPdfToPublic(payload.sourceUrl, slug)
+      : await resolvePdfSourceUrl(payload.sourceUrl)
+    : null;
 
   return {
-    filePath: path.join(readsDir, `${slug}.json`),
-    entry: {
-      type: 'read',
-      title: classification.title.trim(),
-      slug,
-      theme: (classification.theme || 'Unsorted').trim(),
-      subthemes: Array.isArray(classification.subthemes) ? classification.subthemes.filter(Boolean) : [],
-      summary: classification.summary.trim(),
-      whyItMatters: classification.whyItMatters.trim(),
-      notes: classification.notes.trim(),
-      keywords: Array.isArray(classification.keywords) ? classification.keywords.filter(Boolean) : [],
-      status: classification.status === 'published' ? 'published' : 'to-read',
-      source: {
-        type: classification.sourceType || 'webpage',
-        ...(classification.sourceUrl ? { url: classification.sourceUrl } : {}),
-        ...(payload.submitter ? { label: payload.submitter } : {}),
-      },
-      ...(pdfUrl ? { pdfUrl } : {}),
-      addedVia: payload.addedVia,
-      submittedAt: new Date().toISOString(),
+    type: 'read',
+    title: classification.title.trim(),
+    slug,
+    theme: (classification.theme || 'Unsorted').trim(),
+    subthemes: Array.isArray(classification.subthemes) ? classification.subthemes.filter(Boolean) : [],
+    summary: classification.summary.trim(),
+    whyItMatters: classification.whyItMatters.trim(),
+    notes: classification.notes.trim(),
+    keywords: Array.isArray(classification.keywords) ? classification.keywords.filter(Boolean) : [],
+    status: classification.status === 'published' ? 'published' : 'to-read',
+    source: {
+      type: classification.sourceType || 'webpage',
+      ...(classification.sourceUrl ? { url: classification.sourceUrl } : {}),
+      ...(payload.submitter ? { label: payload.submitter } : {}),
     },
+    ...(pdfUrl ? { pdfUrl } : {}),
+    addedVia: payload.addedVia,
+    submittedAt: new Date().toISOString(),
+  };
+}
+
+function mapTermEntryToSupabase(entry) {
+  return {
+    title: entry.title,
+    slug: entry.slug,
+    category: entry.category,
+    subthemes: entry.subthemes,
+    summary: entry.summary,
+    why_it_matters: entry.whyItMatters ?? null,
+    notes: entry.notes ?? null,
+    keywords: entry.keywords,
+    source_type: entry.source?.type ?? null,
+    source_url: entry.source?.url ?? null,
+    source_label: entry.source?.label ?? null,
+    added_via: entry.addedVia ?? null,
+    submitted_at: entry.submittedAt ?? null,
+  };
+}
+
+function mapReadEntryToSupabase(entry) {
+  return {
+    title: entry.title,
+    slug: entry.slug,
+    theme: entry.theme,
+    subthemes: entry.subthemes,
+    summary: entry.summary,
+    why_it_matters: entry.whyItMatters ?? null,
+    notes: entry.notes ?? null,
+    keywords: entry.keywords,
+    status: entry.status,
+    source_type: entry.source?.type ?? null,
+    source_url: entry.source?.url ?? null,
+    source_label: entry.source?.label ?? null,
+    pdf_url: entry.pdfUrl ?? null,
+    added_via: entry.addedVia ?? null,
+    submitted_at: entry.submittedAt ?? null,
+  };
+}
+
+function writeResult(result) {
+  writeFileSync(resultPath, `${JSON.stringify(result, null, 2)}\n`, 'utf8');
+  console.log(JSON.stringify(result));
+}
+
+async function persistToFiles(classification, payload) {
+  mkdirSync(termsDir, { recursive: true });
+  mkdirSync(readsDir, { recursive: true });
+
+  if (classification.entryType === 'term') {
+    const slug = ensureUniqueSlugInDirectory(termsDir, slugify(classification.slugHint || classification.title));
+    const entry = buildTermEntry(classification, payload, slug);
+    const filePath = path.join(termsDir, `${slug}.json`);
+    writeFileSync(filePath, `${JSON.stringify(entry, null, 2)}\n`, 'utf8');
+
+    execFileSync('node', ['scripts/sync-library.mjs'], { cwd: projectRoot, stdio: 'inherit' });
+
+    return {
+      type: entry.type,
+      title: entry.title,
+      slug: entry.slug,
+      filePath: path.relative(projectRoot, filePath),
+      autoMerge: payload.autoMerge,
+      addedVia: payload.addedVia,
+      persistedTo: 'files',
+    };
+  }
+
+  const slug = ensureUniqueSlugInDirectory(readsDir, slugify(classification.slugHint || classification.title));
+  const entry = await buildReadEntry(classification, payload, slug, 'files');
+  const filePath = path.join(readsDir, `${slug}.json`);
+  writeFileSync(filePath, `${JSON.stringify(entry, null, 2)}\n`, 'utf8');
+
+  execFileSync('node', ['scripts/sync-library.mjs'], { cwd: projectRoot, stdio: 'inherit' });
+
+  return {
+    type: entry.type,
+    title: entry.title,
+    slug: entry.slug,
+    filePath: path.relative(projectRoot, filePath),
+    autoMerge: payload.autoMerge,
+    addedVia: payload.addedVia,
+    persistedTo: 'files',
+  };
+}
+
+async function persistToSupabase(classification, payload) {
+  const client = createSupabaseAdminClient();
+
+  if (classification.entryType === 'term') {
+    const slug = await ensureUniqueSlugInSupabase(client, 'terms', slugify(classification.slugHint || classification.title));
+    const entry = buildTermEntry(classification, payload, slug);
+    const record = mapTermEntryToSupabase(entry);
+    const { error } = await client.from('terms').insert(record);
+
+    if (error) {
+      throw error;
+    }
+
+    return {
+      type: entry.type,
+      title: entry.title,
+      slug: entry.slug,
+      filePath: null,
+      autoMerge: false,
+      addedVia: payload.addedVia,
+      persistedTo: 'supabase',
+      tableName: 'terms',
+    };
+  }
+
+  const slug = await ensureUniqueSlugInSupabase(client, 'reads', slugify(classification.slugHint || classification.title));
+  const entry = await buildReadEntry(classification, payload, slug, 'supabase');
+  const record = mapReadEntryToSupabase(entry);
+  const { error } = await client.from('reads').insert(record);
+
+  if (error) {
+    throw error;
+  }
+
+  return {
+    type: entry.type,
+    title: entry.title,
+    slug: entry.slug,
+    filePath: null,
+    autoMerge: false,
+    addedVia: payload.addedVia,
+    persistedTo: 'supabase',
+    tableName: 'reads',
   };
 }
 
 async function main() {
-  mkdirSync(termsDir, { recursive: true });
-  mkdirSync(readsDir, { recursive: true });
-
   const payload = readEventPayload();
   if (!payload.submissionText) {
     throw new Error('Submission text is required.');
   }
 
   const classification = await classifyWithAI(payload);
-  const target =
-    classification.entryType === 'term'
-      ? buildTermEntry(classification, payload)
-      : await buildReadEntry(classification, payload);
+  const result = hasSupabaseWriteConfig()
+    ? await persistToSupabase(classification, payload)
+    : await persistToFiles(classification, payload);
 
-  writeFileSync(target.filePath, `${JSON.stringify(target.entry, null, 2)}\n`, 'utf8');
-  execFileSync('node', ['scripts/sync-library.mjs'], { cwd: projectRoot, stdio: 'inherit' });
-
-  const result = {
-    type: target.entry.type,
-    title: target.entry.title,
-    slug: target.entry.slug,
-    filePath: path.relative(projectRoot, target.filePath),
-    autoMerge: payload.autoMerge,
-    addedVia: payload.addedVia,
-  };
-
-  writeFileSync(resultPath, `${JSON.stringify(result, null, 2)}\n`, 'utf8');
-  console.log(JSON.stringify(result));
+  writeResult(result);
 }
 
 main().catch((error) => {

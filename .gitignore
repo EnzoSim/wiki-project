@@ -3,3 +3,5 @@ node_modules
 .playwright-cli
 output
 .ingest-result.json
+.env.local
+.env.*.local

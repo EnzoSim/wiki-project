@@ -3,9 +3,11 @@ import WikiBrowser from '../components/wiki-browser';
 import styles from './page.module.css';
 import { groupReadingsByTheme, loadReadingQueue, loadWikiConcepts } from '../lib/wiki';
 
-export default function HomePage() {
-  const concepts = loadWikiConcepts();
-  const readings = loadReadingQueue();
+export const dynamic = 'force-dynamic';
+
+export default async function HomePage() {
+  const concepts = await loadWikiConcepts();
+  const readings = await loadReadingQueue();
   const readingThemes = groupReadingsByTheme(readings);
   const categories = Array.from(new Set(concepts.map((concept) => concept.category)));
 

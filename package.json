@@ -9,9 +9,11 @@
     "start": "HOSTNAME=0.0.0.0 node .next/standalone/server.js",
     "sync:library": "node scripts/sync-library.mjs",
     "validate:content": "node scripts/validate-library.mjs",
-    "ingest:submission": "node scripts/ingest-submission.mjs"
+    "ingest:submission": "node scripts/ingest-submission.mjs",
+    "migrate:supabase": "node scripts/migrate-library-to-supabase.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.102.1",
     "next": "^15.4.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
