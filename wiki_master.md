@@ -22,3 +22,6 @@
 
 ## Politics
 - plutocrat: A person whose power or influence comes from their wealth.
+
+## Finance
+- renege: In the context of central banking, to renege refers to a policy pivot where the Fed fails to follow through on its previous forward guidance or implicit commitments (e.g., backing out of signaled interest rate cuts due to persistent inflation).

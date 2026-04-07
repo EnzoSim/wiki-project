@@ -1,0 +1,27 @@
+{
+  "type": "term",
+  "title": "renege",
+  "slug": "renege",
+  "category": "Finance",
+  "subthemes": [
+    "Central banking",
+    "Forward guidance",
+    "Monetary policy"
+  ],
+  "summary": "In the context of central banking, to renege refers to a policy pivot where the Fed fails to follow through on its previous forward guidance or implicit commitments (e.g., backing out of signaled interest rate cuts due to persistent inflation).",
+  "whyItMatters": "It captures the tension between market expectations and policy credibility when central banks shift away from previously signaled actions.",
+  "notes": "Used here in a specialized policy context rather than the more general sense of failing to keep a promise.",
+  "keywords": [
+    "renege",
+    "Fed",
+    "central banking",
+    "forward guidance",
+    "monetary policy"
+  ],
+  "source": {
+    "type": "term",
+    "label": "Poke submission"
+  },
+  "addedVia": "poke",
+  "submittedAt": "2026-04-07T17:41:00.000Z"
+}
