@@ -23,6 +23,7 @@ Body:
   "submission_text": "A new paper on zoning politics and housing supply in large metros.",
   "source_url": "https://example.com/paper",
   "source_type": "paper",
+  "category": "",
   "added_via": "poke",
   "submitter": "Enzo"
 }
@@ -51,6 +52,7 @@ Use this when you want the item to become a published concept page:
 {
   "submission_text": "renege: to go back on a promise, undertaking, or commitment.",
   "source_type": "term",
+  "category": "Language",
   "added_via": "poke",
   "submitter": "Enzo"
 }

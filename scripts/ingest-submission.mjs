@@ -48,6 +48,7 @@ function readEventPayload() {
       submissionText: process.env.SUBMISSION_TEXT,
       sourceUrl: process.env.SUBMISSION_SOURCE_URL ?? '',
       sourceType: process.env.SUBMISSION_SOURCE_TYPE ?? '',
+      category: process.env.SUBMISSION_CATEGORY ?? '',
       addedVia: process.env.SUBMISSION_ADDED_VIA ?? 'manual',
       autoMerge: process.env.SUBMISSION_AUTO_MERGE === 'true',
       submitter: process.env.SUBMISSION_SUBMITTER ?? '',
@@ -67,6 +68,7 @@ function readEventPayload() {
     submissionText: String(inputs.submission_text ?? payload.submission_text ?? '').trim(),
     sourceUrl: String(inputs.source_url ?? payload.source_url ?? '').trim(),
     sourceType: String(inputs.source_type ?? payload.source_type ?? '').trim(),
+    category: String(inputs.category ?? payload.category ?? '').trim(),
     addedVia: String(inputs.added_via ?? payload.added_via ?? event.action ?? event.event_type ?? 'github').trim(),
     autoMerge: String(inputs.auto_merge ?? payload.auto_merge ?? 'false') === 'true',
     submitter: String(inputs.submitter ?? payload.submitter ?? event.sender?.login ?? '').trim(),
@@ -213,7 +215,7 @@ function heuristicClassification(payload) {
       entryType: 'term',
       title,
       slugHint,
-      category: 'Uncategorized',
+      category: payload.category || 'Uncategorized',
       theme: '',
       subthemes: ['Inbox'],
       summary,
@@ -351,6 +353,17 @@ async function classifyWithAI(payload) {
   }
 
   return JSON.parse(content);
+}
+
+function applyPayloadOverrides(classification, payload) {
+  if (classification.entryType === 'term' && payload.category) {
+    return {
+      ...classification,
+      category: payload.category,
+    };
+  }
+
+  return classification;
 }
 
 function buildTermEntry(classification, payload, slug) {
@@ -539,7 +552,7 @@ async function main() {
     throw new Error('Submission text is required.');
   }
 
-  const classification = await classifyWithAI(payload);
+  const classification = applyPayloadOverrides(await classifyWithAI(payload), payload);
   const result = hasSupabaseWriteConfig()
     ? await persistToSupabase(classification, payload)
     : await persistToFiles(classification, payload);
