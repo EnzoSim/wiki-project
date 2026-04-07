@@ -73,6 +73,7 @@ function mapRead(entry) {
     source_type: entry.source?.type ?? null,
     source_url: entry.source?.url ?? null,
     source_label: entry.source?.label ?? null,
+    pdf_url: entry.pdfUrl ?? null,
     added_via: entry.addedVia ?? null,
     submitted_at: entry.submittedAt ?? null,
   };

@@ -6,6 +6,7 @@ import { execFileSync } from 'node:child_process';
 const projectRoot = process.cwd();
 const termsDir = path.join(projectRoot, 'content', 'terms');
 const readsDir = path.join(projectRoot, 'content', 'reads');
+const publicPdfDir = path.join(projectRoot, 'public', 'pdfs');
 const resultPath = path.join(projectRoot, '.ingest-result.json');
 
 function slugify(value) {
@@ -134,6 +135,65 @@ function firstSentence(value) {
     .replace(/\s+/g, ' ')
     .match(/(.+?[.!?])(\s|$)/);
   return sentence?.[1]?.trim() ?? value.trim();
+}
+
+function extractPdfCandidate(html, baseUrl) {
+  const patterns = [
+    new RegExp('(?:href|src)=["\']([^"\']+\\.pdf(?:\\?[^"\'<>\\s]*)?)["\']', 'i'),
+    new RegExp('https?:\\/\\/[^"\'<> ]+\\.pdf(?:\\?[^"\'<>\\s]*)?', 'i'),
+  ];
+
+  for (const pattern of patterns) {
+    const match = html.match(pattern);
+    if (match) {
+      const candidate = match[1] ?? match[0];
+      try {
+        return new URL(candidate, baseUrl).href;
+      } catch {
+        return candidate;
+      }
+    }
+  }
+
+  return null;
+}
+
+async function resolvePdfSourceUrl(sourceUrl) {
+  try {
+    const sourceResponse = await fetch(sourceUrl, { redirect: 'follow' });
+    if (!sourceResponse.ok) return null;
+
+    const contentType = (sourceResponse.headers.get('content-type') ?? '').toLowerCase();
+    if (contentType.includes('pdf')) {
+      return sourceResponse.url;
+    }
+
+    const html = await sourceResponse.text();
+    return extractPdfCandidate(html, sourceResponse.url);
+  } catch {
+    return null;
+  }
+}
+
+async function downloadPdfToPublic(sourceUrl, slug) {
+  const pdfSourceUrl = await resolvePdfSourceUrl(sourceUrl);
+  if (!pdfSourceUrl) return null;
+
+  try {
+    const response = await fetch(pdfSourceUrl, { redirect: 'follow' });
+    if (!response.ok) return null;
+
+    const contentType = (response.headers.get('content-type') ?? '').toLowerCase();
+    if (!contentType.includes('pdf') && !pdfSourceUrl.toLowerCase().includes('.pdf')) {
+      return null;
+    }
+
+    mkdirSync(publicPdfDir, { recursive: true });
+    writeFileSync(path.join(publicPdfDir, `${slug}.pdf`), Buffer.from(await response.arrayBuffer()));
+    return `/pdfs/${slug}.pdf`;
+  } catch {
+    return null;
+  }
 }
 
 function heuristicClassification(payload) {
@@ -314,7 +374,13 @@ function buildTermEntry(classification, payload, slug) {
   };
 }
 
-function buildReadEntry(classification, payload, slug) {
+async function buildReadEntry(classification, payload, slug, mode) {
+  const pdfUrl = payload.sourceUrl
+    ? mode === 'files'
+      ? await downloadPdfToPublic(payload.sourceUrl, slug)
+      : await resolvePdfSourceUrl(payload.sourceUrl)
+    : null;
+
   return {
     type: 'read',
     title: classification.title.trim(),
@@ -331,6 +397,7 @@ function buildReadEntry(classification, payload, slug) {
       ...(classification.sourceUrl ? { url: classification.sourceUrl } : {}),
       ...(payload.submitter ? { label: payload.submitter } : {}),
     },
+    ...(pdfUrl ? { pdfUrl } : {}),
     addedVia: payload.addedVia,
     submittedAt: new Date().toISOString(),
   };
@@ -368,6 +435,7 @@ function mapReadEntryToSupabase(entry) {
     source_type: entry.source?.type ?? null,
     source_url: entry.source?.url ?? null,
     source_label: entry.source?.label ?? null,
+    pdf_url: entry.pdfUrl ?? null,
     added_via: entry.addedVia ?? null,
     submitted_at: entry.submittedAt ?? null,
   };
@@ -378,7 +446,7 @@ function writeResult(result) {
   console.log(JSON.stringify(result));
 }
 
-function persistToFiles(classification, payload) {
+async function persistToFiles(classification, payload) {
   mkdirSync(termsDir, { recursive: true });
   mkdirSync(readsDir, { recursive: true });
 
@@ -402,7 +470,7 @@ function persistToFiles(classification, payload) {
   }
 
   const slug = ensureUniqueSlugInDirectory(readsDir, slugify(classification.slugHint || classification.title));
-  const entry = buildReadEntry(classification, payload, slug);
+  const entry = await buildReadEntry(classification, payload, slug, 'files');
   const filePath = path.join(readsDir, `${slug}.json`);
   writeFileSync(filePath, `${JSON.stringify(entry, null, 2)}\n`, 'utf8');
 
@@ -445,7 +513,7 @@ async function persistToSupabase(classification, payload) {
   }
 
   const slug = await ensureUniqueSlugInSupabase(client, 'reads', slugify(classification.slugHint || classification.title));
-  const entry = buildReadEntry(classification, payload, slug);
+  const entry = await buildReadEntry(classification, payload, slug, 'supabase');
   const record = mapReadEntryToSupabase(entry);
   const { error } = await client.from('reads').insert(record);
 
@@ -474,7 +542,7 @@ async function main() {
   const classification = await classifyWithAI(payload);
   const result = hasSupabaseWriteConfig()
     ? await persistToSupabase(classification, payload)
-    : persistToFiles(classification, payload);
+    : await persistToFiles(classification, payload);
 
   writeResult(result);
 }

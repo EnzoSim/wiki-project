@@ -47,6 +47,7 @@ export type ReadingEntry = {
   keywords: string[];
   status: 'to-read' | 'published';
   source?: LibrarySource;
+  pdfUrl?: string;
   addedVia?: string;
   submittedAt?: string;
 };
@@ -115,6 +116,7 @@ type SupabaseReadRow = {
   source_type: string | null;
   source_url: string | null;
   source_label: string | null;
+  pdf_url: string | null;
   added_via: string | null;
   submitted_at: string | null;
 };
@@ -414,6 +416,7 @@ function parseReading(value: unknown) {
     keywords: keywords.length > 0 ? keywords : extractKeywords(`${theme} ${subthemes.join(' ')} ${summary}`),
     status,
     source: normalizeSource(entry.source),
+    pdfUrl: typeof entry.pdfUrl === 'string' && entry.pdfUrl.trim() ? entry.pdfUrl.trim() : undefined,
     addedVia: typeof entry.addedVia === 'string' ? entry.addedVia.trim() : undefined,
     submittedAt: typeof entry.submittedAt === 'string' ? entry.submittedAt.trim() : undefined,
   };
@@ -456,6 +459,7 @@ function mapSupabaseRead(row: SupabaseReadRow): ReadingEntry {
     keywords: keywords.length > 0 ? keywords : extractKeywords(`${row.theme} ${subthemes.join(' ')} ${row.summary}`),
     status: row.status === 'published' ? 'published' : 'to-read',
     source: buildSource(row.source_type, row.source_url, row.source_label, 'webpage'),
+    pdfUrl: row.pdf_url?.trim() || undefined,
     addedVia: row.added_via?.trim() || undefined,
     submittedAt: row.submitted_at?.trim() || undefined,
   };

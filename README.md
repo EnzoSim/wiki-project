@@ -13,11 +13,11 @@ Run locally:
 - npm run start
 
 Railway:
-- create a Railway project with railway init --name wiki-master
-- if your Railway account has GitHub access configured, add a GitHub-linked service with railway add --service wiki-master-web --repo EnzoSim/wiki-project
-- otherwise create an empty service and deploy the repo with railway up --service wiki-master-web
-- Railway will pick up the standalone Next.js build from package.json
-- generate a Railway public domain with railway domain --service wiki-master-web once the deploy succeeds
+- create a Railway project with `railway init --name wiki-master`
+- if your Railway account has GitHub access configured, add a GitHub-linked service with `railway add --service wiki-master-web --repo EnzoSim/wiki-project`
+- otherwise create an empty service and deploy the repo with `railway up --service wiki-master-web`
+- Railway will pick up the standalone Next.js build from `package.json`
+- generate a Railway public domain with `railway domain --service wiki-master-web` once the deploy succeeds
 
 Features:
 - Reads live content from Supabase when `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` are configured
@@ -25,6 +25,7 @@ Features:
 - Generates `wiki_master.md` from published terms for a compact export view
 - Supports search/filtering for published terms
 - Adds a themed `To read` queue with automatic subtheme grouping
+- Supports PDF-aware reading entries
 - Includes a GitHub Action for AI-assisted or heuristic inbox classification
 - Uses Next.js standalone output for Railway-friendly deployments
 
@@ -35,14 +36,14 @@ Content model:
 
 Supabase setup:
 - Create a Supabase project
-- Run [`supabase/schema.sql`](/Users/enzo_simier/Desktop/wiki-project/supabase/schema.sql) in the Supabase SQL editor
+- Run [supabase/schema.sql](/Users/enzo_simier/Desktop/wiki-project/supabase/schema.sql) in the Supabase SQL editor
 - Set Railway variables:
   - `NEXT_PUBLIC_SUPABASE_URL`
   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 - Set GitHub Action secrets:
   - `SUPABASE_URL`
   - `SUPABASE_SERVICE_ROLE_KEY`
-- Optionally keep local equivalents in [`.env.example`](/Users/enzo_simier/Desktop/wiki-project/.env.example)
+- Optionally keep local equivalents in [.env.example](/Users/enzo_simier/Desktop/wiki-project/.env.example)
 - Seed the database from the current JSON files with `npm run migrate:supabase`
 
 Automation:

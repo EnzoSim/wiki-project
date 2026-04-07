@@ -43,6 +43,7 @@ create table if not exists public.reads (
   source_type text,
   source_url text,
   source_label text,
+  pdf_url text,
   added_via text,
   submitted_at timestamptz default timezone('utc', now()),
   created_at timestamptz not null default timezone('utc', now()),

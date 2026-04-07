@@ -59,10 +59,19 @@ export default function ReadingQueue({ readings, themes }: ReadingQueueProps) {
                     </Link>
                     <p className={styles.itemMeta}>{buildSourceLabel(entry)}</p>
                   </div>
-                  {entry.source?.url ? (
-                    <a className={styles.sourceLink} href={entry.source.url} target="_blank" rel="noreferrer">
-                      Source
-                    </a>
+                  {entry.source?.url || entry.pdfUrl ? (
+                    <div style={{ display: 'grid', gap: '0.35rem', justifyItems: 'end' }}>
+                      {entry.source?.url ? (
+                        <a className={styles.sourceLink} href={entry.source.url} target="_blank" rel="noreferrer">
+                          Source
+                        </a>
+                      ) : null}
+                      {entry.pdfUrl ? (
+                        <a className={styles.sourceLink} href={entry.pdfUrl} target="_blank" rel="noreferrer">
+                          PDF
+                        </a>
+                      ) : null}
+                    </div>
                   ) : null}
                 </div>
                 <p className={styles.itemSummary}>{entry.summary}</p>
