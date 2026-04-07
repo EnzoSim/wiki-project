@@ -25,6 +25,37 @@ function getSupabaseServiceRoleKey() {
   return process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() || '';
 }
 
+function normalizeStringList(value) {
+  if (Array.isArray(value)) {
+    return value
+      .filter((item) => typeof item === 'string')
+      .map((item) => item.trim())
+      .filter(Boolean);
+  }
+
+  if (typeof value !== 'string') {
+    return [];
+  }
+
+  const trimmed = value.trim();
+  if (!trimmed) {
+    return [];
+  }
+
+  if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
+    try {
+      return normalizeStringList(JSON.parse(trimmed));
+    } catch {
+      return [];
+    }
+  }
+
+  return trimmed
+    .split(/\r?\n|,/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
 function hasSupabaseWriteConfig() {
   return Boolean(getSupabaseUrl() && getSupabaseServiceRoleKey());
 }
@@ -49,6 +80,7 @@ function readEventPayload() {
       sourceUrl: process.env.SUBMISSION_SOURCE_URL ?? '',
       sourceType: process.env.SUBMISSION_SOURCE_TYPE ?? '',
       category: process.env.SUBMISSION_CATEGORY ?? '',
+      subthemes: normalizeStringList(process.env.SUBMISSION_SUBTHEMES ?? ''),
       addedVia: process.env.SUBMISSION_ADDED_VIA ?? 'manual',
       autoMerge: process.env.SUBMISSION_AUTO_MERGE === 'true',
       submitter: process.env.SUBMISSION_SUBMITTER ?? '',
@@ -69,6 +101,7 @@ function readEventPayload() {
     sourceUrl: String(inputs.source_url ?? payload.source_url ?? '').trim(),
     sourceType: String(inputs.source_type ?? payload.source_type ?? '').trim(),
     category: String(inputs.category ?? payload.category ?? '').trim(),
+    subthemes: normalizeStringList(inputs.subthemes ?? payload.subthemes ?? ''),
     addedVia: String(inputs.added_via ?? payload.added_via ?? event.action ?? event.event_type ?? 'github').trim(),
     autoMerge: String(inputs.auto_merge ?? payload.auto_merge ?? 'false') === 'true',
     submitter: String(inputs.submitter ?? payload.submitter ?? event.sender?.login ?? '').trim(),
@@ -217,7 +250,7 @@ function heuristicClassification(payload) {
       slugHint,
       category: payload.category || 'Uncategorized',
       theme: '',
-      subthemes: ['Inbox'],
+      subthemes: payload.subthemes.length ? payload.subthemes : ['Inbox'],
       summary,
       whyItMatters:
         'Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.',
@@ -235,7 +268,7 @@ function heuristicClassification(payload) {
     slugHint,
     category: '',
     theme: 'Unsorted',
-    subthemes: ['Inbox'],
+    subthemes: payload.subthemes.length ? payload.subthemes : ['Inbox'],
     summary: firstSentence(normalizedText),
     whyItMatters:
       'Queued from the submission inbox. This item should be reviewed, enriched, and either promoted into a published concept or kept as a themed reading lead.',
@@ -356,14 +389,17 @@ async function classifyWithAI(payload) {
 }
 
 function applyPayloadOverrides(classification, payload) {
+  const nextClassification = { ...classification };
+
   if (classification.entryType === 'term' && payload.category) {
-    return {
-      ...classification,
-      category: payload.category,
-    };
+    nextClassification.category = payload.category;
   }
 
-  return classification;
+  if (payload.subthemes.length) {
+    nextClassification.subthemes = payload.subthemes;
+  }
+
+  return nextClassification;
 }
 
 function buildTermEntry(classification, payload, slug) {

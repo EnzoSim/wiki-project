@@ -25,6 +25,14 @@ on:
           - term
           - video
           - webpage
+      category:
+        description: Optional term category override
+        required: false
+        type: string
+      subthemes:
+        description: Optional subthemes override (comma-separated or one per line)
+        required: false
+        type: string
       added_via:
         description: Origin channel label
         required: false
