@@ -53,6 +53,7 @@ Automation:
 - Optional repo variable `INGEST_MODEL` can override the default model
 - Without an API key, the ingestion script falls back to heuristic classification
 - When `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` are present in GitHub Actions, submissions are written straight to Supabase instead of opening a content PR
+- For the exact Poke webhook format, see [docs/poke-ingestion.md](/Users/enzo_simier/Desktop/wiki-project/docs/poke-ingestion.md)
 
 `repository_dispatch` payload example:
 
