@@ -8,6 +8,9 @@
 - Out of the Money (OTM): An option that has no intrinsic value, consisting only of time value. For a call option, this occurs when the strike price is above the market price.
 - renege: In the context of central banking, to renege refers to a policy pivot where the Fed fails to follow through on its previous forward guidance or implicit commitments (e.g., backing out of signaled interest rate cuts due to persistent inflation).
 
+## Geography
+- Conterminous: Sharing a common boundary, or contained within the same boundaries. Synonym of contiguous. E.g. 'the conterminous United States' refers to the 48 states excluding Alaska and Hawaii.
+
 ## Law
 - terra nullius: Latin for "nobody's land"; a principle used in international law to describe territory that has never been subject to the sovereignty of any state.
 

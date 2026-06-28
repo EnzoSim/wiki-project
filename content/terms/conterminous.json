@@ -1,0 +1,27 @@
+{
+  "type": "term",
+  "title": "Conterminous",
+  "slug": "conterminous",
+  "category": "Geography",
+  "subthemes": [
+    "Boundaries",
+    "Cartography",
+    "Geopolitics"
+  ],
+  "summary": "Sharing a common boundary, or contained within the same boundaries. Synonym of contiguous. E.g. 'the conterminous United States' refers to the 48 states excluding Alaska and Hawaii.",
+  "whyItMatters": "The term is used to distinguish the logically or physically connected parts of a territory from its exclaves. In the US, it is essential for distinguishing the 'lower 48' from the non-contiguous states.",
+  "notes": "Often confused with 'contiguous', which carries the same meaning of sharing a border. In geographic contexts, conterminous emphasizes the sharing of a boundary edge.",
+  "keywords": [
+    "conterminous",
+    "contiguous",
+    "geography",
+    "boundaries",
+    "United States"
+  ],
+  "source": {
+    "type": "term",
+    "label": "User entry"
+  },
+  "addedVia": "manual",
+  "submittedAt": "2026-06-28T13:05:25.831Z"
+}
