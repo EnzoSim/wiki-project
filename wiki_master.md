@@ -14,6 +14,9 @@
 ## Law
 - terra nullius: Latin for "nobody's land"; a principle used in international law to describe territory that has never been subject to the sovereignty of any state.
 
+## Meteorology
+- Sweltering: Oppressively hot and humid.
+
 ## Politics
 - plutocrat: A person whose power or influence comes from their wealth.
 
