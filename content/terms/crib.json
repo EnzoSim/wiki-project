@@ -1,0 +1,27 @@
+{
+  "type": "term",
+  "title": "crib",
+  "slug": "crib",
+  "category": "Vocabulary",
+  "subthemes": [
+    "University slang",
+    "Study methods",
+    "Writing"
+  ],
+  "summary": "A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.",
+  "whyItMatters": "In UK and university slang, a crib or crib sheet is an aide-mémoire: formulas, steps, what to say. On a file titled \u201cQ1 crib\u201d it means personal notes, not the slide they asked for.",
+  "notes": "If the word sounds odd in a prompt, write \u201cpersonal notes PDF\u201d or \u201clogic write-up\u201d instead. Distinct from crib as a baby's bed, and from cribbing as copying.",
+  "keywords": [
+    "crib",
+    "crib sheet",
+    "cheat sheet",
+    "aide-mémoire",
+    "study notes"
+  ],
+  "source": {
+    "type": "term",
+    "label": "Curated note"
+  },
+  "addedVia": "manual",
+  "submittedAt": "2026-08-13T02:33:00.000Z"
+}

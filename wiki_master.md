@@ -31,3 +31,6 @@
 
 ## Urban Economics
 - NIMBYism: An acronym for "Not In My Back Yard," referring to opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally.
+
+## Vocabulary
+- crib: A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.
