@@ -34,3 +34,4 @@
 
 ## Vocabulary
 - crib: A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.
+- crustaceous: Hard-shelled or crust-like; the adjective for crabs, lobsters, shrimp, and other crustaceans.
