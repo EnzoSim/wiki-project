@@ -2,11 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import styles from './page.module.css';
-import { getConceptBySlug, loadWikiConcepts } from '../../../lib/wiki';
+import { getConceptBySlug, loadWikiConcepts, type Concept } from '../../../lib/wiki';
 
 type ConceptPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+const SEE_ALSO_LIMIT = 8;
 
 export const dynamic = 'force-dynamic';
 
@@ -38,9 +40,11 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
 
   if (!concept) return notFound();
 
-  const otherConcepts = (await loadWikiConcepts())
-    .filter((item) => item.slug !== concept.slug)
-    .sort((left, right) => left.title.localeCompare(right.title));
+  const conceptsBySlug = new Map((await loadWikiConcepts()).map((item) => [item.slug, item]));
+  const relatedConcepts = concept.related
+    .slice(0, SEE_ALSO_LIMIT)
+    .map((relatedSlug) => conceptsBySlug.get(relatedSlug))
+    .filter((item): item is Concept => Boolean(item));
 
   return (
     <main className={styles.page}>
@@ -71,11 +75,11 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
             </section>
           ) : null}
 
-          {otherConcepts.length > 0 ? (
+          {relatedConcepts.length > 0 ? (
             <section className={styles.section}>
               <h2>See also</h2>
               <ul className={styles.relatedList}>
-                {otherConcepts.map((item) => (
+                {relatedConcepts.map((item) => (
                   <li key={item.slug}>
                     <Link href={`/concepts/${item.slug}`}>{item.title}</Link>
                     <span>{item.summary}</span>
