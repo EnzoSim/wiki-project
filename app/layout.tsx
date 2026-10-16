@@ -18,23 +18,23 @@ const body = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Reference index · Enzo Simier',
-    template: '%s | Reference index',
+    default: 'Commonplace · Enzo Simier',
+    template: '%s | Commonplace',
   },
   description:
-    'A personal library of concepts, connections and things worth reading, curated by Enzo Simier.',
+    'Ideas, connections, and things worth keeping. Collected by Enzo Simier.',
   authors: [{ name: 'Enzo Simier' }],
   creator: 'Enzo Simier',
   publisher: 'Enzo Simier',
   openGraph: {
-    title: 'Reference index · Enzo Simier',
-    description: 'A personal library of concepts, connections and things worth reading.',
+    title: 'Commonplace · Enzo Simier',
+    description: 'Ideas, connections, and things worth keeping.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: 'Reference index · Enzo Simier',
-    description: 'A personal library of concepts, connections and things worth reading.',
+    title: 'Commonplace · Enzo Simier',
+    description: 'Ideas, connections, and things worth keeping.',
   },
 };
 

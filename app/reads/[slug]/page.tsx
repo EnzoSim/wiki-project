@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: ReadPageProps): Promise<Metad
     description: entry.summary,
     keywords: [entry.theme, ...entry.subthemes, ...entry.keywords],
     openGraph: {
-      title: `${entry.title} | Reference index`,
+      title: `${entry.title} | Commonplace`,
       description: entry.summary,
       type: 'article',
     },
