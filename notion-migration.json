@@ -1,0 +1,148 @@
+{
+  "publicRoot": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81aba2eee315b6e44f26",
+  "publicOrigin": "https://angry-toothpaste-1c7.notion.site",
+  "termsDataSourceId": "db9b2836-1275-4303-91f7-ffb8ef0513a4",
+  "readsDataSourceId": "5dc71a00-1e5f-450d-bd97-31c61b0d3641",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81aba2eee315b6e44f26",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/ceteris-paribus-2",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab818a8a8ef1dac55ccdea",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/jean-fran-ois-lyotard",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab817cba5ddfcb314b4e83",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab814cb929e4c595416b99",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab817cba5ddfcb314b4e83",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81e9bd93e007a471cd65",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/aesthete",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab819a80acda5c597013f9",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/anathema",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab8195925bf58941d3f07a",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/at-the-money-atm",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab8162bf24f1d4273eb147",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/atrabilaire",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81b592adf3c832b131d7",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/ceteris-paribus",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab818a8a8ef1dac55ccdea",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/conterminous",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81c7a930dc7e6bec789c",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/crib",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab813b9db7df0310c28c80",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/crustaceous",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab812f914dc36eb0b1eed0",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/in-the-money-itm",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab8176a545ed4fa24878bd",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/jean-francois-lyotard",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab817cba5ddfcb314b4e83",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/libidinal-economy",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab814cb929e4c595416b99",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/mackinder-s-heartland-theory",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab8128ab3fcd31976cd01c",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/nicholas-spykman-s-rimland-theory",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81158617da27f6c1650e",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/nimbyism",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81a8a6c5fc0bb8934032",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/out-of-the-money-otm",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81759c3dc5acba244c3f",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/plutocrat",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab8174a3a7cf555fb45b17",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/renege",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81c5a04fcd3033fe51d7",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/safetyism",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81eb9178e0b25fb43463",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/snippy",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab8166a5f4cc564292adca",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/svar-structural-vector-autoregression",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81e9bd93e007a471cd65",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/terra-nullius",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81f0bc72dbabf7dfbd61",
+      "permanent": false
+    },
+    {
+      "source": "/reads/complete-biosynthesis-of-nicotine",
+      "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81f99203e96a9f14d9f4",
+      "permanent": false
+    }
+  ]
+}
