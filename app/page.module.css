@@ -1,78 +1,73 @@
 .page {
   margin: 0 auto;
-  max-width: 72rem;
-  padding: 1.5rem 1.5rem 3rem;
+  max-width: 76rem;
+  padding: 4.5rem 2rem 2rem;
 }
-
 .header {
   border-bottom: 1px solid var(--line);
   display: grid;
-  gap: 0.7rem;
-  padding: 0.5rem 0 1.5rem;
+  gap: 0.85rem;
+  padding-bottom: 2.8rem;
 }
-
-.kicker,
-.sectionLabel {
-  color: var(--text-muted);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
 .header h1 {
-  font-size: clamp(2.2rem, 4vw, 3.1rem);
-  line-height: 1.05;
+  font-size: clamp(2.6rem, 4.5vw, 3.7rem);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+  margin-bottom: 0.45rem;
 }
-
-.intro,
-.sectionCopy,
-.meta {
-  color: var(--text-muted);
-  line-height: 1.65;
+.intro {
+  font-family: var(--font-display), serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
   max-width: 44rem;
 }
-
 .credit {
-  color: var(--text);
-  font-size: 0.95rem;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-.meta {
+  color: var(--text-muted);
   font-size: 0.95rem;
 }
-
 .indexSection {
-  padding-top: 1.5rem;
+  padding-top: 1.8rem;
 }
-
 .queueSection {
-  padding-top: 2rem;
+  padding-top: 4.2rem;
 }
-
 .sectionHeader {
-  align-items: end;
-  column-gap: 2rem;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(16rem, 24rem);
-  margin-bottom: 1rem;
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
 }
-
 .sectionHeader h2 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  line-height: 1.1;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
 }
-
-@media (max-width: 800px) {
-  .sectionHeader {
-    grid-template-columns: minmax(0, 1fr);
-    row-gap: 0.75rem;
-  }
+.sectionHeader p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
 }
-
+.footer {
+  margin-top: 4rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  gap: 1rem;
+}
 @media (max-width: 640px) {
   .page {
-    padding-inline: 1rem;
+    padding: 2.7rem 1.15rem 1.5rem;
+  }
+  .header {
+    padding-bottom: 2rem;
+  }
+  .intro {
+    font-size: 1.1rem;
+  }
+  .queueSection {
+    padding-top: 3rem;
   }
 }

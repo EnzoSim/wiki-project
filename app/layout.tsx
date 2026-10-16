@@ -1,48 +1,52 @@
 import type { Metadata } from 'next';
-import { Source_Sans_3, Source_Serif_4 } from 'next/font/google';
+import localFont from 'next/font/local';
 import type { ReactNode } from 'react';
 import './globals.css';
 
-const display = Source_Serif_4({
-  subsets: ['latin'],
+const display = localFont({
+  src: './fonts/source-serif-4-latin.woff2',
   variable: '--font-display',
-  weight: ['400', '600', '700'],
+  weight: '200 900',
+  display: 'swap',
 });
-
-const body = Source_Sans_3({
-  subsets: ['latin'],
+const body = localFont({
+  src: './fonts/source-sans-3-latin.woff2',
   variable: '--font-body',
-  weight: ['400', '500', '600', '700'],
+  weight: '200 900',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Wiki Master',
-    template: '%s | Wiki Master',
+    default: 'Reference index · Enzo Simier',
+    template: '%s | Reference index',
   },
   description:
-    'A compact encyclopedia-style library of published terms and queued reading leads, grouped into themes and subthemes.',
+    'A personal library of concepts, connections and things worth reading, curated by Enzo Simier.',
   authors: [{ name: 'Enzo Simier' }],
   creator: 'Enzo Simier',
   publisher: 'Enzo Simier',
   openGraph: {
-    title: 'Wiki Master',
-    description:
-      'A compact encyclopedia-style library of published terms and queued reading leads, grouped into themes and subthemes.',
+    title: 'Reference index · Enzo Simier',
+    description: 'A personal library of concepts, connections and things worth reading.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: 'Wiki Master',
-    description:
-      'A compact encyclopedia-style library of published terms and queued reading leads, grouped into themes and subthemes.',
+    title: 'Reference index · Enzo Simier',
+    description: 'A personal library of concepts, connections and things worth reading.',
   },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${display.variable} ${body.variable}`}>{children}</body>
+      <body className={`${display.variable} ${body.variable}`}>
+        <a href="#main" className="skip-link">
+          Skip to content
+        </a>
+        {children}
+      </body>
     </html>
   );
 }

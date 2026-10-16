@@ -1,6 +1,8 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
+import type { Artwork, ContentNode } from './content-types';
+import { loadPublicLibrary } from './notion';
 
 export type LibrarySourceType =
   | 'article'
@@ -33,6 +35,9 @@ export type Concept = {
   source?: LibrarySource;
   addedVia?: string;
   submittedAt?: string;
+  notionId?: string;
+  artwork?: Artwork;
+  body?: ContentNode[];
 };
 
 export type ReadingEntry = {
@@ -45,11 +50,13 @@ export type ReadingEntry = {
   whyItMatters?: string;
   notes?: string;
   keywords: string[];
-  status: 'to-read' | 'published';
+  status: 'to-read' | 'reading' | 'read' | 'published';
   source?: LibrarySource;
   pdfUrl?: string;
   addedVia?: string;
   submittedAt?: string;
+  notionId?: string;
+  body?: ContentNode[];
 };
 
 export type KeywordFrequency = {
@@ -548,6 +555,9 @@ async function loadSupabaseReadings() {
 }
 
 async function loadConceptSource() {
+  if (process.env.WIKI_NOTION_MODE !== 'legacy') {
+    return (await loadPublicLibrary()).concepts;
+  }
   if (hasSupabaseReadConfig()) {
     try {
       return await loadSupabaseConcepts();
@@ -560,6 +570,9 @@ async function loadConceptSource() {
 }
 
 async function loadReadingSource() {
+  if (process.env.WIKI_NOTION_MODE !== 'legacy') {
+    return (await loadPublicLibrary()).readings;
+  }
   if (hasSupabaseReadConfig()) {
     try {
       return await loadSupabaseReadings();

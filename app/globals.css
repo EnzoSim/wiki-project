@@ -1,14 +1,14 @@
 :root {
   color-scheme: light;
-  --bg: #f8f9fa;
-  --surface: #ffffff;
-  --line: #d8dde3;
-  --line-strong: #b9c2cc;
-  --text: #202122;
-  --text-muted: #54595d;
-  --link: #0645ad;
-  --link-hover: #0b0080;
-  --selection: rgba(6, 69, 173, 0.16);
+  --bg: #ffffff;
+  --surface: #f7f7f4;
+  --line: #e2e3dc;
+  --line-strong: #b5b8ab;
+  --text: #2e302b;
+  --text-muted: #73776b;
+  --link: #4c5b42;
+  --link-hover: #293820;
+  --selection: rgba(91, 104, 72, 0.16);
 }
 
 *,
@@ -82,3 +82,8 @@ h6 {
 p {
   margin: 0;
 }
+
+:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+.skip-link { position: absolute; top: .5rem; left: 1rem; transform: translateY(-200%); background: white; padding: .5rem 1rem; z-index: 5; }
+.skip-link:focus { transform: translateY(0); }
+@media(prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

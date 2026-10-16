@@ -1,0 +1,1407 @@
+{
+  "block": {
+    "3fb314f9-feab-81ab-a2ee-e315b6e44f26": {
+      "value": {
+        "id": "3fb314f9-feab-81ab-a2ee-e315b6e44f26",
+        "type": "page",
+        "parent_id": "606314f9-feab-813e-90b5-0003252ef235",
+        "properties": {
+          "title": [
+            [
+              "Reference index"
+            ]
+          ]
+        },
+        "content": [
+          "0a25399f-e0ee-4701-8e44-7dc38fedebb9",
+          "f06c583b-6b5b-4865-b6e9-8439e3d0d5d6",
+          "2d35e436-dee6-45ac-bd26-d2321084c595",
+          "698a033f-e447-45da-8ce9-33d13c21e70d",
+          "9a6613cb-9389-426f-a33e-9021150b6a6e",
+          "f03b231c-cf6a-4f35-a6bf-a9b83dbee04f",
+          "e72c787d-c509-400d-b900-09a18aa99342",
+          "3fb314f9-feab-81ad-9ff2-fe21b72fe608"
+        ],
+        "alive": true
+      }
+    },
+    "0a25399f-e0ee-4701-8e44-7dc38fedebb9": {
+      "value": {
+        "id": "0a25399f-e0ee-4701-8e44-7dc38fedebb9",
+        "type": "text",
+        "parent_id": "3fb314f9-feab-81ab-a2ee-e315b6e44f26",
+        "properties": {
+          "title": [
+            [
+              "A personal library of concepts, connections and things worth reading."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "f06c583b-6b5b-4865-b6e9-8439e3d0d5d6": {
+      "value": {
+        "id": "f06c583b-6b5b-4865-b6e9-8439e3d0d5d6",
+        "type": "text",
+        "parent_id": "3fb314f9-feab-81ab-a2ee-e315b6e44f26",
+        "properties": {
+          "title": [
+            [
+              "Curated by Enzo Simier."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "3fb314f9-feab-8162-bf24-f1d4273eb147": {
+      "value": {
+        "id": "3fb314f9-feab-8162-bf24-f1d4273eb147",
+        "type": "page",
+        "parent_id": "db9b2836-1275-4303-91f7-ffb8ef0513a4",
+        "properties": {
+          "F:[R": [
+            [
+              "Enzo"
+            ]
+          ],
+          "GEQO": [
+            [
+              "at-the-money-atm"
+            ]
+          ],
+          "Y_bJ": [
+            [
+              "Finance"
+            ]
+          ],
+          "eP:<": [
+            [
+              "\u2023",
+              [
+                [
+                  "d",
+                  {
+                    "type": "datetime",
+                    "time_zone": "UTC",
+                    "start_date": "2026-04-07",
+                    "start_time": "18:30"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "ijLM": [
+            [
+              "Options,Moneyness,Strike price"
+            ]
+          ],
+          "inp`": [
+            [
+              "at-the-money-atm.png",
+              [
+                [
+                  "a",
+                  "attachment:51cc0cc7-9339-4591-9055-fd705cc46f37:at-the-money-atm.png"
+                ]
+              ]
+            ]
+          ],
+          "qRGW": [
+            [
+              "term"
+            ]
+          ],
+          "r^qv": [
+            [
+              "https://github.com/EnzoSim/wiki-project/blob/main/content/terms/at-the-money-atm.json"
+            ]
+          ],
+          "tkLI": [
+            [
+              "ATM, options, strike price, market price, moneyness"
+            ]
+          ],
+          "uWgi": [
+            [
+              "An option where the strike price is identical to the current market price of the underlying asset."
+            ]
+          ],
+          "unQX": [
+            [
+              "poke"
+            ]
+          ],
+          "wms[": [
+            [
+              "at-the-money-atm-explained.png",
+              [
+                [
+                  "a",
+                  "attachment:b88622a1-9097-409c-b2ac-87c7bbe5b251:at-the-money-atm-explained.png"
+                ]
+              ]
+            ]
+          ],
+          "title": [
+            [
+              "At the Money (ATM)"
+            ]
+          ]
+        },
+        "content": [
+          "8d59e573-7022-4c9f-9340-ea5ee4d6bd60",
+          "61ddcf78-25ab-4394-bf2a-546b59bd288e",
+          "1990b216-f243-46c7-b625-cff00dbbabfd",
+          "1e04ff5d-c432-4931-bb5f-dc5c34321071",
+          "578800e6-abf5-4720-b030-70050cc528d0",
+          "9d03574d-1c8c-42ee-877e-2fd8291a294f",
+          "4ba6cf72-9436-4cdb-84c9-e606e8a604fc",
+          "ea4aeeb4-4469-4c9a-b262-34fad3392305"
+        ],
+        "alive": true
+      }
+    },
+    "8d59e573-7022-4c9f-9340-ea5ee4d6bd60": {
+      "value": {
+        "id": "8d59e573-7022-4c9f-9340-ea5ee4d6bd60",
+        "type": "image",
+        "parent_id": "3fb314f9-feab-8162-bf24-f1d4273eb147",
+        "properties": {
+          "size": [
+            [
+              "2.17 MiB"
+            ]
+          ],
+          "title": [
+            [
+              "at-the-money-atm-explained.png"
+            ]
+          ],
+          "source": [
+            [
+              "attachment:b88622a1-9097-409c-b2ac-87c7bbe5b251:at-the-money-atm-explained.png"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "61ddcf78-25ab-4394-bf2a-546b59bd288e": {
+      "value": {
+        "id": "61ddcf78-25ab-4394-bf2a-546b59bd288e",
+        "type": "text",
+        "parent_id": "3fb314f9-feab-8162-bf24-f1d4273eb147",
+        "properties": {
+          "title": [
+            [
+              "An option where the strike price is identical to the current market price of the underlying asset."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "1990b216-f243-46c7-b625-cff00dbbabfd": {
+      "value": {
+        "id": "1990b216-f243-46c7-b625-cff00dbbabfd",
+        "type": "divider",
+        "parent_id": "3fb314f9-feab-8162-bf24-f1d4273eb147",
+        "alive": true
+      }
+    },
+    "1e04ff5d-c432-4931-bb5f-dc5c34321071": {
+      "value": {
+        "id": "1e04ff5d-c432-4931-bb5f-dc5c34321071",
+        "type": "sub_header",
+        "parent_id": "3fb314f9-feab-8162-bf24-f1d4273eb147",
+        "properties": {
+          "title": [
+            [
+              "Why it matters"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "578800e6-abf5-4720-b030-70050cc528d0": {
+      "value": {
+        "id": "578800e6-abf5-4720-b030-70050cc528d0",
+        "type": "text",
+        "parent_id": "3fb314f9-feab-8162-bf24-f1d4273eb147",
+        "properties": {
+          "title": [
+            [
+              "At-the-money options sit at the boundary between intrinsic value and time value."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "9d03574d-1c8c-42ee-877e-2fd8291a294f": {
+      "value": {
+        "id": "9d03574d-1c8c-42ee-877e-2fd8291a294f",
+        "type": "sub_header",
+        "parent_id": "3fb314f9-feab-8162-bf24-f1d4273eb147",
+        "properties": {
+          "title": [
+            [
+              "Notes"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "4ba6cf72-9436-4cdb-84c9-e606e8a604fc": {
+      "value": {
+        "id": "4ba6cf72-9436-4cdb-84c9-e606e8a604fc",
+        "type": "text",
+        "parent_id": "3fb314f9-feab-8162-bf24-f1d4273eb147",
+        "properties": {
+          "title": [
+            [
+              "Used in derivatives pricing and trading when the strike and market price are approximately equal."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "ea4aeeb4-4469-4c9a-b262-34fad3392305": {
+      "value": {
+        "id": "ea4aeeb4-4469-4c9a-b262-34fad3392305",
+        "type": "toggle",
+        "parent_id": "3fb314f9-feab-8162-bf24-f1d4273eb147",
+        "properties": {
+          "title": [
+            [
+              "Original source records"
+            ]
+          ]
+        },
+        "content": [
+          "87eacf09-0b21-4ad4-bec6-6c04b619ba72",
+          "c2066f3f-90d2-4c38-8466-b62ecb5dbfe1"
+        ],
+        "alive": true
+      }
+    },
+    "87eacf09-0b21-4ad4-bec6-6c04b619ba72": {
+      "value": {
+        "id": "87eacf09-0b21-4ad4-bec6-6c04b619ba72",
+        "type": "text",
+        "parent_id": "ea4aeeb4-4469-4c9a-b262-34fad3392305",
+        "properties": {
+          "title": [
+            [
+              "1 original record preserved from the public wiki and repository."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "c2066f3f-90d2-4c38-8466-b62ecb5dbfe1": {
+      "value": {
+        "id": "c2066f3f-90d2-4c38-8466-b62ecb5dbfe1",
+        "type": "code",
+        "parent_id": "ea4aeeb4-4469-4c9a-b262-34fad3392305",
+        "properties": {
+          "title": [
+            [
+              "[\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"At the Money (ATM)\",\n      \"slug\": \"at-the-money-atm\",\n      \"category\": \"Finance\",\n      \"subthemes\": [\n        \"Options\",\n        \"Moneyness\",\n        \"Strike price\"\n      ],\n      \"summary\": \"An option where the strike price is identical to the current market price of the underlying asset.\",\n      \"whyItMatters\": \"At-the-money options sit at the boundary between intrinsic value and time value.\",\n      \"notes\": \"Used in derivatives pricing and trading when the strike and market price are approximately equal.\",\n      \"keywords\": [\n        \"ATM\",\n        \"options\",\n        \"strike price\",\n        \"market price\",\n        \"moneyness\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-07T18:30:16.745Z\",\n      \"_source_file\": \"content/terms/at-the-money-atm.json\"\n    }\n  }\n]"
+            ]
+          ],
+          "language": [
+            [
+              "JSON"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "3fb314f9-feab-8175-9c3d-c5acba244c3f": {
+      "value": {
+        "id": "3fb314f9-feab-8175-9c3d-c5acba244c3f",
+        "type": "page",
+        "parent_id": "db9b2836-1275-4303-91f7-ffb8ef0513a4",
+        "properties": {
+          "F:[R": [
+            [
+              "Enzo"
+            ]
+          ],
+          "GEQO": [
+            [
+              "out-of-the-money-otm"
+            ]
+          ],
+          "Y_bJ": [
+            [
+              "Finance"
+            ]
+          ],
+          "eP:<": [
+            [
+              "\u2023",
+              [
+                [
+                  "d",
+                  {
+                    "type": "datetime",
+                    "time_zone": "UTC",
+                    "start_date": "2026-04-07",
+                    "start_time": "18:30"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "ijLM": [
+            [
+              "Options,Moneyness,Time value"
+            ]
+          ],
+          "inp`": [
+            [
+              "out-of-the-money-otm.png",
+              [
+                [
+                  "a",
+                  "attachment:1a714317-19eb-4105-b5c4-be475f41cc7d:out-of-the-money-otm.png"
+                ]
+              ]
+            ]
+          ],
+          "qRGW": [
+            [
+              "term"
+            ]
+          ],
+          "r^qv": [
+            [
+              "https://github.com/EnzoSim/wiki-project/blob/main/content/terms/out-of-the-money-otm.json"
+            ]
+          ],
+          "tkLI": [
+            [
+              "OTM, options, time value, call option, strike price"
+            ]
+          ],
+          "uWgi": [
+            [
+              "An option that has no intrinsic value, consisting only of time value. For a call option, this occurs when the strike price is above the market price."
+            ]
+          ],
+          "unQX": [
+            [
+              "poke"
+            ]
+          ],
+          "wms[": [
+            [
+              "out-of-the-money-otm-explained.png",
+              [
+                [
+                  "a",
+                  "attachment:671818e4-a7c2-4067-a49b-388a61a50007:out-of-the-money-otm-explained.png"
+                ]
+              ]
+            ]
+          ],
+          "title": [
+            [
+              "Out of the Money (OTM)"
+            ]
+          ]
+        },
+        "content": [
+          "cbc861fb-b046-4192-aaac-0f1d55db3cbe",
+          "54d5db73-f5fa-444b-bf14-13d040d63776",
+          "c3789579-59f3-4c6f-83fb-00fefc29114b",
+          "49b4a2ac-4b30-4d7a-99a2-03a421a99b62",
+          "f0295312-b200-49eb-9a10-d5e9c03e8cdf",
+          "0d4ec776-9964-4832-9c34-7a75d9f9cfee",
+          "5b1fccd8-ca43-4e0b-97a5-2175e638079a",
+          "c23a7473-9f97-4568-bf67-0fb457fa1457"
+        ],
+        "alive": true
+      }
+    },
+    "cbc861fb-b046-4192-aaac-0f1d55db3cbe": {
+      "value": {
+        "id": "cbc861fb-b046-4192-aaac-0f1d55db3cbe",
+        "type": "image",
+        "parent_id": "3fb314f9-feab-8175-9c3d-c5acba244c3f",
+        "properties": {
+          "size": [
+            [
+              "2.37 MiB"
+            ]
+          ],
+          "title": [
+            [
+              "out-of-the-money-otm-explained.png"
+            ]
+          ],
+          "source": [
+            [
+              "attachment:671818e4-a7c2-4067-a49b-388a61a50007:out-of-the-money-otm-explained.png"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "54d5db73-f5fa-444b-bf14-13d040d63776": {
+      "value": {
+        "id": "54d5db73-f5fa-444b-bf14-13d040d63776",
+        "type": "text",
+        "parent_id": "3fb314f9-feab-8175-9c3d-c5acba244c3f",
+        "properties": {
+          "title": [
+            [
+              "An option that has no intrinsic value, consisting only of time value. For a call option, this occurs when the strike price is above the market price."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "c3789579-59f3-4c6f-83fb-00fefc29114b": {
+      "value": {
+        "id": "c3789579-59f3-4c6f-83fb-00fefc29114b",
+        "type": "divider",
+        "parent_id": "3fb314f9-feab-8175-9c3d-c5acba244c3f",
+        "alive": true
+      }
+    },
+    "49b4a2ac-4b30-4d7a-99a2-03a421a99b62": {
+      "value": {
+        "id": "49b4a2ac-4b30-4d7a-99a2-03a421a99b62",
+        "type": "sub_header",
+        "parent_id": "3fb314f9-feab-8175-9c3d-c5acba244c3f",
+        "properties": {
+          "title": [
+            [
+              "Why it matters"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "f0295312-b200-49eb-9a10-d5e9c03e8cdf": {
+      "value": {
+        "id": "f0295312-b200-49eb-9a10-d5e9c03e8cdf",
+        "type": "text",
+        "parent_id": "3fb314f9-feab-8175-9c3d-c5acba244c3f",
+        "properties": {
+          "title": [
+            [
+              "Out-of-the-money options are valued only for their remaining time value and optionality."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "0d4ec776-9964-4832-9c34-7a75d9f9cfee": {
+      "value": {
+        "id": "0d4ec776-9964-4832-9c34-7a75d9f9cfee",
+        "type": "sub_header",
+        "parent_id": "3fb314f9-feab-8175-9c3d-c5acba244c3f",
+        "properties": {
+          "title": [
+            [
+              "Notes"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "5b1fccd8-ca43-4e0b-97a5-2175e638079a": {
+      "value": {
+        "id": "5b1fccd8-ca43-4e0b-97a5-2175e638079a",
+        "type": "text",
+        "parent_id": "3fb314f9-feab-8175-9c3d-c5acba244c3f",
+        "properties": {
+          "title": [
+            [
+              "Used in derivatives pricing and trading to describe options with zero intrinsic value."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "c23a7473-9f97-4568-bf67-0fb457fa1457": {
+      "value": {
+        "id": "c23a7473-9f97-4568-bf67-0fb457fa1457",
+        "type": "toggle",
+        "parent_id": "3fb314f9-feab-8175-9c3d-c5acba244c3f",
+        "properties": {
+          "title": [
+            [
+              "Original source records"
+            ]
+          ]
+        },
+        "content": [
+          "20a12722-0814-4287-82bc-828a2133e1e8",
+          "4f0f22e2-a4ca-4e72-b678-a4b3ef65adc0"
+        ],
+        "alive": true
+      }
+    },
+    "20a12722-0814-4287-82bc-828a2133e1e8": {
+      "value": {
+        "id": "20a12722-0814-4287-82bc-828a2133e1e8",
+        "type": "text",
+        "parent_id": "c23a7473-9f97-4568-bf67-0fb457fa1457",
+        "properties": {
+          "title": [
+            [
+              "1 original record preserved from the public wiki and repository."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "4f0f22e2-a4ca-4e72-b678-a4b3ef65adc0": {
+      "value": {
+        "id": "4f0f22e2-a4ca-4e72-b678-a4b3ef65adc0",
+        "type": "code",
+        "parent_id": "c23a7473-9f97-4568-bf67-0fb457fa1457",
+        "properties": {
+          "title": [
+            [
+              "[\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"Out of the Money (OTM)\",\n      \"slug\": \"out-of-the-money-otm\",\n      \"category\": \"Finance\",\n      \"subthemes\": [\n        \"Options\",\n        \"Moneyness\",\n        \"Time value\"\n      ],\n      \"summary\": \"An option that has no intrinsic value, consisting only of time value. For a call option, this occurs when the strike price is above the market price.\",\n      \"whyItMatters\": \"Out-of-the-money options are valued only for their remaining time value and optionality.\",\n      \"notes\": \"Used in derivatives pricing and trading to describe options with zero intrinsic value.\",\n      \"keywords\": [\n        \"OTM\",\n        \"options\",\n        \"time value\",\n        \"call option\",\n        \"strike price\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-07T18:30:16.745Z\",\n      \"_source_file\": \"content/terms/out-of-the-money-otm.json\"\n    }\n  }\n]"
+            ]
+          ],
+          "language": [
+            [
+              "JSON"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "3fb314f9-feab-81f9-9203-e96a9f14d9f4": {
+      "value": {
+        "id": "3fb314f9-feab-81f9-9203-e96a9f14d9f4",
+        "type": "page",
+        "parent_id": "5dc71a00-1e5f-450d-bd97-31c61b0d3641",
+        "properties": {
+          "B]Bm": [
+            [
+              "https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1"
+            ]
+          ],
+          "Em[z": [
+            [
+              "paper"
+            ]
+          ],
+          "FTkY": [
+            [
+              "\u2023",
+              [
+                [
+                  "d",
+                  {
+                    "type": "datetime",
+                    "time_zone": "UTC",
+                    "start_date": "2026-04-03",
+                    "start_time": "23:08"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "Gz]U": [
+            [
+              "complete-biosynthesis-of-nicotine.pdf",
+              [
+                [
+                  "a",
+                  "attachment:e5f95289-e9cb-4afa-ae5a-6a7153ebf845:complete-biosynthesis-of-nicotine.pdf"
+                ]
+              ]
+            ]
+          ],
+          "I@i\\": [
+            [
+              "This Cell paper completes the nicotine biosynthesis pathway by identifying the final coupling reaction, a 5-component metabolon, and a MATE transporter required for efficient nicotine production and transport."
+            ]
+          ],
+          "IutS": [
+            [
+              "https://wiki.enzosimier.com/reads/complete-biosynthesis-of-nicotine"
+            ]
+          ],
+          "Jfhr": [
+            [
+              "Biology"
+            ]
+          ],
+          "VgWb": [
+            [
+              "complete-biosynthesis-of-nicotine"
+            ]
+          ],
+          "]~}J": [
+            [
+              "nicotine,biosynthesis,plants,alkaloids,metabolism"
+            ]
+          ],
+          "fOQc": [
+            [
+              "To read"
+            ]
+          ],
+          "iBuK": [
+            [
+              "Plant biochemistry,Natural products,Metabolism"
+            ]
+          ],
+          "i\\=G": [
+            [
+              "poke"
+            ]
+          ],
+          "title": [
+            [
+              "Complete biosynthesis of nicotine"
+            ]
+          ]
+        },
+        "content": [
+          "de76d75a-0058-4a36-96e6-1bdde7d23669",
+          "67c31efc-e999-4b57-ad26-e72b5df31932",
+          "091413ee-9d59-44cf-a846-3ba078263fab",
+          "378ffaa5-de84-464f-903d-a66eedbb4039",
+          "f5303059-b330-4132-a372-92235db65fb3",
+          "1e2a5eb0-cb2e-4023-8a18-23a458d78897",
+          "a338a800-61b6-419a-93eb-f649e36077d6",
+          "06126b0d-d38b-4561-9f32-c3eacf061421"
+        ],
+        "alive": true
+      }
+    },
+    "de76d75a-0058-4a36-96e6-1bdde7d23669": {
+      "value": {
+        "id": "de76d75a-0058-4a36-96e6-1bdde7d23669",
+        "type": "text",
+        "parent_id": "3fb314f9-feab-81f9-9203-e96a9f14d9f4",
+        "properties": {
+          "title": [
+            [
+              "This Cell paper completes the nicotine biosynthesis pathway by identifying the final coupling reaction, a 5-component metabolon, and a MATE transporter required for efficient nicotine production and transport."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "67c31efc-e999-4b57-ad26-e72b5df31932": {
+      "value": {
+        "id": "67c31efc-e999-4b57-ad26-e72b5df31932",
+        "type": "sub_header",
+        "parent_id": "3fb314f9-feab-81f9-9203-e96a9f14d9f4",
+        "properties": {
+          "title": [
+            [
+              "Why it matters"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "091413ee-9d59-44cf-a846-3ba078263fab": {
+      "value": {
+        "id": "091413ee-9d59-44cf-a846-3ba078263fab",
+        "type": "text",
+        "parent_id": "3fb314f9-feab-81f9-9203-e96a9f14d9f4",
+        "properties": {
+          "title": [
+            [
+              "It clarifies a major plant alkaloid pathway and offers useful ideas for engineering pest resistance in crops."
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "378ffaa5-de84-464f-903d-a66eedbb4039": {
+      "value": {
+        "id": "378ffaa5-de84-464f-903d-a66eedbb4039",
+        "type": "sub_header",
+        "parent_id": "3fb314f9-feab-81f9-9203-e96a9f14d9f4",
+        "properties": {
+          "title": [
+            [
+              "Notes"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "f5303059-b330-4132-a372-92235db65fb3": {
+      "value": {
+        "id": "f5303059-b330-4132-a372-92235db65fb3",
+        "type": "text",
+        "parent_id": "3fb314f9-feab-81f9-9203-e96a9f14d9f4",
+        "properties": {
+          "title": [
+            [
+              "Source: "
+            ],
+            [
+              "https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1",
+              [
+                [
+                  "a",
+                  "https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1"
+                ]
+              ]
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "1e2a5eb0-cb2e-4023-8a18-23a458d78897": {
+      "value": {
+        "id": "1e2a5eb0-cb2e-4023-8a18-23a458d78897",
+        "type": "sub_header",
+        "parent_id": "3fb314f9-feab-81f9-9203-e96a9f14d9f4",
+        "properties": {
+          "title": [
+            [
+              "Original document"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "a338a800-61b6-419a-93eb-f649e36077d6": {
+      "value": {
+        "id": "a338a800-61b6-419a-93eb-f649e36077d6",
+        "type": "pdf",
+        "parent_id": "3fb314f9-feab-81f9-9203-e96a9f14d9f4",
+        "properties": {
+          "size": [
+            [
+              "1.19 KiB"
+            ]
+          ],
+          "title": [
+            [
+              "complete-biosynthesis-of-nicotine.pdf"
+            ]
+          ],
+          "source": [
+            [
+              "attachment:e5f95289-e9cb-4afa-ae5a-6a7153ebf845:complete-biosynthesis-of-nicotine.pdf"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    },
+    "06126b0d-d38b-4561-9f32-c3eacf061421": {
+      "value": {
+        "id": "06126b0d-d38b-4561-9f32-c3eacf061421",
+        "type": "toggle",
+        "parent_id": "3fb314f9-feab-81f9-9203-e96a9f14d9f4",
+        "properties": {
+          "title": [
+            [
+              "Original source record"
+            ]
+          ]
+        },
+        "content": [
+          "5378a5db-90d8-4b54-abbe-4bb6ce332aed"
+        ],
+        "alive": true
+      }
+    },
+    "5378a5db-90d8-4b54-abbe-4bb6ce332aed": {
+      "value": {
+        "id": "5378a5db-90d8-4b54-abbe-4bb6ce332aed",
+        "type": "code",
+        "parent_id": "06126b0d-d38b-4561-9f32-c3eacf061421",
+        "properties": {
+          "title": [
+            [
+              "{\n  \"type\": \"read\",\n  \"title\": \"Complete biosynthesis of nicotine\",\n  \"slug\": \"complete-biosynthesis-of-nicotine\",\n  \"theme\": \"Biology\",\n  \"subthemes\": [\n    \"Plant biochemistry\",\n    \"Natural products\",\n    \"Metabolism\"\n  ],\n  \"summary\": \"This Cell paper completes the nicotine biosynthesis pathway by identifying the final coupling reaction, a 5-component metabolon, and a MATE transporter required for efficient nicotine production and transport.\",\n  \"whyItMatters\": \"It clarifies a major plant alkaloid pathway and offers useful ideas for engineering pest resistance in crops.\",\n  \"notes\": \"Source: https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1\",\n  \"keywords\": [\n    \"nicotine\",\n    \"biosynthesis\",\n    \"plants\",\n    \"alkaloids\",\n    \"metabolism\"\n  ],\n  \"status\": \"to-read\",\n  \"source\": {\n    \"type\": \"paper\",\n    \"url\": \"https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1\"\n  },\n  \"addedVia\": \"poke\",\n  \"submittedAt\": \"2026-04-03T23:08:12.741Z\",\n  \"pdfUrl\": \"/pdfs/complete-biosynthesis-of-nicotine.pdf\",\n  \"_source_file\": \"content/reads/complete-biosynthesis-of-nicotine.json\"\n}"
+            ]
+          ],
+          "language": [
+            [
+              "JSON"
+            ]
+          ]
+        },
+        "alive": true
+      }
+    }
+  },
+  "collection": {
+    "db9b2836-1275-4303-91f7-ffb8ef0513a4": {
+      "value": {
+        "schema": {
+          "F:[R": {
+            "name": "Source label",
+            "type": "text"
+          },
+          "GEQO": {
+            "name": "Slug",
+            "type": "text"
+          },
+          "SNhh": {
+            "name": "Source URL",
+            "type": "url"
+          },
+          "Y_bJ": {
+            "name": "Category",
+            "type": "select",
+            "options": [
+              {
+                "id": "5838c879-5bdb-46d5-9eee-8c5c7f59e52e",
+                "color": "gray",
+                "value": "Vocabulary"
+              },
+              {
+                "id": "99fd1552-6d8e-4231-9512-81013623903c",
+                "color": "brown",
+                "value": "Religion"
+              },
+              {
+                "id": "25618683-d4f5-480d-848b-5e3b72626ade",
+                "color": "blue",
+                "value": "Finance"
+              },
+              {
+                "id": "f1d240aa-44a6-4b58-a3b0-bf57baca5276",
+                "color": "gray",
+                "value": "Temperament"
+              },
+              {
+                "id": "4635a01b-0411-4014-a818-4ff49a2295c2",
+                "color": "blue",
+                "value": "Economics"
+              },
+              {
+                "id": "8c7a26c0-2096-4597-bcfe-b39109d6194a",
+                "value": "Geography"
+              },
+              {
+                "id": "5235c3f1-b4c0-4f9a-a879-d3be4423b2ad",
+                "color": "purple",
+                "value": "Politics"
+              },
+              {
+                "id": "36c289d6-29bd-4a0d-aa29-b4ba3f1501b1",
+                "color": "green",
+                "value": "Geopolitics"
+              },
+              {
+                "id": "10a08a16-f593-4839-83aa-788acf578666",
+                "color": "orange",
+                "value": "Urban Economics"
+              },
+              {
+                "id": "a3180dd1-b2b9-4db7-8221-00c164a5e8e2",
+                "color": "gray",
+                "value": "Public policy"
+              },
+              {
+                "id": "810bfd71-4a55-4d0d-91ff-a6b5b2e65555",
+                "color": "brown",
+                "value": "Law"
+              }
+            ]
+          },
+          "eP:<": {
+            "name": "Submitted",
+            "type": "date"
+          },
+          "ijLM": {
+            "name": "Subthemes",
+            "type": "multi_select",
+            "options": [
+              {
+                "id": "eca5cc72-4b19-4e2d-9ae0-f296e4ae8308",
+                "value": "Temperament"
+              },
+              {
+                "id": "01a8ce7e-4f7e-40bc-95e3-3a5a83e3cb51",
+                "value": "Art"
+              },
+              {
+                "id": "ddea35f0-dee7-401f-ad09-d063e5b48844",
+                "value": "Aesthetics"
+              },
+              {
+                "id": "fb33ea33-1916-42a4-9642-6c6944efc2db",
+                "value": "Canon law"
+              },
+              {
+                "id": "4f35d5b6-a108-4613-bb82-8e1c75400762",
+                "value": "Excommunication"
+              },
+              {
+                "id": "b86a6b94-d98c-4e3b-b93d-f6539e598855",
+                "value": "Religious language"
+              },
+              {
+                "id": "ff331774-c3f5-487f-b3e3-df60ef11f0dd",
+                "value": "Options"
+              },
+              {
+                "id": "856004d9-3197-4884-ad6e-c88c5d4f7dd9",
+                "value": "Moneyness"
+              },
+              {
+                "id": "ee1c55b9-3fee-4b3a-9109-8b707fa0efa5",
+                "value": "Strike price"
+              },
+              {
+                "id": "71be52f4-fddf-4ded-95e6-dd5bbf083e64",
+                "value": "Intellectual history"
+              },
+              {
+                "id": "c3eb2851-70ce-409f-879f-3890862a5d1f",
+                "value": "Mood"
+              },
+              {
+                "id": "1a20c67a-2429-4759-a4ce-eac81dbcf298",
+                "value": "Literary language"
+              },
+              {
+                "id": "02edf370-bb0c-4149-89ca-fd67705bbc22",
+                "value": "Latin"
+              },
+              {
+                "id": "9e875e7c-5e10-48d3-b077-2d4414117845",
+                "value": "Methodology"
+              },
+              {
+                "id": "21c9f005-30bc-4c42-a616-6c0502345290",
+                "value": "Boundaries"
+              },
+              {
+                "id": "eafe9fd5-89a5-4402-8f5f-7623a6cf780f",
+                "value": "Cartography"
+              },
+              {
+                "id": "b2234b7a-fab1-443c-a21f-567b549e00d0",
+                "value": "Geopolitics"
+              },
+              {
+                "id": "3f84c03c-e214-40dc-b1dd-c03cb5f47f22",
+                "value": "University slang"
+              },
+              {
+                "id": "abc307da-f3b6-4fba-8b29-80e0271ca8e5",
+                "value": "Study methods"
+              },
+              {
+                "id": "065393c8-c666-4b9b-b447-7d34a94e5ad7",
+                "value": "Writing"
+              },
+              {
+                "id": "f89c91e0-baf7-4c11-a684-bde8a39a1f0c",
+                "value": "Zoology"
+              },
+              {
+                "id": "435a7d0b-c0ee-4f1c-861c-87f50056cc7d",
+                "value": "Botany"
+              },
+              {
+                "id": "9ed55c5e-f6f6-4ad9-903d-85c20c851545",
+                "value": "Diction"
+              },
+              {
+                "id": "5c617386-bab9-4d35-bb73-9ac545e630f1",
+                "value": "Intrinsic value"
+              },
+              {
+                "id": "970110fd-87d2-4dc3-b077-77f300b9b44d",
+                "value": "Political theory"
+              },
+              {
+                "id": "dafdf1f7-b478-4359-8b44-d153eebae850",
+                "value": "Postmodernism"
+              },
+              {
+                "id": "6128759e-8d65-47fd-89e3-74576ad871dc",
+                "value": "Philosophy"
+              },
+              {
+                "id": "227e61e1-b8c9-4e87-bcba-dfbd53893eac",
+                "value": "Political economy"
+              },
+              {
+                "id": "7a2505ab-9454-4632-832b-b559498828a4",
+                "value": "Desire"
+              },
+              {
+                "id": "66a90b83-25e6-4b50-8437-501403bc70dc",
+                "value": "Critical theory"
+              },
+              {
+                "id": "bea665bb-2612-42ab-9415-623edf99cd67",
+                "value": "Strategic Theory"
+              },
+              {
+                "id": "da2bf9d3-de9a-4169-91d1-e4458ef874f6",
+                "value": "Eurasia"
+              },
+              {
+                "id": "990bacd2-17f2-417a-a9b7-70889fc588e7",
+                "value": "Housing"
+              },
+              {
+                "id": "686e104a-afd5-40fb-94f6-307080b9a34e",
+                "value": "Land use"
+              },
+              {
+                "id": "bb24407d-6e8e-4d7d-8c49-4744f53f35db",
+                "value": "Local politics"
+              },
+              {
+                "id": "b7155921-379c-4b87-abe0-09e42efe7b2b",
+                "value": "Time value"
+              },
+              {
+                "id": "4cf9bebe-91a6-40b1-8b25-69b1a1e5fe18",
+                "value": "Wealth"
+              },
+              {
+                "id": "c86da79d-eb1f-4c1f-86c1-7642e1438c21",
+                "value": "Power"
+              },
+              {
+                "id": "45c6f1de-48bc-483d-b5d8-d4eb781769e9",
+                "value": "Political influence"
+              },
+              {
+                "id": "0f5aabfb-d3c0-4867-bf23-a69e9da83c47",
+                "value": "Central banking"
+              },
+              {
+                "id": "9aefe86e-4661-48f5-a3cd-09af57e66a03",
+                "value": "Forward guidance"
+              },
+              {
+                "id": "91d81a21-0468-4a3b-921d-c522cdb4e5c8",
+                "value": "Monetary policy"
+              },
+              {
+                "id": "b98b8ae3-05c4-42ef-ace9-c804a9c187da",
+                "value": "Risk management"
+              },
+              {
+                "id": "3301c7a7-4fb6-4a00-8dc8-35dcb284b28e",
+                "value": "Institutional culture"
+              },
+              {
+                "id": "516abfd1-ebe7-415e-81ef-a8cdccf1d449",
+                "value": "Political psychology"
+              },
+              {
+                "id": "871fc17e-ecd4-482b-bf0f-53f027590330",
+                "value": "Behavior"
+              },
+              {
+                "id": "d6b52457-5db7-43d8-af62-5e3e1335d024",
+                "value": "Econometrics"
+              },
+              {
+                "id": "2d4bde00-7450-4824-9bc1-7f89d93a00db",
+                "value": "Macroeconomics"
+              },
+              {
+                "id": "64db50b6-a946-4060-a18a-85143da54f2c",
+                "value": "Causal Inference"
+              },
+              {
+                "id": "8a113541-6942-4f6f-913f-68f646690b79",
+                "value": "Colonial law"
+              },
+              {
+                "id": "ac0a6f2f-2a56-4201-81ff-82745fffa88b",
+                "value": "Sovereignty"
+              },
+              {
+                "id": "c64e5804-0572-4539-9da6-706f84f6fa7b",
+                "value": "Imperial doctrine"
+              }
+            ]
+          },
+          "inp`": {
+            "name": "Original artwork",
+            "type": "file"
+          },
+          "qRGW": {
+            "name": "Source type",
+            "type": "select",
+            "options": [
+              {
+                "id": "0fd27523-f8a0-45f1-8dd4-9af906521402",
+                "color": "gray",
+                "value": "term"
+              },
+              {
+                "id": "4743a3a4-4d98-47d9-b3db-35ef88051df6",
+                "color": "gray",
+                "value": "article"
+              },
+              {
+                "id": "3cae1694-1518-41c9-8902-8ef392434006",
+                "color": "gray",
+                "value": "book"
+              },
+              {
+                "id": "616b34e1-215b-476f-919b-7dcd092d577b",
+                "color": "gray",
+                "value": "paper"
+              },
+              {
+                "id": "6d139fbf-53e4-48c8-9b17-731e1654186b",
+                "color": "gray",
+                "value": "note"
+              },
+              {
+                "id": "06dee169-5b9f-4907-a8c3-e4d165ad5211",
+                "color": "gray",
+                "value": "podcast"
+              },
+              {
+                "id": "9a8aa9de-24f8-4f4e-82ac-2ff63b1cca16",
+                "color": "gray",
+                "value": "webpage"
+              }
+            ]
+          },
+          "r^qv": {
+            "name": "Original URL",
+            "type": "url"
+          },
+          "tkLI": {
+            "name": "Keywords",
+            "type": "text"
+          },
+          "uWgi": {
+            "name": "Definition",
+            "type": "text"
+          },
+          "unQX": {
+            "name": "Added via",
+            "type": "text"
+          },
+          "wms[": {
+            "name": "Artwork",
+            "type": "file"
+          },
+          "{{Sj": {
+            "name": "Related",
+            "type": "relation",
+            "version": "v2",
+            "collection_id": "db9b2836-1275-4303-91f7-ffb8ef0513a4",
+            "collection_pointer": {
+              "id": "db9b2836-1275-4303-91f7-ffb8ef0513a4",
+              "table": "collection",
+              "spaceId": "606314f9-feab-813e-90b5-0003252ef235"
+            }
+          },
+          "title": {
+            "name": "Term",
+            "type": "title"
+          }
+        }
+      }
+    },
+    "5dc71a00-1e5f-450d-bd97-31c61b0d3641": {
+      "value": {
+        "schema": {
+          "B]Bm": {
+            "name": "Source URL",
+            "type": "url"
+          },
+          "Em[z": {
+            "name": "Format",
+            "type": "select",
+            "options": [
+              {
+                "id": "97704408-6929-4db3-af45-6188bd34cd63",
+                "color": "gray",
+                "value": "paper"
+              },
+              {
+                "id": "75be3432-655e-4fa2-bf22-d60125076158",
+                "color": "gray",
+                "value": "article"
+              },
+              {
+                "id": "159872b3-0a34-4f8d-a0cc-ac70e987c7c2",
+                "color": "gray",
+                "value": "book"
+              },
+              {
+                "id": "e897799b-73e9-4fc3-ab9c-3f46d01e328c",
+                "color": "gray",
+                "value": "essay"
+              },
+              {
+                "id": "553eb0a0-d7ed-4508-b361-1324264fcf62",
+                "color": "gray",
+                "value": "note"
+              },
+              {
+                "id": "e756d9c0-6f3a-420e-972d-bbdf30810707",
+                "color": "gray",
+                "value": "podcast"
+              },
+              {
+                "id": "fc5145d7-a338-4d1a-ad0f-78f3fd2064f7",
+                "color": "gray",
+                "value": "video"
+              },
+              {
+                "id": "22ed631f-d71b-4e8d-b4d8-3d9c49d11e79",
+                "color": "gray",
+                "value": "webpage"
+              }
+            ]
+          },
+          "FTkY": {
+            "name": "Submitted",
+            "type": "date"
+          },
+          "Gz]U": {
+            "name": "Document",
+            "type": "file"
+          },
+          "I@i\\": {
+            "name": "Summary",
+            "type": "text"
+          },
+          "IutS": {
+            "name": "Original URL",
+            "type": "url"
+          },
+          "Jfhr": {
+            "name": "Theme",
+            "type": "select",
+            "options": [
+              {
+                "id": "922d714f-ddaa-4404-9df8-f79f08de1928",
+                "color": "green",
+                "value": "Biology"
+              }
+            ]
+          },
+          "VgWb": {
+            "name": "Slug",
+            "type": "text"
+          },
+          "]~}J": {
+            "name": "Keywords",
+            "type": "multi_select",
+            "options": [
+              {
+                "id": "76771233-a454-4333-abea-8d8a8ce08690",
+                "value": "nicotine"
+              },
+              {
+                "id": "1ec25e11-a649-40a7-9894-35bbfcdc3013",
+                "value": "biosynthesis"
+              },
+              {
+                "id": "c9af874d-b861-49c6-93ff-50713ddedbda",
+                "value": "plants"
+              },
+              {
+                "id": "87aa9fdf-2be6-4c0a-adf1-c5f9c544672f",
+                "value": "alkaloids"
+              },
+              {
+                "id": "1b06091e-4175-496b-a287-07cb83adac9f",
+                "value": "metabolism"
+              }
+            ]
+          },
+          "fOQc": {
+            "name": "Status",
+            "type": "select",
+            "options": [
+              {
+                "id": "39cc4cc0-ab53-485c-a2b7-7db52895199a",
+                "color": "gray",
+                "value": "To read"
+              },
+              {
+                "id": "5605ea1b-1d6a-4723-81f6-3119998d92c7",
+                "color": "blue",
+                "value": "Reading"
+              },
+              {
+                "id": "2a8117d0-059d-43a4-9d32-af48ed282689",
+                "color": "green",
+                "value": "Read"
+              },
+              {
+                "id": "763bada6-5bb9-4222-bb60-364c45e99cea",
+                "color": "brown",
+                "value": "Published"
+              }
+            ]
+          },
+          "iBuK": {
+            "name": "Subthemes",
+            "type": "multi_select",
+            "options": [
+              {
+                "id": "4442c695-3789-45f7-b78e-3bb1cc565582",
+                "value": "Plant biochemistry"
+              },
+              {
+                "id": "3f02ef07-0e6c-4ea4-abea-16605b43c414",
+                "value": "Natural products"
+              },
+              {
+                "id": "d5c6520a-da90-4f92-b29f-3c5f6b17199b",
+                "value": "Metabolism"
+              }
+            ]
+          },
+          "i\\=G": {
+            "name": "Added via",
+            "type": "text"
+          },
+          "title": {
+            "name": "Title",
+            "type": "title"
+          }
+        }
+      }
+    }
+  },
+  "signed_urls": {}
+}

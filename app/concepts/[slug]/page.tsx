@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import styles from './page.module.css';
 import { getConceptBySlug, loadWikiConcepts, type Concept } from '../../../lib/wiki';
+import NotionContent from '../../../components/notion-content';
 
 type ConceptPageProps = {
   params: Promise<{ slug: string }>;
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: ConceptPageProps): Promise<Me
     description: concept.summary,
     keywords: [concept.category, ...concept.keywords],
     openGraph: {
-      title: `${concept.title} | Wiki Master`,
+      title: `${concept.title} | Reference index`,
       description: concept.summary,
       type: 'article',
     },
@@ -47,7 +48,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
     .filter((item): item is Concept => Boolean(item));
 
   return (
-    <main className={styles.page}>
+    <main id="main" className={styles.page}>
       <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
         <Link href="/">Back to index</Link>
       </nav>
@@ -55,25 +56,31 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
       <header className={styles.header}>
         <p className={styles.category}>{concept.category}</p>
         <h1>{concept.title}</h1>
-        <p className={styles.lead}>{concept.summary}</p>
+        {!concept.body?.length ? <p className={styles.lead}>{concept.summary}</p> : null}
         <p className={styles.credit}>Curated by Enzo Simier.</p>
       </header>
 
       <div className={styles.layout}>
         <article className={styles.article}>
-          {concept.whyItMatters ? (
-            <section className={styles.section}>
-              <h2>Why it matters</h2>
-              <p>{concept.whyItMatters}</p>
-            </section>
-          ) : null}
+          {concept.body?.length ? (
+            <NotionContent nodes={concept.body} />
+          ) : (
+            <>
+              {concept.whyItMatters ? (
+                <section className={styles.section}>
+                  <h2>Why it matters</h2>
+                  <p>{concept.whyItMatters}</p>
+                </section>
+              ) : null}
 
-          {concept.notes ? (
-            <section className={styles.section}>
-              <h2>Notes</h2>
-              <p>{concept.notes}</p>
-            </section>
-          ) : null}
+              {concept.notes ? (
+                <section className={styles.section}>
+                  <h2>Notes</h2>
+                  <p>{concept.notes}</p>
+                </section>
+              ) : null}
+            </>
+          )}
 
           {relatedConcepts.length > 0 ? (
             <section className={styles.section}>
@@ -98,10 +105,6 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
               <dd>{concept.category}</dd>
             </div>
             <div>
-              <dt>Slug</dt>
-              <dd>{concept.slug}</dd>
-            </div>
-            <div>
               <dt>Keywords</dt>
               <dd>{concept.keywords.join(', ')}</dd>
             </div>
@@ -109,6 +112,18 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
               <div>
                 <dt>Subthemes</dt>
                 <dd>{concept.subthemes.join(', ')}</dd>
+              </div>
+            ) : null}
+            {concept.source?.label || concept.source?.url ? (
+              <div>
+                <dt>Source</dt>
+                <dd>
+                  {concept.source.url ? (
+                    <a href={concept.source.url}>{concept.source.label || concept.source.url}</a>
+                  ) : (
+                    concept.source.label
+                  )}
+                </dd>
               </div>
             ) : null}
           </dl>

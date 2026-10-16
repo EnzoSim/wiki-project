@@ -144,5 +144,32 @@
       "destination": "https://angry-toothpaste-1c7.notion.site/3fb314f9feab81f99203e96a9f14d9f4",
       "permanent": false
     }
+  ],
+  "localAliases": [
+    {
+      "source": "/concepts/ceteris-paribus-2",
+      "destination": "/concepts/ceteris-paribus",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/jean-fran-ois-lyotard",
+      "destination": "/concepts/jean-francois-lyotard",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite",
+      "destination": "/concepts/libidinal-economy",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2",
+      "destination": "/concepts/jean-francois-lyotard",
+      "permanent": false
+    },
+    {
+      "source": "/concepts/svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep",
+      "destination": "/concepts/svar-structural-vector-autoregression",
+      "permanent": false
+    }
   ]
 }

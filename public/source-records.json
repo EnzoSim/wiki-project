@@ -1,0 +1,2192 @@
+{
+  "source_origin": "https://wiki.enzosimier.com",
+  "live_terms": 21,
+  "live_pages": 22,
+  "repository_terms": 15,
+  "original_term_records": 36,
+  "canonical_terms": 21,
+  "reading_entries": 1,
+  "aliases": {
+    "ceteris-paribus-2": "ceteris-paribus",
+    "jean-fran-ois-lyotard": "jean-francois-lyotard",
+    "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite": "libidinal-economy",
+    "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2": "jean-francois-lyotard",
+    "svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep": "svar-structural-vector-autoregression"
+  },
+  "concepts": [
+    {
+      "type": "term",
+      "title": "Aesthete",
+      "slug": "aesthete",
+      "category": "Vocabulary",
+      "subthemes": [
+        "Temperament",
+        "Art",
+        "Aesthetics"
+      ],
+      "summary": "A person who has or affects to have a special appreciation of art and beauty.",
+      "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+      "notes": "Aesthete: A person who has or affects to have a special appreciation of art and beauty.",
+      "keywords": [
+        "vocabulary",
+        "temperament",
+        "aesthetics",
+        "person",
+        "affects",
+        "have",
+        "special",
+        "appreciation",
+        "beauty"
+      ],
+      "related": [
+        "snippy",
+        "atrabilaire",
+        "crib",
+        "crustaceous"
+      ],
+      "source": {
+        "type": "term",
+        "url": null,
+        "label": "Enzo"
+      },
+      "addedVia": "iMessage",
+      "submittedAt": "2026-04-16T16:24:49.218+00:00",
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "Aesthete",
+            "slug": "aesthete",
+            "category": "Vocabulary",
+            "subthemes": [
+              "Temperament",
+              "Art",
+              "Aesthetics"
+            ],
+            "summary": "A person who has or affects to have a special appreciation of art and beauty.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "Aesthete: A person who has or affects to have a special appreciation of art and beauty.",
+            "keywords": [
+              "vocabulary",
+              "temperament",
+              "aesthetics",
+              "person",
+              "affects",
+              "have",
+              "special",
+              "appreciation",
+              "beauty"
+            ],
+            "related": [
+              "snippy",
+              "atrabilaire",
+              "crib",
+              "crustaceous"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Enzo"
+            },
+            "addedVia": "iMessage",
+            "submittedAt": "2026-04-16T16:24:49.218+00:00"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "aesthete"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/aesthete"
+    },
+    {
+      "type": "term",
+      "title": "anathema",
+      "slug": "anathema",
+      "category": "Religion",
+      "subthemes": [
+        "Canon law",
+        "Excommunication",
+        "Religious language"
+      ],
+      "summary": "Something or someone that one vehemently dislikes; a formal curse by a pope or a council of the Church, excommunicating a person or denouncing a doctrine.",
+      "whyItMatters": "The word spans both everyday dislike and the formal language of ecclesiastical condemnation, which gives it unusual range and force.",
+      "notes": "In modern usage it is often used figuratively, but the older religious meaning still gives it extra weight and severity.",
+      "keywords": [
+        "anathema",
+        "curse",
+        "excommunication",
+        "church",
+        "denunciation"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Poke submission"
+      },
+      "addedVia": "poke",
+      "submittedAt": "2026-04-06T21:15:00.000Z",
+      "_source_file": "content/terms/anathema.json",
+      "related": [],
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "anathema",
+            "slug": "anathema",
+            "category": "Religion",
+            "subthemes": [
+              "Canon law",
+              "Excommunication",
+              "Religious language"
+            ],
+            "summary": "Something or someone that one vehemently dislikes; a formal curse by a pope or a council of the Church, excommunicating a person or denouncing a doctrine.",
+            "whyItMatters": "The word spans both everyday dislike and the formal language of ecclesiastical condemnation, which gives it unusual range and force.",
+            "notes": "In modern usage it is often used figuratively, but the older religious meaning still gives it extra weight and severity.",
+            "keywords": [
+              "anathema",
+              "curse",
+              "excommunication",
+              "church",
+              "denunciation"
+            ],
+            "related": [],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Poke submission"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-06T21:15:00+00:00"
+          }
+        },
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "anathema",
+            "slug": "anathema",
+            "category": "Religion",
+            "subthemes": [
+              "Canon law",
+              "Excommunication",
+              "Religious language"
+            ],
+            "summary": "Something or someone that one vehemently dislikes; a formal curse by a pope or a council of the Church, excommunicating a person or denouncing a doctrine.",
+            "whyItMatters": "The word spans both everyday dislike and the formal language of ecclesiastical condemnation, which gives it unusual range and force.",
+            "notes": "In modern usage it is often used figuratively, but the older religious meaning still gives it extra weight and severity.",
+            "keywords": [
+              "anathema",
+              "curse",
+              "excommunication",
+              "church",
+              "denunciation"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Poke submission"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-06T21:15:00.000Z",
+            "_source_file": "content/terms/anathema.json"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "anathema"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/anathema"
+    },
+    {
+      "type": "term",
+      "title": "At the Money (ATM)",
+      "slug": "at-the-money-atm",
+      "category": "Finance",
+      "subthemes": [
+        "Options",
+        "Moneyness",
+        "Strike price"
+      ],
+      "summary": "An option where the strike price is identical to the current market price of the underlying asset.",
+      "whyItMatters": "At-the-money options sit at the boundary between intrinsic value and time value.",
+      "notes": "Used in derivatives pricing and trading when the strike and market price are approximately equal.",
+      "keywords": [
+        "ATM",
+        "options",
+        "strike price",
+        "market price",
+        "moneyness"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "submittedAt": "2026-04-07T18:30:16.745Z",
+      "_source_file": "content/terms/at-the-money-atm.json",
+      "related": [],
+      "_versions": [
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "At the Money (ATM)",
+            "slug": "at-the-money-atm",
+            "category": "Finance",
+            "subthemes": [
+              "Options",
+              "Moneyness",
+              "Strike price"
+            ],
+            "summary": "An option where the strike price is identical to the current market price of the underlying asset.",
+            "whyItMatters": "At-the-money options sit at the boundary between intrinsic value and time value.",
+            "notes": "Used in derivatives pricing and trading when the strike and market price are approximately equal.",
+            "keywords": [
+              "ATM",
+              "options",
+              "strike price",
+              "market price",
+              "moneyness"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Enzo"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-07T18:30:16.745Z",
+            "_source_file": "content/terms/at-the-money-atm.json"
+          }
+        }
+      ],
+      "_live_slugs": [],
+      "_original_url": "https://github.com/EnzoSim/wiki-project/blob/main/content/terms/at-the-money-atm.json"
+    },
+    {
+      "type": "term",
+      "title": "atrabilaire",
+      "slug": "atrabilaire",
+      "category": "Temperament",
+      "subthemes": [
+        "Intellectual history",
+        "Mood",
+        "Literary language"
+      ],
+      "summary": "Having a gloomy, irritable, or melancholy disposition; literally rooted in the old theory of black bile (atrabilis), which was once thought to produce a morose temperament.",
+      "whyItMatters": "The word connects older medical theories of temperament to modern descriptions of personality and tone. It carries historical texture that makes it richer than a simple synonym for gloomy or sour.",
+      "notes": "Its value is partly stylistic: the term often signals a literary, historical, or high-register voice. It is less a technical diagnosis than a compact way of naming a dark or bile-tinged disposition.",
+      "keywords": [
+        "atrabilaire",
+        "melancholy",
+        "temperament",
+        "black bile",
+        "intellectual history"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "github",
+      "submittedAt": "2026-04-03T14:00:00.000Z",
+      "_source_file": "content/terms/atrabilaire.json",
+      "related": [
+        "aesthete",
+        "snippy"
+      ],
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "atrabilaire",
+            "slug": "atrabilaire",
+            "category": "Temperament",
+            "subthemes": [
+              "Intellectual history",
+              "Mood",
+              "Literary language"
+            ],
+            "summary": "Having a gloomy, irritable, or melancholy disposition; literally rooted in the old theory of black bile (atrabilis), which was once thought to produce a morose temperament.",
+            "whyItMatters": "The word connects older medical theories of temperament to modern descriptions of personality and tone. It carries historical texture that makes it richer than a simple synonym for gloomy or sour.",
+            "notes": "Its value is partly stylistic: the term often signals a literary, historical, or high-register voice. It is less a technical diagnosis than a compact way of naming a dark or bile-tinged disposition.",
+            "keywords": [
+              "atrabilaire",
+              "melancholy",
+              "temperament",
+              "black bile",
+              "intellectual history"
+            ],
+            "related": [
+              "aesthete",
+              "snippy"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Curated note"
+            },
+            "addedVia": "github",
+            "submittedAt": "2026-04-03T14:00:00+00:00"
+          }
+        },
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "atrabilaire",
+            "slug": "atrabilaire",
+            "category": "Temperament",
+            "subthemes": [
+              "Intellectual history",
+              "Mood",
+              "Literary language"
+            ],
+            "summary": "Having a gloomy, irritable, or melancholy disposition; literally rooted in the old theory of black bile (atrabilis), which was once thought to produce a morose temperament.",
+            "whyItMatters": "The word connects older medical theories of temperament to modern descriptions of personality and tone. It carries historical texture that makes it richer than a simple synonym for gloomy or sour.",
+            "notes": "Its value is partly stylistic: the term often signals a literary, historical, or high-register voice. It is less a technical diagnosis than a compact way of naming a dark or bile-tinged disposition.",
+            "keywords": [
+              "atrabilaire",
+              "melancholy",
+              "temperament",
+              "black bile",
+              "intellectual history"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Curated note"
+            },
+            "addedVia": "github",
+            "submittedAt": "2026-04-03T14:00:00.000Z",
+            "_source_file": "content/terms/atrabilaire.json"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "atrabilaire"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/atrabilaire"
+    },
+    {
+      "type": "term",
+      "title": "ceteris paribus",
+      "slug": "ceteris-paribus",
+      "category": "Economics",
+      "subthemes": [
+        "Latin",
+        "Methodology"
+      ],
+      "summary": "Latin for \"all other things being equal\"; used in economics to isolate the effect of a single variable by holding all other factors constant.",
+      "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+      "notes": "ceteris paribus: Latin for \"all other things being equal\"; used in economics to isolate the effect of a single variable by holding all other factors constant.",
+      "keywords": [
+        "economics",
+        "latin",
+        "methodology",
+        "other",
+        "things",
+        "equal",
+        "isolate",
+        "effect",
+        "single",
+        "variable",
+        "uncategorized",
+        "inbox"
+      ],
+      "related": [
+        "svar-structural-vector-autoregression",
+        "libidinal-economy"
+      ],
+      "source": {
+        "type": "term",
+        "url": null,
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "submittedAt": "2026-04-07T20:28:52.38+00:00",
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "ceteris paribus",
+            "slug": "ceteris-paribus-2",
+            "category": "Economics",
+            "subthemes": [
+              "Latin",
+              "Methodology"
+            ],
+            "summary": "Latin for \"all other things being equal\"; used in economics to isolate the effect of a single variable by holding all other factors constant.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "ceteris paribus: Latin for \"all other things being equal\"; used in economics to isolate the effect of a single variable by holding all other factors constant.",
+            "keywords": [
+              "economics",
+              "latin",
+              "methodology",
+              "other",
+              "things",
+              "equal",
+              "isolate",
+              "effect",
+              "single",
+              "variable"
+            ],
+            "related": [
+              "ceteris-paribus",
+              "svar-structural-vector-autoregression",
+              "svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep",
+              "libidinal-economy",
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Enzo"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-07T20:28:52.38+00:00"
+          }
+        },
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "ceteris paribus",
+            "slug": "ceteris-paribus",
+            "category": "Uncategorized",
+            "subthemes": [
+              "Inbox"
+            ],
+            "summary": "Latin for \"all other things being equal\"; used in economics to isolate the effect of a single variable by holding all other factors constant.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "ceteris paribus: Latin for \"all other things being equal\"; used in economics to isolate the effect of a single variable by holding all other factors constant.",
+            "keywords": [
+              "uncategorized",
+              "inbox",
+              "latin",
+              "other",
+              "things",
+              "equal",
+              "economics",
+              "isolate",
+              "effect",
+              "single"
+            ],
+            "related": [
+              "ceteris-paribus-2",
+              "libidinal-economy",
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite",
+              "svar-structural-vector-autoregression",
+              "svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Enzo"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-07T19:04:03.64+00:00"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "ceteris-paribus-2",
+        "ceteris-paribus"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/ceteris-paribus-2"
+    },
+    {
+      "type": "term",
+      "title": "Conterminous",
+      "slug": "conterminous",
+      "category": "Geography",
+      "subthemes": [
+        "Boundaries",
+        "Cartography",
+        "Geopolitics"
+      ],
+      "summary": "Sharing a common boundary, or contained within the same boundaries. Synonym of contiguous. E.g. 'the conterminous United States' refers to the 48 states excluding Alaska and Hawaii.",
+      "whyItMatters": "The term is used to distinguish the logically or physically connected parts of a territory from its exclaves. In the US, it is essential for distinguishing the 'lower 48' from the non-contiguous states.",
+      "notes": "Often confused with 'contiguous', which carries the same meaning of sharing a border. In geographic contexts, conterminous emphasizes the sharing of a boundary edge.",
+      "keywords": [
+        "conterminous",
+        "contiguous",
+        "geography",
+        "boundaries",
+        "United States"
+      ],
+      "source": {
+        "type": "term",
+        "label": "User entry"
+      },
+      "addedVia": "manual",
+      "submittedAt": "2026-06-28T13:05:25.831Z",
+      "_source_file": "content/terms/conterminous.json",
+      "related": [],
+      "_versions": [
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "Conterminous",
+            "slug": "conterminous",
+            "category": "Geography",
+            "subthemes": [
+              "Boundaries",
+              "Cartography",
+              "Geopolitics"
+            ],
+            "summary": "Sharing a common boundary, or contained within the same boundaries. Synonym of contiguous. E.g. 'the conterminous United States' refers to the 48 states excluding Alaska and Hawaii.",
+            "whyItMatters": "The term is used to distinguish the logically or physically connected parts of a territory from its exclaves. In the US, it is essential for distinguishing the 'lower 48' from the non-contiguous states.",
+            "notes": "Often confused with 'contiguous', which carries the same meaning of sharing a border. In geographic contexts, conterminous emphasizes the sharing of a boundary edge.",
+            "keywords": [
+              "conterminous",
+              "contiguous",
+              "geography",
+              "boundaries",
+              "United States"
+            ],
+            "source": {
+              "type": "term",
+              "label": "User entry"
+            },
+            "addedVia": "manual",
+            "submittedAt": "2026-06-28T13:05:25.831Z",
+            "_source_file": "content/terms/conterminous.json"
+          }
+        }
+      ],
+      "_live_slugs": [],
+      "_original_url": "https://github.com/EnzoSim/wiki-project/blob/main/content/terms/conterminous.json"
+    },
+    {
+      "type": "term",
+      "title": "crib",
+      "slug": "crib",
+      "category": "Vocabulary",
+      "subthemes": [
+        "University slang",
+        "Study methods",
+        "Writing"
+      ],
+      "summary": "A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.",
+      "whyItMatters": "In UK and university slang, a crib or crib sheet is an aide-mémoire: formulas, steps, what to say. On a file titled “Q1 crib” it means personal notes, not the slide they asked for.",
+      "notes": "If the word sounds odd in a prompt, write “personal notes PDF” or “logic write-up” instead. Distinct from crib as a baby's bed, and from cribbing as copying.",
+      "keywords": [
+        "vocabulary",
+        "university",
+        "slang",
+        "study",
+        "methods",
+        "writing",
+        "compact",
+        "private",
+        "cheat",
+        "sheet",
+        "crib",
+        "crib sheet",
+        "cheat sheet",
+        "aide-mémoire",
+        "study notes"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "manual",
+      "submittedAt": "2026-08-13T02:33:00.000Z",
+      "_source_file": "content/terms/crib.json",
+      "related": [
+        "aesthete",
+        "crustaceous",
+        "snippy"
+      ],
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "crib",
+            "slug": "crib",
+            "category": "Vocabulary",
+            "subthemes": [
+              "University slang",
+              "Study methods",
+              "Writing"
+            ],
+            "summary": "A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "crib: A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.",
+            "keywords": [
+              "vocabulary",
+              "university",
+              "slang",
+              "study",
+              "methods",
+              "writing",
+              "compact",
+              "private",
+              "cheat",
+              "sheet"
+            ],
+            "related": [
+              "aesthete",
+              "crustaceous",
+              "snippy"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Enzo"
+            },
+            "addedVia": "antoine",
+            "submittedAt": "2026-08-13T02:43:01.119+00:00"
+          }
+        },
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "crib",
+            "slug": "crib",
+            "category": "Vocabulary",
+            "subthemes": [
+              "University slang",
+              "Study methods",
+              "Writing"
+            ],
+            "summary": "A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.",
+            "whyItMatters": "In UK and university slang, a crib or crib sheet is an aide-mémoire: formulas, steps, what to say. On a file titled “Q1 crib” it means personal notes, not the slide they asked for.",
+            "notes": "If the word sounds odd in a prompt, write “personal notes PDF” or “logic write-up” instead. Distinct from crib as a baby's bed, and from cribbing as copying.",
+            "keywords": [
+              "crib",
+              "crib sheet",
+              "cheat sheet",
+              "aide-mémoire",
+              "study notes"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Curated note"
+            },
+            "addedVia": "manual",
+            "submittedAt": "2026-08-13T02:33:00.000Z",
+            "_source_file": "content/terms/crib.json"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "crib"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/crib"
+    },
+    {
+      "type": "term",
+      "title": "crustaceous",
+      "slug": "crustaceous",
+      "category": "Vocabulary",
+      "subthemes": [
+        "Zoology",
+        "Botany",
+        "Diction"
+      ],
+      "summary": "Hard-shelled or crust-like; the adjective for crabs, lobsters, shrimp, and other crustaceans.",
+      "whyItMatters": "In botany it can also describe a hard, brittle seed coat, including on some legumes. For eating texture, English usually wants crunchy, crisp, or snap, not this word.",
+      "notes": "A crossword clue like “crunchy legumes” is looking for snap beans, not crustaceous.",
+      "keywords": [
+        "vocabulary",
+        "zoology",
+        "botany",
+        "diction",
+        "hard-shelled",
+        "crust-like",
+        "adjective",
+        "crabs",
+        "lobsters",
+        "shrimp",
+        "crustaceous",
+        "crustacean",
+        "seed coat",
+        "crunchy"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "manual",
+      "submittedAt": "2026-08-13T02:45:00.000Z",
+      "_source_file": "content/terms/crustaceous.json",
+      "related": [
+        "snippy",
+        "aesthete",
+        "crib"
+      ],
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "crustaceous",
+            "slug": "crustaceous",
+            "category": "Vocabulary",
+            "subthemes": [
+              "Zoology",
+              "Botany",
+              "Diction"
+            ],
+            "summary": "Hard-shelled or crust-like; the adjective for crabs, lobsters, shrimp, and other crustaceans.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "crustaceous: Hard-shelled or crust-like; the adjective for crabs, lobsters, shrimp, and other crustaceans. In botany it can also describe a hard, brittle seed coat, including on some legumes. For eating texture, English usually wants crunchy, crisp, or snap, not this word.",
+            "keywords": [
+              "vocabulary",
+              "zoology",
+              "botany",
+              "diction",
+              "hard-shelled",
+              "crust-like",
+              "adjective",
+              "crabs",
+              "lobsters",
+              "shrimp"
+            ],
+            "related": [
+              "snippy",
+              "aesthete",
+              "crib"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Enzo"
+            },
+            "addedVia": "antoine",
+            "submittedAt": "2026-08-13T02:47:14.301+00:00"
+          }
+        },
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "crustaceous",
+            "slug": "crustaceous",
+            "category": "Vocabulary",
+            "subthemes": [
+              "Zoology",
+              "Botany",
+              "Diction"
+            ],
+            "summary": "Hard-shelled or crust-like; the adjective for crabs, lobsters, shrimp, and other crustaceans.",
+            "whyItMatters": "In botany it can also describe a hard, brittle seed coat, including on some legumes. For eating texture, English usually wants crunchy, crisp, or snap, not this word.",
+            "notes": "A crossword clue like “crunchy legumes” is looking for snap beans, not crustaceous.",
+            "keywords": [
+              "crustaceous",
+              "crustacean",
+              "hard-shelled",
+              "seed coat",
+              "crunchy"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Curated note"
+            },
+            "addedVia": "manual",
+            "submittedAt": "2026-08-13T02:45:00.000Z",
+            "_source_file": "content/terms/crustaceous.json"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "crustaceous"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/crustaceous"
+    },
+    {
+      "type": "term",
+      "title": "In the Money (ITM)",
+      "slug": "in-the-money-itm",
+      "category": "Finance",
+      "subthemes": [
+        "Options",
+        "Moneyness",
+        "Intrinsic value"
+      ],
+      "summary": "An option that possesses intrinsic value. For a call option, this occurs when the strike price is below the market price of the underlying asset.",
+      "whyItMatters": "In-the-money status determines whether an option can be exercised for immediate value.",
+      "notes": "Used in derivatives pricing and trading to describe options with positive intrinsic value.",
+      "keywords": [
+        "ITM",
+        "options",
+        "intrinsic value",
+        "call option",
+        "strike price"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "submittedAt": "2026-04-07T18:30:16.745Z",
+      "_source_file": "content/terms/in-the-money-itm.json",
+      "related": [],
+      "_versions": [
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "In the Money (ITM)",
+            "slug": "in-the-money-itm",
+            "category": "Finance",
+            "subthemes": [
+              "Options",
+              "Moneyness",
+              "Intrinsic value"
+            ],
+            "summary": "An option that possesses intrinsic value. For a call option, this occurs when the strike price is below the market price of the underlying asset.",
+            "whyItMatters": "In-the-money status determines whether an option can be exercised for immediate value.",
+            "notes": "Used in derivatives pricing and trading to describe options with positive intrinsic value.",
+            "keywords": [
+              "ITM",
+              "options",
+              "intrinsic value",
+              "call option",
+              "strike price"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Enzo"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-07T18:30:16.745Z",
+            "_source_file": "content/terms/in-the-money-itm.json"
+          }
+        }
+      ],
+      "_live_slugs": [],
+      "_original_url": "https://github.com/EnzoSim/wiki-project/blob/main/content/terms/in-the-money-itm.json"
+    },
+    {
+      "type": "term",
+      "title": "Jean-François Lyotard",
+      "slug": "jean-francois-lyotard",
+      "category": "Politics",
+      "subthemes": [
+        "Political theory",
+        "Postmodernism",
+        "Philosophy"
+      ],
+      "summary": "French philosopher (1924–1998) who treated desire as an economy and later named the postmodern as incredulity toward grand narratives.",
+      "whyItMatters": "Two books travel: Économie libidinale (1974) is the libidinal-economy move; The Postmodern Condition (1979) is why people say ‘metanarrative.’",
+      "notes": "Not a system-builder. Read him for those two interventions, not for a complete theory of society. Économie libidinale is the libidinal-economy book.",
+      "keywords": [
+        "politics",
+        "political",
+        "theory",
+        "postmodernism",
+        "philosophy",
+        "french",
+        "philosopher",
+        "1924-1998",
+        "treated",
+        "desire",
+        "publish",
+        "wiki",
+        "term",
+        "queued",
+        "paper",
+        "lyotard",
+        "postmodern",
+        "metanarrative",
+        "libidinal economy",
+        "political theory"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "antoine",
+      "submittedAt": "2026-08-26T17:08:00.000Z",
+      "_source_file": "content/terms/jean-francois-lyotard.json",
+      "related": [
+        "libidinal-economy",
+        "mackinder-s-heartland-theory",
+        "nicholas-spykman-s-rimland-theory"
+      ],
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "Jean-François Lyotard",
+            "slug": "jean-fran-ois-lyotard",
+            "category": "Politics",
+            "subthemes": [
+              "Political theory",
+              "Postmodernism",
+              "Philosophy"
+            ],
+            "summary": "French philosopher (1924-1998) who treated desire as an economy and later named the postmodern as incredulity toward grand narratives.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "Jean-François Lyotard: French philosopher (1924-1998) who treated desire as an economy and later named the postmodern as incredulity toward grand narratives.",
+            "keywords": [
+              "politics",
+              "political",
+              "theory",
+              "postmodernism",
+              "philosophy",
+              "french",
+              "philosopher",
+              "1924-1998",
+              "treated",
+              "desire"
+            ],
+            "related": [
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2",
+              "libidinal-economy",
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite",
+              "mackinder-s-heartland-theory",
+              "nicholas-spykman-s-rimland-theory"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "EnzoSim"
+            },
+            "addedVia": "antoine",
+            "submittedAt": "2026-08-26T17:28:23.473+00:00"
+          }
+        },
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "Publish this as a wiki TERM (not a queued paper). Use this copy, do not rewrite",
+            "slug": "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2",
+            "category": "Politics",
+            "subthemes": [
+              "Political theory",
+              "Postmodernism",
+              "Philosophy"
+            ],
+            "summary": "Publish this as a wiki TERM (not a queued paper).",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "Publish this as a wiki TERM (not a queued paper). Use this copy, do not rewrite the definition.  title: Jean-François Lyotard slug: jean-francois-lyotard category: Politics subthemes: Political theory, Postmodernism, Philosophy summary: French philosopher (1924–1998) who treated desire as an economy and later named the postmodern as incredulity toward grand narratives. whyItMatters: Two books travel: Économie libidinale (1974) is the libidinal-economy move; The Postmodern Condition (1979) is why people say ‘metanarrative.’ notes: Not a system-builder. Read him for those two interventions, not for a complete theory of society. keywords: lyotard, postmodern, metanarrative, libidinal economy, political theory source: Curated note addedVia: antoine",
+            "keywords": [
+              "politics",
+              "political",
+              "theory",
+              "postmodernism",
+              "philosophy",
+              "publish",
+              "wiki",
+              "term",
+              "queued",
+              "paper"
+            ],
+            "related": [
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite",
+              "jean-fran-ois-lyotard",
+              "libidinal-economy",
+              "mackinder-s-heartland-theory",
+              "nicholas-spykman-s-rimland-theory"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "EnzoSim"
+            },
+            "addedVia": "antoine",
+            "submittedAt": "2026-08-26T17:17:25.482+00:00"
+          }
+        },
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "Jean-François Lyotard",
+            "slug": "jean-francois-lyotard",
+            "category": "Politics",
+            "subthemes": [
+              "Political theory",
+              "Postmodernism",
+              "Philosophy"
+            ],
+            "summary": "French philosopher (1924–1998) who treated desire as an economy and later named the postmodern as incredulity toward grand narratives.",
+            "whyItMatters": "Two books travel: Économie libidinale (1974) is the libidinal-economy move; The Postmodern Condition (1979) is why people say ‘metanarrative.’",
+            "notes": "Not a system-builder. Read him for those two interventions, not for a complete theory of society. Économie libidinale is the libidinal-economy book.",
+            "keywords": [
+              "lyotard",
+              "postmodern",
+              "metanarrative",
+              "libidinal economy",
+              "political theory"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Curated note"
+            },
+            "addedVia": "antoine",
+            "submittedAt": "2026-08-26T17:08:00.000Z",
+            "_source_file": "content/terms/jean-francois-lyotard.json"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "jean-fran-ois-lyotard",
+        "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/jean-fran-ois-lyotard"
+    },
+    {
+      "type": "term",
+      "title": "libidinal economy",
+      "slug": "libidinal-economy",
+      "category": "Economics",
+      "subthemes": [
+        "Political economy",
+        "Desire",
+        "Critical theory"
+      ],
+      "summary": "A reading of social life in which desire is treated as a scarce, investable force — circulated, hoarded, and spent the way capital is.",
+      "whyItMatters": "It names why attention, status, and sexual energy show up in markets and politics as if they were prices, not leftovers. Useful when a ‘rational’ model keeps missing what people are actually allocating.",
+      "notes": "The phrase is locked to Lyotard’s Économie libidinale (1974), though the move is older: Freud already talked about psychic ‘economics.’ A sharp lens; easy to over-apply as a just-so story about every institution.",
+      "keywords": [
+        "economics",
+        "political",
+        "economy",
+        "desire",
+        "critical",
+        "theory",
+        "reading",
+        "social",
+        "life",
+        "treated",
+        "publish",
+        "wiki",
+        "term",
+        "queued",
+        "libidinal economy",
+        "lyotard",
+        "political economy",
+        "attention"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "antoine",
+      "submittedAt": "2026-08-26T17:05:00.000Z",
+      "_source_file": "content/terms/libidinal-economy.json",
+      "related": [
+        "jean-francois-lyotard",
+        "ceteris-paribus",
+        "mackinder-s-heartland-theory",
+        "nicholas-spykman-s-rimland-theory",
+        "svar-structural-vector-autoregression"
+      ],
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "libidinal economy",
+            "slug": "libidinal-economy",
+            "category": "Economics",
+            "subthemes": [
+              "Political economy",
+              "Desire",
+              "Critical theory"
+            ],
+            "summary": "A reading of social life in which desire is treated as a scarce, investable force, circulated, hoarded, and spent the way capital is.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "libidinal economy: A reading of social life in which desire is treated as a scarce, investable force, circulated, hoarded, and spent the way capital is.",
+            "keywords": [
+              "economics",
+              "political",
+              "economy",
+              "desire",
+              "critical",
+              "theory",
+              "reading",
+              "social",
+              "life",
+              "treated"
+            ],
+            "related": [
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite",
+              "jean-fran-ois-lyotard",
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2",
+              "ceteris-paribus",
+              "ceteris-paribus-2",
+              "mackinder-s-heartland-theory",
+              "nicholas-spykman-s-rimland-theory",
+              "svar-structural-vector-autoregression",
+              "svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "EnzoSim"
+            },
+            "addedVia": "antoine",
+            "submittedAt": "2026-08-26T17:24:15.465+00:00"
+          }
+        },
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "Publish this as a wiki TERM (not a queued paper). Use this copy, do not rewrite",
+            "slug": "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite",
+            "category": "Economics",
+            "subthemes": [
+              "Political economy",
+              "Desire",
+              "Critical theory"
+            ],
+            "summary": "Publish this as a wiki TERM (not a queued paper).",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "Publish this as a wiki TERM (not a queued paper). Use this copy, do not rewrite the definition.  title: libidinal economy slug: libidinal-economy category: Economics subthemes: Political economy, Desire, Critical theory summary: A reading of social life in which desire is treated as a scarce, investable force — circulated, hoarded, and spent the way capital is. whyItMatters: It names why attention, status, and sexual energy show up in markets and politics as if they were prices, not leftovers. Useful when a ‘rational’ model keeps missing what people are actually allocating. notes: The phrase is locked to Lyotard’s Économie libidinale (1974), though the move is older: Freud already talked about psychic ‘economics.’ A sharp lens; easy to over-apply as a just-so story about every institution. keywords: libidinal economy, desire, lyotard, political economy, attention source: Curated note addedVia: antoine",
+            "keywords": [
+              "economics",
+              "political",
+              "economy",
+              "desire",
+              "critical",
+              "theory",
+              "publish",
+              "wiki",
+              "term",
+              "queued"
+            ],
+            "related": [
+              "libidinal-economy",
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2",
+              "jean-fran-ois-lyotard",
+              "ceteris-paribus",
+              "ceteris-paribus-2",
+              "mackinder-s-heartland-theory",
+              "nicholas-spykman-s-rimland-theory",
+              "svar-structural-vector-autoregression",
+              "svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "EnzoSim"
+            },
+            "addedVia": "antoine",
+            "submittedAt": "2026-08-26T17:11:24.804+00:00"
+          }
+        },
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "libidinal economy",
+            "slug": "libidinal-economy",
+            "category": "Economics",
+            "subthemes": [
+              "Political economy",
+              "Desire",
+              "Critical theory"
+            ],
+            "summary": "A reading of social life in which desire is treated as a scarce, investable force — circulated, hoarded, and spent the way capital is.",
+            "whyItMatters": "It names why attention, status, and sexual energy show up in markets and politics as if they were prices, not leftovers. Useful when a ‘rational’ model keeps missing what people are actually allocating.",
+            "notes": "The phrase is locked to Lyotard’s Économie libidinale (1974), though the move is older: Freud already talked about psychic ‘economics.’ A sharp lens; easy to over-apply as a just-so story about every institution.",
+            "keywords": [
+              "libidinal economy",
+              "desire",
+              "lyotard",
+              "political economy",
+              "attention"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Curated note"
+            },
+            "addedVia": "antoine",
+            "submittedAt": "2026-08-26T17:05:00.000Z",
+            "_source_file": "content/terms/libidinal-economy.json"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "libidinal-economy",
+        "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/libidinal-economy"
+    },
+    {
+      "type": "term",
+      "title": "Mackinder's Heartland theory",
+      "slug": "mackinder-s-heartland-theory",
+      "category": "Geopolitics",
+      "subthemes": [
+        "Strategic Theory",
+        "Eurasia"
+      ],
+      "summary": "A geopolitical concept proposing that control over Central Asia (the 'Heartland') allows for dominance over the 'World Island' (Eurasia and Africa), and thus the entire world.",
+      "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+      "notes": "Mackinder's Heartland theory: A geopolitical concept proposing that control over Central Asia (the 'Heartland') allows for dominance over the 'World Island' (Eurasia and Africa), and thus the entire world.",
+      "keywords": [
+        "geopolitics",
+        "strategic",
+        "theory",
+        "eurasia",
+        "geopolitical",
+        "concept",
+        "proposing",
+        "control",
+        "over",
+        "central"
+      ],
+      "related": [
+        "nicholas-spykman-s-rimland-theory",
+        "jean-francois-lyotard",
+        "libidinal-economy"
+      ],
+      "source": {
+        "type": "term",
+        "url": null,
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "submittedAt": "2026-04-13T20:56:07.47+00:00",
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "Mackinder's Heartland theory",
+            "slug": "mackinder-s-heartland-theory",
+            "category": "Geopolitics",
+            "subthemes": [
+              "Strategic Theory",
+              "Eurasia"
+            ],
+            "summary": "A geopolitical concept proposing that control over Central Asia (the 'Heartland') allows for dominance over the 'World Island' (Eurasia and Africa), and thus the entire world.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "Mackinder's Heartland theory: A geopolitical concept proposing that control over Central Asia (the 'Heartland') allows for dominance over the 'World Island' (Eurasia and Africa), and thus the entire world.",
+            "keywords": [
+              "geopolitics",
+              "strategic",
+              "theory",
+              "eurasia",
+              "geopolitical",
+              "concept",
+              "proposing",
+              "control",
+              "over",
+              "central"
+            ],
+            "related": [
+              "nicholas-spykman-s-rimland-theory",
+              "jean-fran-ois-lyotard",
+              "libidinal-economy",
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite",
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Enzo"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-13T20:56:07.47+00:00"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "mackinder-s-heartland-theory"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/mackinder-s-heartland-theory"
+    },
+    {
+      "type": "term",
+      "title": "Nicholas Spykman's Rimland theory",
+      "slug": "nicholas-spykman-s-rimland-theory",
+      "category": "Geopolitics",
+      "subthemes": [
+        "Strategic Theory",
+        "Eurasia"
+      ],
+      "summary": "A geopolitical theory stating that control over the coastal fringes of Eurasia (the Rimland) is the key to global power, as it contains the majority of the world's population and resources.",
+      "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+      "notes": "Nicholas Spykman's Rimland theory: A geopolitical theory stating that control over the coastal fringes of Eurasia (the Rimland) is the key to global power, as it contains the majority of the world's population and resources. It was developed to counter Mackinder's Heartland theory.",
+      "keywords": [
+        "geopolitics",
+        "strategic",
+        "theory",
+        "eurasia",
+        "geopolitical",
+        "stating",
+        "control",
+        "over",
+        "coastal",
+        "fringes"
+      ],
+      "related": [
+        "mackinder-s-heartland-theory",
+        "jean-francois-lyotard",
+        "libidinal-economy"
+      ],
+      "source": {
+        "type": "term",
+        "url": null,
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "submittedAt": "2026-04-13T20:55:44.19+00:00",
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "Nicholas Spykman's Rimland theory",
+            "slug": "nicholas-spykman-s-rimland-theory",
+            "category": "Geopolitics",
+            "subthemes": [
+              "Strategic Theory",
+              "Eurasia"
+            ],
+            "summary": "A geopolitical theory stating that control over the coastal fringes of Eurasia (the Rimland) is the key to global power, as it contains the majority of the world's population and resources.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "Nicholas Spykman's Rimland theory: A geopolitical theory stating that control over the coastal fringes of Eurasia (the Rimland) is the key to global power, as it contains the majority of the world's population and resources. It was developed to counter Mackinder's Heartland theory.",
+            "keywords": [
+              "geopolitics",
+              "strategic",
+              "theory",
+              "eurasia",
+              "geopolitical",
+              "stating",
+              "control",
+              "over",
+              "coastal",
+              "fringes"
+            ],
+            "related": [
+              "mackinder-s-heartland-theory",
+              "jean-fran-ois-lyotard",
+              "libidinal-economy",
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite",
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Enzo"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-13T20:55:44.19+00:00"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "nicholas-spykman-s-rimland-theory"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/nicholas-spykman-s-rimland-theory"
+    },
+    {
+      "type": "term",
+      "title": "NIMBYism",
+      "slug": "nimbyism",
+      "category": "Urban Economics",
+      "subthemes": [
+        "Housing",
+        "Land use",
+        "Local politics"
+      ],
+      "summary": "An acronym for \"Not In My Back Yard,\" referring to opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally.",
+      "whyItMatters": "The term matters because it captures the gap between abstract support for growth and concrete resistance to nearby change. It is especially useful in arguments about housing supply, infrastructure bottlenecks, and local veto power.",
+      "notes": "The label can illuminate a real pattern, but it can also oversimplify local concerns by treating every objection as selfish or irrational. The most interesting debates are often about where genuine externalities end and exclusionary politics begin.",
+      "keywords": [
+        "nimbyism",
+        "urban economics",
+        "housing",
+        "land use",
+        "local veto"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "manual",
+      "submittedAt": "2026-03-31T12:00:00.000Z",
+      "_source_file": "content/terms/nimbyism.json",
+      "related": [],
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "NIMBYism",
+            "slug": "nimbyism",
+            "category": "Urban Economics",
+            "subthemes": [
+              "Housing",
+              "Land use",
+              "Local politics"
+            ],
+            "summary": "An acronym for \"Not In My Back Yard,\" referring to opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally.",
+            "whyItMatters": "The term matters because it captures the gap between abstract support for growth and concrete resistance to nearby change. It is especially useful in arguments about housing supply, infrastructure bottlenecks, and local veto power.",
+            "notes": "The label can illuminate a real pattern, but it can also oversimplify local concerns by treating every objection as selfish or irrational. The most interesting debates are often about where genuine externalities end and exclusionary politics begin.",
+            "keywords": [
+              "nimbyism",
+              "urban economics",
+              "housing",
+              "land use",
+              "local veto"
+            ],
+            "related": [],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Curated note"
+            },
+            "addedVia": "manual",
+            "submittedAt": "2026-03-31T12:00:00+00:00"
+          }
+        },
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "NIMBYism",
+            "slug": "nimbyism",
+            "category": "Urban Economics",
+            "subthemes": [
+              "Housing",
+              "Land use",
+              "Local politics"
+            ],
+            "summary": "An acronym for \"Not In My Back Yard,\" referring to opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally.",
+            "whyItMatters": "The term matters because it captures the gap between abstract support for growth and concrete resistance to nearby change. It is especially useful in arguments about housing supply, infrastructure bottlenecks, and local veto power.",
+            "notes": "The label can illuminate a real pattern, but it can also oversimplify local concerns by treating every objection as selfish or irrational. The most interesting debates are often about where genuine externalities end and exclusionary politics begin.",
+            "keywords": [
+              "nimbyism",
+              "urban economics",
+              "housing",
+              "land use",
+              "local veto"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Curated note"
+            },
+            "addedVia": "manual",
+            "submittedAt": "2026-03-31T12:00:00.000Z",
+            "_source_file": "content/terms/nimbyism.json"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "nimbyism"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/nimbyism"
+    },
+    {
+      "type": "term",
+      "title": "Out of the Money (OTM)",
+      "slug": "out-of-the-money-otm",
+      "category": "Finance",
+      "subthemes": [
+        "Options",
+        "Moneyness",
+        "Time value"
+      ],
+      "summary": "An option that has no intrinsic value, consisting only of time value. For a call option, this occurs when the strike price is above the market price.",
+      "whyItMatters": "Out-of-the-money options are valued only for their remaining time value and optionality.",
+      "notes": "Used in derivatives pricing and trading to describe options with zero intrinsic value.",
+      "keywords": [
+        "OTM",
+        "options",
+        "time value",
+        "call option",
+        "strike price"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "submittedAt": "2026-04-07T18:30:16.745Z",
+      "_source_file": "content/terms/out-of-the-money-otm.json",
+      "related": [],
+      "_versions": [
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "Out of the Money (OTM)",
+            "slug": "out-of-the-money-otm",
+            "category": "Finance",
+            "subthemes": [
+              "Options",
+              "Moneyness",
+              "Time value"
+            ],
+            "summary": "An option that has no intrinsic value, consisting only of time value. For a call option, this occurs when the strike price is above the market price.",
+            "whyItMatters": "Out-of-the-money options are valued only for their remaining time value and optionality.",
+            "notes": "Used in derivatives pricing and trading to describe options with zero intrinsic value.",
+            "keywords": [
+              "OTM",
+              "options",
+              "time value",
+              "call option",
+              "strike price"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Enzo"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-07T18:30:16.745Z",
+            "_source_file": "content/terms/out-of-the-money-otm.json"
+          }
+        }
+      ],
+      "_live_slugs": [],
+      "_original_url": "https://github.com/EnzoSim/wiki-project/blob/main/content/terms/out-of-the-money-otm.json"
+    },
+    {
+      "type": "term",
+      "title": "plutocrat",
+      "slug": "plutocrat",
+      "category": "Politics",
+      "subthemes": [
+        "Wealth",
+        "Power",
+        "Political influence"
+      ],
+      "summary": "A person whose power or influence comes from their wealth.",
+      "whyItMatters": "It names a recurring political pattern in which money converts into influence, access, or authority.",
+      "notes": "The term is often used critically, especially when wealth appears to override merit, representation, or democratic accountability.",
+      "keywords": [
+        "plutocrat",
+        "wealth",
+        "power",
+        "influence",
+        "elite"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Poke submission"
+      },
+      "addedVia": "poke",
+      "submittedAt": "2026-04-06T21:15:00.000Z",
+      "_source_file": "content/terms/plutocrat.json",
+      "related": [],
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "plutocrat",
+            "slug": "plutocrat",
+            "category": "Politics",
+            "subthemes": [
+              "Wealth",
+              "Power",
+              "Political influence"
+            ],
+            "summary": "A person whose power or influence comes from their wealth.",
+            "whyItMatters": "It names a recurring political pattern in which money converts into influence, access, or authority.",
+            "notes": "The term is often used critically, especially when wealth appears to override merit, representation, or democratic accountability.",
+            "keywords": [
+              "plutocrat",
+              "wealth",
+              "power",
+              "influence",
+              "elite"
+            ],
+            "related": [],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Poke submission"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-06T21:15:00+00:00"
+          }
+        },
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "plutocrat",
+            "slug": "plutocrat",
+            "category": "Politics",
+            "subthemes": [
+              "Wealth",
+              "Power",
+              "Political influence"
+            ],
+            "summary": "A person whose power or influence comes from their wealth.",
+            "whyItMatters": "It names a recurring political pattern in which money converts into influence, access, or authority.",
+            "notes": "The term is often used critically, especially when wealth appears to override merit, representation, or democratic accountability.",
+            "keywords": [
+              "plutocrat",
+              "wealth",
+              "power",
+              "influence",
+              "elite"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Poke submission"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-06T21:15:00.000Z",
+            "_source_file": "content/terms/plutocrat.json"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "plutocrat"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/plutocrat"
+    },
+    {
+      "type": "term",
+      "title": "renege",
+      "slug": "renege",
+      "category": "Finance",
+      "subthemes": [
+        "Central banking",
+        "Forward guidance",
+        "Monetary policy"
+      ],
+      "summary": "In the context of central banking, to renege refers to a policy pivot where the Fed fails to follow through on its previous forward guidance or implicit commitments (e.g., backing out of signaled interest rate cuts due to persistent inflation).",
+      "whyItMatters": "It captures the tension between market expectations and policy credibility when central banks shift away from previously signaled actions.",
+      "notes": "Used here in a specialized policy context rather than the more general sense of failing to keep a promise.",
+      "keywords": [
+        "renege",
+        "Fed",
+        "central banking",
+        "forward guidance",
+        "monetary policy"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Poke submission"
+      },
+      "addedVia": "poke",
+      "submittedAt": "2026-04-07T17:41:00.000Z",
+      "_source_file": "content/terms/renege.json",
+      "related": [],
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "renege",
+            "slug": "renege",
+            "category": "Finance",
+            "subthemes": [
+              "Central banking",
+              "Forward guidance",
+              "Monetary policy"
+            ],
+            "summary": "In the context of central banking, to renege refers to a policy pivot where the Fed fails to follow through on its previous forward guidance or implicit commitments (e.g., backing out of signaled interest rate cuts due to persistent inflation).",
+            "whyItMatters": "It captures the tension between market expectations and policy credibility when central banks shift away from previously signaled actions.",
+            "notes": "Used here in a specialized policy context rather than the more general sense of failing to keep a promise.",
+            "keywords": [
+              "renege",
+              "Fed",
+              "central banking",
+              "forward guidance",
+              "monetary policy"
+            ],
+            "related": [],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Poke submission"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-07T17:41:00+00:00"
+          }
+        },
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "renege",
+            "slug": "renege",
+            "category": "Finance",
+            "subthemes": [
+              "Central banking",
+              "Forward guidance",
+              "Monetary policy"
+            ],
+            "summary": "In the context of central banking, to renege refers to a policy pivot where the Fed fails to follow through on its previous forward guidance or implicit commitments (e.g., backing out of signaled interest rate cuts due to persistent inflation).",
+            "whyItMatters": "It captures the tension between market expectations and policy credibility when central banks shift away from previously signaled actions.",
+            "notes": "Used here in a specialized policy context rather than the more general sense of failing to keep a promise.",
+            "keywords": [
+              "renege",
+              "Fed",
+              "central banking",
+              "forward guidance",
+              "monetary policy"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Poke submission"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-07T17:41:00.000Z",
+            "_source_file": "content/terms/renege.json"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "renege"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/renege"
+    },
+    {
+      "type": "term",
+      "title": "safetyism",
+      "slug": "safetyism",
+      "category": "Public policy",
+      "subthemes": [
+        "Risk management",
+        "Institutional culture",
+        "Political psychology"
+      ],
+      "summary": "The tacit ideology that the government’s main goal should be to minimize risks rather than balance them against benefits.",
+      "whyItMatters": "The concept is useful because it names a governing style in which caution becomes the default answer even when tradeoffs are unavoidable. It often appears in debates about regulation, public health, speech, and education.",
+      "notes": "Used carefully, the term points to a real tension between resilience and protection. Used lazily, it can flatten serious moral disagreements into a single accusation of overprotection.",
+      "keywords": [
+        "safetyism",
+        "risk management",
+        "public policy",
+        "precaution",
+        "institutional culture"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "manual",
+      "submittedAt": "2026-03-31T12:00:00.000Z",
+      "_source_file": "content/terms/safetyism.json",
+      "related": [],
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "safetyism",
+            "slug": "safetyism",
+            "category": "Public policy",
+            "subthemes": [
+              "Risk management",
+              "Institutional culture",
+              "Political psychology"
+            ],
+            "summary": "The tacit ideology that the government’s main goal should be to minimize risks rather than balance them against benefits.",
+            "whyItMatters": "The concept is useful because it names a governing style in which caution becomes the default answer even when tradeoffs are unavoidable. It often appears in debates about regulation, public health, speech, and education.",
+            "notes": "Used carefully, the term points to a real tension between resilience and protection. Used lazily, it can flatten serious moral disagreements into a single accusation of overprotection.",
+            "keywords": [
+              "safetyism",
+              "risk management",
+              "public policy",
+              "precaution",
+              "institutional culture"
+            ],
+            "related": [],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Curated note"
+            },
+            "addedVia": "manual",
+            "submittedAt": "2026-03-31T12:00:00+00:00"
+          }
+        },
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "safetyism",
+            "slug": "safetyism",
+            "category": "Public policy",
+            "subthemes": [
+              "Risk management",
+              "Institutional culture",
+              "Political psychology"
+            ],
+            "summary": "The tacit ideology that the government’s main goal should be to minimize risks rather than balance them against benefits.",
+            "whyItMatters": "The concept is useful because it names a governing style in which caution becomes the default answer even when tradeoffs are unavoidable. It often appears in debates about regulation, public health, speech, and education.",
+            "notes": "Used carefully, the term points to a real tension between resilience and protection. Used lazily, it can flatten serious moral disagreements into a single accusation of overprotection.",
+            "keywords": [
+              "safetyism",
+              "risk management",
+              "public policy",
+              "precaution",
+              "institutional culture"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Curated note"
+            },
+            "addedVia": "manual",
+            "submittedAt": "2026-03-31T12:00:00.000Z",
+            "_source_file": "content/terms/safetyism.json"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "safetyism"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/safetyism"
+    },
+    {
+      "type": "term",
+      "title": "Snippy",
+      "slug": "snippy",
+      "category": "Vocabulary",
+      "subthemes": [
+        "Temperament",
+        "Behavior"
+      ],
+      "summary": "an adjective describing someone who is rudely curt, impatient, or sharp-tongued, often reacting with unnecessary brevity or irritation.",
+      "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+      "notes": "Snippy: an adjective describing someone who is rudely curt, impatient, or sharp-tongued, often reacting with unnecessary brevity or irritation. It is commonly used to describe someone \"putting on airs\" or acting snappish.",
+      "keywords": [
+        "vocabulary",
+        "temperament",
+        "behavior",
+        "adjective",
+        "describing",
+        "someone",
+        "rudely",
+        "curt",
+        "impatient",
+        "sharp-tongued"
+      ],
+      "related": [
+        "aesthete",
+        "crustaceous",
+        "atrabilaire",
+        "crib"
+      ],
+      "source": {
+        "type": "term",
+        "url": null,
+        "label": "Poke"
+      },
+      "addedVia": "iMessage",
+      "submittedAt": "2026-04-20T03:48:15.776+00:00",
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "Snippy",
+            "slug": "snippy",
+            "category": "Vocabulary",
+            "subthemes": [
+              "Temperament",
+              "Behavior"
+            ],
+            "summary": "an adjective describing someone who is rudely curt, impatient, or sharp-tongued, often reacting with unnecessary brevity or irritation.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "Snippy: an adjective describing someone who is rudely curt, impatient, or sharp-tongued, often reacting with unnecessary brevity or irritation. It is commonly used to describe someone \"putting on airs\" or acting snappish.",
+            "keywords": [
+              "vocabulary",
+              "temperament",
+              "behavior",
+              "adjective",
+              "describing",
+              "someone",
+              "rudely",
+              "curt",
+              "impatient",
+              "sharp-tongued"
+            ],
+            "related": [
+              "aesthete",
+              "crustaceous",
+              "atrabilaire",
+              "crib"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Poke"
+            },
+            "addedVia": "iMessage",
+            "submittedAt": "2026-04-20T03:48:15.776+00:00"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "snippy"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/snippy"
+    },
+    {
+      "type": "term",
+      "title": "SVAR (Structural Vector Autoregression)",
+      "slug": "svar-structural-vector-autoregression",
+      "category": "Economics",
+      "subthemes": [
+        "Econometrics",
+        "Macroeconomics",
+        "Methodology",
+        "Causal Inference"
+      ],
+      "summary": "SVAR (Structural Vector Autoregression): SVAR is an econometric tool that separates tangled economic data into the underlying independent surprises, or shocks, that drove it, so you can simulate what happens if one of those shocks hits again.",
+      "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+      "notes": "SVAR (Structural Vector Autoregression): SVAR is an econometric tool that separates tangled economic data into the underlying independent surprises, or shocks, that drove it, so you can simulate what happens if one of those shocks hits again.\n\nWhen two economic variables move together, you usually cannot tell from the data alone whether A caused B or B caused A. Interest rates and unemployment may move in the same direction, but both causal stories can fit the same numbers. That is the identification problem.\n\nA standard VAR predicts today's values from past values across multiple variables at once. It is good at describing the dance between variables, but it does not tell you why the dance is happening. It tells you what tends to happen next, not who is leading.\n\nThe structural part adds the discipline needed to decompose comovements into clean, independent causes called structural shocks. These are the original surprises in the economy: an oil price spike, a surprise Fed move, a productivity boom. Once the shock hits, GDP, unemployment, inflation, and other variables adjust as the economy digests it.\n\nTo move from a VAR to an SVAR, you need identifying restrictions. These are extra assumptions that let you unmix the signal into its pure components. They are not fully testable, which is why two economists can look at the same data and disagree about what counts as a pure monetary shock. SVARs are not magic; they are a disciplined way of making assumptions explicit.\n\nA good analogy is a cocktail. A VAR tells you what the drink tastes like: sweet, citrusy, bitter. An SVAR tries to reverse-engineer the recipe, such as 30ml gin and 15ml lime. To do that, you have to assume the bartender only used a limited set of ingredients.\n\nAnother analogy is a sound engineer. The raw recording with drums, guitar, and vocals mixed together is the VAR. Separating it back into individual tracks is what an SVAR does, but only if you are willing to make assumptions about how the tracks were mixed in the first place.\n\nOnce you have clean shocks, you can run impulse response functions, which show how the economy reacts over time to one pure shock while holding the others fixed. That is why central banks, the IMF, and finance teams use SVARs to answer questions like what happens if the Fed surprises markets with a rate hike.\n\nIn short, an SVAR is a statistical tool that separates tangled economic data into the independent shocks that drove it, allowing causal what-if simulations.",
+      "keywords": [
+        "economics",
+        "econometrics",
+        "macroeconomics",
+        "methodology",
+        "causal",
+        "inference",
+        "svar",
+        "structural",
+        "vector",
+        "autoregression"
+      ],
+      "related": [
+        "ceteris-paribus",
+        "libidinal-economy"
+      ],
+      "source": {
+        "type": "term",
+        "url": null,
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "submittedAt": "2026-04-21T02:32:50.581+00:00",
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "SVAR (Structural Vector Autoregression)",
+            "slug": "svar-structural-vector-autoregression",
+            "category": "Economics",
+            "subthemes": [
+              "Econometrics",
+              "Macroeconomics",
+              "Methodology",
+              "Causal Inference"
+            ],
+            "summary": "SVAR (Structural Vector Autoregression): SVAR is an econometric tool that separates tangled economic data into the underlying independent surprises, or shocks, that drove it, so you can simulate what happens if one of those shocks hits again.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "SVAR (Structural Vector Autoregression): SVAR is an econometric tool that separates tangled economic data into the underlying independent surprises, or shocks, that drove it, so you can simulate what happens if one of those shocks hits again.\n\nWhen two economic variables move together, you usually cannot tell from the data alone whether A caused B or B caused A. Interest rates and unemployment may move in the same direction, but both causal stories can fit the same numbers. That is the identification problem.\n\nA standard VAR predicts today's values from past values across multiple variables at once. It is good at describing the dance between variables, but it does not tell you why the dance is happening. It tells you what tends to happen next, not who is leading.\n\nThe structural part adds the discipline needed to decompose comovements into clean, independent causes called structural shocks. These are the original surprises in the economy: an oil price spike, a surprise Fed move, a productivity boom. Once the shock hits, GDP, unemployment, inflation, and other variables adjust as the economy digests it.\n\nTo move from a VAR to an SVAR, you need identifying restrictions. These are extra assumptions that let you unmix the signal into its pure components. They are not fully testable, which is why two economists can look at the same data and disagree about what counts as a pure monetary shock. SVARs are not magic; they are a disciplined way of making assumptions explicit.\n\nA good analogy is a cocktail. A VAR tells you what the drink tastes like: sweet, citrusy, bitter. An SVAR tries to reverse-engineer the recipe, such as 30ml gin and 15ml lime. To do that, you have to assume the bartender only used a limited set of ingredients.\n\nAnother analogy is a sound engineer. The raw recording with drums, guitar, and vocals mixed together is the VAR. Separating it back into individual tracks is what an SVAR does, but only if you are willing to make assumptions about how the tracks were mixed in the first place.\n\nOnce you have clean shocks, you can run impulse response functions, which show how the economy reacts over time to one pure shock while holding the others fixed. That is why central banks, the IMF, and finance teams use SVARs to answer questions like what happens if the Fed surprises markets with a rate hike.\n\nIn short, an SVAR is a statistical tool that separates tangled economic data into the independent shocks that drove it, allowing causal what-if simulations.",
+            "keywords": [
+              "economics",
+              "econometrics",
+              "macroeconomics",
+              "methodology",
+              "causal",
+              "inference",
+              "svar",
+              "structural",
+              "vector",
+              "autoregression"
+            ],
+            "related": [
+              "svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep",
+              "ceteris-paribus-2",
+              "ceteris-paribus",
+              "libidinal-economy",
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Enzo"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-21T02:32:50.581+00:00"
+          }
+        },
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "SVAR (Structural Vector Autoregression) is an econometric tool that tries to sep",
+            "slug": "svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep",
+            "category": "Economics",
+            "subthemes": [
+              "Econometrics",
+              "Macroeconomics",
+              "Methodology",
+              "Causal Inference"
+            ],
+            "summary": "SVAR (Structural Vector Autoregression) is an econometric tool that tries to separate tangled economic data into the underlying independent surprises — called shocks — that drove it, so you can simulate what happens if one of those surprises hits again.",
+            "whyItMatters": "Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.",
+            "notes": "SVAR (Structural Vector Autoregression) is an econometric tool that tries to separate tangled economic data into the underlying independent surprises — called shocks — that drove it, so you can simulate what happens if one of those surprises hits again.\n\nThe motivating problem\nWhen two things move together in the economy (e.g., interest rates and unemployment), you can't tell from the data alone whether A caused B or B caused A. Both causal stories fit the same numbers. This is the core identification problem.\n\nWhat a VAR does\nA VAR (vector autoregression) predicts today's values from recent past values across multiple variables simultaneously. It's a correlation machine across time — it tells you what tends to happen next but not why. It captures the dance between variables without knowing who's leading.\n\nWhat the \"S\" adds\nThe S stands for Structural. An SVAR forces the model to decompose comovements into clean, independent causes — structural shocks. These are the economy's original surprises: a surprise oil price spike, a surprise Fed decision, a surprise productivity boom. Everything else (downstream movements in GDP, unemployment, prices) is just the economy digesting those shocks.\n\nIdentifying restrictions\nTo go from a VAR to an SVAR, you need extra assumptions called identifying restrictions. These are what allow you to decompose the mixed signal into its pure components. They are never fully testable — two economists can take the same data and disagree about what counts as a \"pure monetary shock\" based on different assumptions. SVARs aren't magic; they're a disciplined way of being explicit about your assumptions.\n\nAnalogies\n- Cocktail: A VAR describes what you taste (sweet, citrusy, bitter). An SVAR reverse-engineers the recipe (30ml gin, 15ml lime). To do that, you need assumptions — like knowing the bartender only uses three ingredients.\n- Sound engineer: The raw recording with drums, guitar, and vocals mixed together is the VAR. Separating it back into individual tracks is what an SVAR does — but you need assumptions to un-mix the signal.\n\nWhy it matters\nOnce you have clean shocks, you can run impulse response functions — graphs showing how the economy reacts over time to one pure shock, holding others fixed. Central banks, the IMF, and finance shops use SVARs to answer \"what if the Fed does a surprise rate hike tomorrow?\" type questions.\n\nTL;DR\nA statistical tool that separates tangled economic data into the independent surprises that drove it, enabling causal what-if simulations.",
+            "keywords": [
+              "economics",
+              "econometrics",
+              "macroeconomics",
+              "methodology",
+              "causal",
+              "inference",
+              "svar",
+              "structural",
+              "vector",
+              "autoregression"
+            ],
+            "related": [
+              "svar-structural-vector-autoregression",
+              "ceteris-paribus-2",
+              "ceteris-paribus",
+              "libidinal-economy",
+              "publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite"
+            ],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Enzo"
+            },
+            "addedVia": "poke",
+            "submittedAt": "2026-04-21T02:31:27.976+00:00"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "svar-structural-vector-autoregression",
+        "svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/svar-structural-vector-autoregression"
+    },
+    {
+      "type": "term",
+      "title": "terra nullius",
+      "slug": "terra-nullius",
+      "category": "Law",
+      "subthemes": [
+        "Colonial law",
+        "Sovereignty",
+        "Imperial doctrine"
+      ],
+      "summary": "Latin for \"nobody's land\"; a principle used in international law to describe territory that has never been subject to the sovereignty of any state.",
+      "whyItMatters": "The phrase matters because it reveals how legal language was used to turn inhabited places into supposedly empty territory. It remains central to debates about colonization, recognition, and the legitimacy of historical land claims.",
+      "notes": "In practice, the doctrine has been heavily criticized for erasing Indigenous presence and political order. It now often appears as an example of how legal categories can naturalize conquest.",
+      "keywords": [
+        "terra nullius",
+        "colonial law",
+        "sovereignty",
+        "indigenous dispossession",
+        "land claims"
+      ],
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "manual",
+      "submittedAt": "2026-03-31T12:00:00.000Z",
+      "_source_file": "content/terms/terra-nullius.json",
+      "related": [],
+      "_versions": [
+        {
+          "origin": "live",
+          "record": {
+            "type": "term",
+            "title": "terra nullius",
+            "slug": "terra-nullius",
+            "category": "Law",
+            "subthemes": [
+              "Colonial law",
+              "Sovereignty",
+              "Imperial doctrine"
+            ],
+            "summary": "Latin for \"nobody's land\"; a principle used in international law to describe territory that has never been subject to the sovereignty of any state.",
+            "whyItMatters": "The phrase matters because it reveals how legal language was used to turn inhabited places into supposedly empty territory. It remains central to debates about colonization, recognition, and the legitimacy of historical land claims.",
+            "notes": "In practice, the doctrine has been heavily criticized for erasing Indigenous presence and political order. It now often appears as an example of how legal categories can naturalize conquest.",
+            "keywords": [
+              "terra nullius",
+              "colonial law",
+              "sovereignty",
+              "indigenous dispossession",
+              "land claims"
+            ],
+            "related": [],
+            "source": {
+              "type": "term",
+              "url": null,
+              "label": "Curated note"
+            },
+            "addedVia": "manual",
+            "submittedAt": "2026-03-31T12:00:00+00:00"
+          }
+        },
+        {
+          "origin": "repository",
+          "record": {
+            "type": "term",
+            "title": "terra nullius",
+            "slug": "terra-nullius",
+            "category": "Law",
+            "subthemes": [
+              "Colonial law",
+              "Sovereignty",
+              "Imperial doctrine"
+            ],
+            "summary": "Latin for \"nobody's land\"; a principle used in international law to describe territory that has never been subject to the sovereignty of any state.",
+            "whyItMatters": "The phrase matters because it reveals how legal language was used to turn inhabited places into supposedly empty territory. It remains central to debates about colonization, recognition, and the legitimacy of historical land claims.",
+            "notes": "In practice, the doctrine has been heavily criticized for erasing Indigenous presence and political order. It now often appears as an example of how legal categories can naturalize conquest.",
+            "keywords": [
+              "terra nullius",
+              "colonial law",
+              "sovereignty",
+              "indigenous dispossession",
+              "land claims"
+            ],
+            "source": {
+              "type": "term",
+              "label": "Curated note"
+            },
+            "addedVia": "manual",
+            "submittedAt": "2026-03-31T12:00:00.000Z",
+            "_source_file": "content/terms/terra-nullius.json"
+          }
+        }
+      ],
+      "_live_slugs": [
+        "terra-nullius"
+      ],
+      "_original_url": "https://wiki.enzosimier.com/concepts/terra-nullius"
+    }
+  ],
+  "readings": [
+    {
+      "type": "read",
+      "title": "Complete biosynthesis of nicotine",
+      "slug": "complete-biosynthesis-of-nicotine",
+      "theme": "Biology",
+      "subthemes": [
+        "Plant biochemistry",
+        "Natural products",
+        "Metabolism"
+      ],
+      "summary": "This Cell paper completes the nicotine biosynthesis pathway by identifying the final coupling reaction, a 5-component metabolon, and a MATE transporter required for efficient nicotine production and transport.",
+      "whyItMatters": "It clarifies a major plant alkaloid pathway and offers useful ideas for engineering pest resistance in crops.",
+      "notes": "Source: https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1",
+      "keywords": [
+        "nicotine",
+        "biosynthesis",
+        "plants",
+        "alkaloids",
+        "metabolism"
+      ],
+      "status": "to-read",
+      "source": {
+        "type": "paper",
+        "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1"
+      },
+      "addedVia": "poke",
+      "submittedAt": "2026-04-03T23:08:12.741Z",
+      "pdfUrl": "/pdfs/complete-biosynthesis-of-nicotine.pdf",
+      "_source_file": "content/reads/complete-biosynthesis-of-nicotine.json"
+    }
+  ]
+}
