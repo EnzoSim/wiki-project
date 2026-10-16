@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: ConceptPageProps): Promise<Me
     description: concept.summary,
     keywords: [concept.category, ...concept.keywords],
     openGraph: {
-      title: `${concept.title} | Reference index`,
+      title: `${concept.title} | Commonplace`,
       description: concept.summary,
       type: 'article',
     },
@@ -57,7 +57,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
         <p className={styles.category}>{concept.category}</p>
         <h1>{concept.title}</h1>
         {!concept.body?.length ? <p className={styles.lead}>{concept.summary}</p> : null}
-        <p className={styles.credit}>Curated by Enzo Simier.</p>
+        <p className={styles.credit}>Collected by Enzo Simier.</p>
       </header>
 
       <div className={styles.layout}>

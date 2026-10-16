@@ -327,9 +327,9 @@ export function parsePublicLibrary(
     available: true,
     source: 'notion-public',
     syncedAt: new Date().toISOString(),
-    title: plain(root.properties?.title) || 'Reference index',
-    intro: rootText[0] || 'A personal library of concepts, connections and things worth reading.',
-    credit: rootText[1] || 'Curated by Enzo Simier.',
+    title: plain(root.properties?.title) || 'Commonplace',
+    intro: rootText[0] || 'Ideas, connections, and things worth keeping.',
+    credit: rootText[1] || 'Collected by Enzo Simier.',
     concepts: concepts.sort((a, b) => a.title.localeCompare(b.title)),
     readings,
   };
