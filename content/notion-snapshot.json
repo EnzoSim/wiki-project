@@ -1,0 +1,3980 @@
+{
+  "available": true,
+  "source": "notion-public",
+  "syncedAt": "2026-10-16T21:42:54.908Z",
+  "title": "Reference index",
+  "intro": "A personal library of concepts, connections and things worth reading.",
+  "credit": "Curated by Enzo Simier.",
+  "concepts": [
+    {
+      "title": "Aesthete",
+      "slug": "aesthete",
+      "notionId": "3fb314f9-feab-819a-80ac-da5c597013f9",
+      "summary": "A person who has or affects to have a special appreciation of art and beauty.",
+      "body": [
+        {
+          "id": "28e61fe7-ae29-4a8e-8794-492cf34ef7c2",
+          "type": "image",
+          "rich": [
+            {
+              "text": "aesthete-paper-glass.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/aesthete.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "9231350d-ed2a-4855-ab91-f0c6cc789bb0",
+          "type": "text",
+          "rich": [
+            {
+              "text": "A person who has or affects to have a special appreciation of art and beauty.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "bef5d13b-7176-4402-9c7d-f7901d1fb9ad",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "1b1aeda1-31ea-4ebb-abdc-cc8e51864a20",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "5464bde0-fb74-4b2e-95a2-16446a826c53",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Aesthete: A person who has or affects to have a special appreciation of art and beauty.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "5b9d6d95-c319-4506-b3db-df529cc93318",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "e90ae6e3-b9c8-467b-99ad-d396e702e11c",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "1 original record preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "16483215-c05f-4d95-ad09-f0be137d6110",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"Aesthete\",\n      \"slug\": \"aesthete\",\n      \"category\": \"Vocabulary\",\n      \"subthemes\": [\n        \"Temperament\",\n        \"Art\",\n        \"Aesthetics\"\n      ],\n      \"summary\": \"A person who has or affects to have a special appreciation of art and beauty.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"Aesthete: A person who has or affects to have a special appreciation of art and beauty.\",\n      \"keywords\": [\n        \"vocabulary\",\n        \"temperament\",\n        \"aesthetics\",\n        \"person\",\n        \"affects\",\n        \"have\",\n        \"special\",\n        \"appreciation\",\n        \"beauty\"\n      ],\n      \"related\": [\n        \"snippy\",\n        \"atrabilaire\",\n        \"crib\",\n        \"crustaceous\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"iMessage\",\n      \"submittedAt\": \"2026-04-16T16:24:49.218+00:00\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Temperament",
+        "Art",
+        "Aesthetics"
+      ],
+      "keywords": [
+        "vocabulary",
+        "temperament",
+        "aesthetics",
+        "person",
+        "affects",
+        "have",
+        "special",
+        "appreciation",
+        "beauty"
+      ],
+      "notes": "Aesthete: A person who has or affects to have a special appreciation of art and beauty.",
+      "source": {
+        "type": "term",
+        "label": "Enzo"
+      },
+      "addedVia": "iMessage",
+      "type": "term",
+      "category": "Vocabulary",
+      "related": [
+        "snippy",
+        "atrabilaire",
+        "crib",
+        "crustaceous"
+      ],
+      "artwork": {
+        "full": "/artwork/aesthete.webp",
+        "thumbnail": "/artwork/aesthete-thumb.webp"
+      }
+    },
+    {
+      "title": "anathema",
+      "slug": "anathema",
+      "notionId": "3fb314f9-feab-8195-925b-f58941d3f07a",
+      "summary": "Something or someone that one vehemently dislikes; a formal curse by a pope or a council of the Church, excommunicating a person or denouncing a doctrine.",
+      "body": [
+        {
+          "id": "3e463f8d-d287-40ba-a4a0-de9ae80ab575",
+          "type": "image",
+          "rich": [
+            {
+              "text": "anathema-paper-glass.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/anathema.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "e7860907-b0d6-4114-882c-96b7756cf278",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Something or someone that one vehemently dislikes; a formal curse by a pope or a council of the Church, excommunicating a person or denouncing a doctrine.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "28487398-b035-4734-b7dc-a9f867aa3872",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "ff1cb53a-5e78-4029-9527-170605ed29d1",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "225708d1-5b37-45ae-b1eb-e0ec23cfa707",
+          "type": "text",
+          "rich": [
+            {
+              "text": "The word spans both everyday dislike and the formal language of ecclesiastical condemnation, which gives it unusual range and force.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "d7f03567-5fe2-454d-a616-d09a8255ca7e",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "4da55e14-3fb8-4f46-a7fe-6940dd03074f",
+          "type": "text",
+          "rich": [
+            {
+              "text": "In modern usage it is often used figuratively, but the older religious meaning still gives it extra weight and severity.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "abfc6cb0-3b49-4ece-b2ae-ea9b002cd0d6",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "0ef0ebac-626b-4a6b-9fc2-8fc51fa90c8c",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "2 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "85542ac0-4711-4637-8469-91562b5e4f98",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"anathema\",\n      \"slug\": \"anathema\",\n      \"category\": \"Religion\",\n      \"subthemes\": [\n        \"Canon law\",\n        \"Excommunication\",\n        \"Religious language\"\n      ],\n      \"summary\": \"Something or someone that one vehemently dislikes; a formal curse by a pope or a council of the Church, excommunicating a person or denouncing a doctrine.\",\n      \"whyItMatters\": \"The word spans both everyday dislike and the formal language of ecclesiastical condemnation, which gives it unusual range and force.\",\n      \"notes\": \"In modern usage it is often used figuratively, but the older religious meaning still gives it extra weight and severity.\",\n      \"keywords\": [\n        \"anathema\",\n        \"curse\",\n        \"excommunication\",\n        \"church\",\n        \"denunciation\"\n      ],\n      \"related\": [],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Poke submission\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-06T21:15:00+00:00\"\n    }\n  },\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"anathema\",\n      \"slug\": \"anathema\",\n      \"category\": \"Religion\",\n      \"subthemes\": [\n        \"Canon law\",\n        \"Excommunication\",\n        \"Religious language\"\n      ],\n      \"summary\": \"Something or someone that one vehemently dislikes; a formal curse by a pope or a council of the Church, excommunicating a person or denouncing a doctrine.\",\n      \"whyItMatters\": \"The word spans both everyday dislike and the formal language of ecclesiastical condemnation, which gives it unusual range and force.\",\n      \"notes\": \"In modern usage it is often used figuratively, but the older religious meaning still gives it extra weight and severity.\",\n      \"keywords\": [\n        \"anathema\",\n        \"curse\",\n        \"excommunication\",\n        \"church\",\n        \"denunciation\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Poke submission\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-06T21:15:00.000Z\",\n      \"_source_file\": \"content/terms/anathema.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Canon law",
+        "Excommunication",
+        "Religious language"
+      ],
+      "keywords": [
+        "anathema",
+        "curse",
+        "excommunication",
+        "church",
+        "denunciation"
+      ],
+      "whyItMatters": "The word spans both everyday dislike and the formal language of ecclesiastical condemnation, which gives it unusual range and force.",
+      "notes": "In modern usage it is often used figuratively, but the older religious meaning still gives it extra weight and severity.",
+      "source": {
+        "type": "term",
+        "label": "Poke submission"
+      },
+      "addedVia": "poke",
+      "type": "term",
+      "category": "Religion",
+      "related": [],
+      "artwork": {
+        "full": "/artwork/anathema.webp",
+        "thumbnail": "/artwork/anathema-thumb.webp"
+      }
+    },
+    {
+      "title": "At the Money (ATM)",
+      "slug": "at-the-money-atm",
+      "notionId": "3fb314f9-feab-8162-bf24-f1d4273eb147",
+      "summary": "An option where the strike price is identical to the current market price of the underlying asset.",
+      "body": [
+        {
+          "id": "8d59e573-7022-4c9f-9340-ea5ee4d6bd60",
+          "type": "image",
+          "rich": [
+            {
+              "text": "at-the-money-atm-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/at-the-money-atm.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "61ddcf78-25ab-4394-bf2a-546b59bd288e",
+          "type": "text",
+          "rich": [
+            {
+              "text": "An option where the strike price is identical to the current market price of the underlying asset.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "1990b216-f243-46c7-b625-cff00dbbabfd",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "1e04ff5d-c432-4931-bb5f-dc5c34321071",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "578800e6-abf5-4720-b030-70050cc528d0",
+          "type": "text",
+          "rich": [
+            {
+              "text": "At-the-money options sit at the boundary between intrinsic value and time value.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "9d03574d-1c8c-42ee-877e-2fd8291a294f",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "4ba6cf72-9436-4cdb-84c9-e606e8a604fc",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Used in derivatives pricing and trading when the strike and market price are approximately equal.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "ea4aeeb4-4469-4c9a-b262-34fad3392305",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "87eacf09-0b21-4ad4-bec6-6c04b619ba72",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "1 original record preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "c2066f3f-90d2-4c38-8466-b62ecb5dbfe1",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"At the Money (ATM)\",\n      \"slug\": \"at-the-money-atm\",\n      \"category\": \"Finance\",\n      \"subthemes\": [\n        \"Options\",\n        \"Moneyness\",\n        \"Strike price\"\n      ],\n      \"summary\": \"An option where the strike price is identical to the current market price of the underlying asset.\",\n      \"whyItMatters\": \"At-the-money options sit at the boundary between intrinsic value and time value.\",\n      \"notes\": \"Used in derivatives pricing and trading when the strike and market price are approximately equal.\",\n      \"keywords\": [\n        \"ATM\",\n        \"options\",\n        \"strike price\",\n        \"market price\",\n        \"moneyness\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-07T18:30:16.745Z\",\n      \"_source_file\": \"content/terms/at-the-money-atm.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Options",
+        "Moneyness",
+        "Strike price"
+      ],
+      "keywords": [
+        "ATM",
+        "options",
+        "strike price",
+        "market price",
+        "moneyness"
+      ],
+      "whyItMatters": "At-the-money options sit at the boundary between intrinsic value and time value.",
+      "notes": "Used in derivatives pricing and trading when the strike and market price are approximately equal.",
+      "source": {
+        "type": "term",
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "type": "term",
+      "category": "Finance",
+      "related": [],
+      "artwork": {
+        "full": "/artwork/at-the-money-atm.webp",
+        "thumbnail": "/artwork/at-the-money-atm-thumb.webp"
+      }
+    },
+    {
+      "title": "atrabilaire",
+      "slug": "atrabilaire",
+      "notionId": "3fb314f9-feab-81b5-92ad-f3c832b131d7",
+      "summary": "Having a gloomy, irritable, or melancholy disposition; literally rooted in the old theory of black bile (atrabilis), which was once thought to produce a morose temperament.",
+      "body": [
+        {
+          "id": "b807dcf6-d44a-4035-8ca6-81bd59a1efa7",
+          "type": "image",
+          "rich": [
+            {
+              "text": "atrabilaire-paper-glass.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/atrabilaire.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "bcc63d5f-c4f5-48bd-b9e1-6477c48c9bb0",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Having a gloomy, irritable, or melancholy disposition; literally rooted in the old theory of black bile (atrabilis), which was once thought to produce a morose temperament.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "f560a094-5a43-48f8-ae8d-5e454095850c",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "b633a67e-3da9-45d3-a18a-0300c9593bc5",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "9cc1d0bf-ad8f-4c0b-8677-1ac0f5f7d0c0",
+          "type": "text",
+          "rich": [
+            {
+              "text": "The word connects older medical theories of temperament to modern descriptions of personality and tone. It carries historical texture that makes it richer than a simple synonym for gloomy or sour.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "4fbbc621-c283-46df-9326-16e9eb1c7fe0",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "5e490771-1649-4a56-9ccc-73f316da1061",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Its value is partly stylistic: the term often signals a literary, historical, or high-register voice. It is less a technical diagnosis than a compact way of naming a dark or bile-tinged disposition.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "be92efd4-2699-4f3b-a53f-c3e268eb499d",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "79c32369-3d3c-4041-8025-34c2ba597fea",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "2 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "ac670395-9f4e-4ada-a538-c4bbe2dd93ca",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"atrabilaire\",\n      \"slug\": \"atrabilaire\",\n      \"category\": \"Temperament\",\n      \"subthemes\": [\n        \"Intellectual history\",\n        \"Mood\",\n        \"Literary language\"\n      ],\n      \"summary\": \"Having a gloomy, irritable, or melancholy disposition; literally rooted in the old theory of black bile (atrabilis), which was once thought to produce a morose temperament.\",\n      \"whyItMatters\": \"The word connects older medical theories of temperament to modern descriptions of personality and tone. It carries historical texture that makes it richer than a simple synonym for gloomy or sour.\",\n      \"notes\": \"Its value is partly stylistic: the term often signals a literary, historical, or high-register voice. It is less a technical diagnosis than a compact way of naming a dark or bile-tinged disposition.\",\n      \"keywords\": [\n        \"atrabilaire\",\n        \"melancholy\",\n        \"temperament\",\n        \"black bile\",\n        \"intellectual history\"\n      ],\n      \"related\": [\n        \"aesthete\",\n        \"snippy\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"github\",\n      \"submittedAt\": \"2026-04-03T14:00:00+00:00\"\n    }\n  },\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"atrabilaire\",\n      \"slug\": \"atrabilaire\",\n      \"category\": \"Temperament\",\n      \"subthemes\": [\n        \"Intellectual history\",\n        \"Mood\",\n        \"Literary language\"\n      ],\n      \"summary\": \"Having a gloomy, irritable, or melancholy disposition; literally rooted in the old theory of black bile (atrabilis), which was once thought to produce a morose temperament.\",\n      \"whyItMatters\": \"The word connects older medical theories of temperament to modern descriptions of personality and tone. It carries historical texture that makes it richer than a simple synonym for gloomy or sour.\",\n      \"notes\": \"Its value is partly stylistic: the term often signals a literary, historical, or high-register voice. It is less a technical diagnosis than a compact way of naming a dark or bile-tinged disposition.\",\n      \"keywords\": [\n        \"atrabilaire\",\n        \"melancholy\",\n        \"temperament\",\n        \"black bile\",\n        \"intellectual history\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"github\",\n      \"submittedAt\": \"2026-04-03T14:00:00.000Z\",\n      \"_source_file\": \"content/terms/atrabilaire.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Intellectual history",
+        "Mood",
+        "Literary language"
+      ],
+      "keywords": [
+        "atrabilaire",
+        "melancholy",
+        "temperament",
+        "black bile",
+        "intellectual history"
+      ],
+      "whyItMatters": "The word connects older medical theories of temperament to modern descriptions of personality and tone. It carries historical texture that makes it richer than a simple synonym for gloomy or sour.",
+      "notes": "Its value is partly stylistic: the term often signals a literary, historical, or high-register voice. It is less a technical diagnosis than a compact way of naming a dark or bile-tinged disposition.",
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "github",
+      "type": "term",
+      "category": "Temperament",
+      "related": [
+        "aesthete",
+        "snippy"
+      ],
+      "artwork": {
+        "full": "/artwork/atrabilaire.webp",
+        "thumbnail": "/artwork/atrabilaire-thumb.webp"
+      }
+    },
+    {
+      "title": "ceteris paribus",
+      "slug": "ceteris-paribus",
+      "notionId": "3fb314f9-feab-818a-8a8e-f1dac55ccdea",
+      "summary": "Latin for \"all other things being equal\"; used in economics to isolate the effect of a single variable by holding all other factors constant.",
+      "body": [
+        {
+          "id": "4772abc1-9712-4f83-a6c0-6eef766e0062",
+          "type": "image",
+          "rich": [
+            {
+              "text": "ceteris-paribus-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/ceteris-paribus.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "c4a72e2d-99d2-496e-b431-5ff2ae41981a",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Latin for \"all other things being equal\"; used in economics to isolate the effect of a single variable by holding all other factors constant.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "959e00e1-0898-4f27-97ff-ae2e38ae0b53",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "3055d26c-99f7-4185-8cbe-19b243fe0e38",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "be3c1ffb-0670-4a0c-bd40-a1e6909a4666",
+          "type": "text",
+          "rich": [
+            {
+              "text": "ceteris paribus: Latin for \"all other things being equal\"; used in economics to isolate the effect of a single variable by holding all other factors constant.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "35f9a046-a239-43fe-860a-e05f8f30687f",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "b8f8894f-2903-4882-97dc-e80fb9f08fbc",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "2 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "bb37dd4b-913c-4ed0-8448-3d7fb2b4fcb8",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"ceteris paribus\",\n      \"slug\": \"ceteris-paribus-2\",\n      \"category\": \"Economics\",\n      \"subthemes\": [\n        \"Latin\",\n        \"Methodology\"\n      ],\n      \"summary\": \"Latin for \\\"all other things being equal\\\"; used in economics to isolate the effect of a single variable by holding all other factors constant.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"ceteris paribus: Latin for \\\"all other things being equal\\\"; used in economics to isolate the effect of a single variable by holding all other factors constant.\",\n      \"keywords\": [\n        \"economics\",\n        \"latin\",\n        \"methodology\",\n        \"other\",\n        \"things\",\n        \"equal\",\n        \"isolate\",\n        \"effect\",\n        \"single\",\n        \"variable\"\n      ],\n      \"related\": [\n        \"ceteris-paribus\",\n        \"svar-structural-vector-autoregression\",\n        \"svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep\",\n        \"libidinal-economy\",\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-07T20:28:52.38+00:00\"\n    }\n  },\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"ceteris paribus\",\n      \"slug\": \"ceteris-paribus\",\n      \"category\": \"Uncategorized\",\n      \"subthemes\": [\n        \"Inbox\"\n      ],\n      \"summary\": \"Latin for \\\"all other things being equal\\\"; used in economics to isolate the effect of a single variable by holding all other factors constant.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"ceteris paribus: Latin for \\\"all other things being equal\\\"; used in economics to isolate the effect of a single variable by holding all other factors constant.\",\n      \"keywords\": [\n        \"uncategorized\",\n        \"inbox\",\n        \"latin\",\n        \"other\",\n        \"things\",\n        \"equal\",\n        \"economics\",\n        \"isolate\",\n        \"effect\",\n        \"single\"\n      ],\n      \"related\": [\n        \"ceteris-paribus-2\",\n        \"libidinal-economy\",\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite\",\n        \"svar-structural-vector-autoregression\",\n        \"svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-07T19:04:03.64+00:00\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Latin",
+        "Methodology"
+      ],
+      "keywords": [
+        "economics",
+        "latin",
+        "methodology",
+        "other",
+        "things",
+        "equal",
+        "isolate",
+        "effect",
+        "single",
+        "variable",
+        "uncategorized",
+        "inbox"
+      ],
+      "notes": "ceteris paribus: Latin for \"all other things being equal\"; used in economics to isolate the effect of a single variable by holding all other factors constant.",
+      "source": {
+        "type": "term",
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "type": "term",
+      "category": "Economics",
+      "related": [
+        "svar-structural-vector-autoregression",
+        "libidinal-economy"
+      ],
+      "artwork": {
+        "full": "/artwork/ceteris-paribus.webp",
+        "thumbnail": "/artwork/ceteris-paribus-thumb.webp"
+      }
+    },
+    {
+      "title": "Conterminous",
+      "slug": "conterminous",
+      "notionId": "3fb314f9-feab-81c7-a930-dc7e6bec789c",
+      "summary": "Sharing a common boundary, or contained within the same boundaries. Synonym of contiguous. E.g. 'the conterminous United States' refers to the 48 states excluding Alaska and Hawaii.",
+      "body": [
+        {
+          "id": "13854505-db90-4a57-a70d-4e3723830397",
+          "type": "image",
+          "rich": [
+            {
+              "text": "conterminous-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/conterminous.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "002ba59b-bf01-4623-8a77-fe564c95df61",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Sharing a common boundary, or contained within the same boundaries. Synonym of contiguous. E.g. 'the conterminous United States' refers to the 48 states excluding Alaska and Hawaii.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "bf22b02a-63d1-42f1-80c2-5a4b5813f1fa",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "8fd77bee-7069-45b9-b248-49e96ad4527a",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "9945ce88-aeba-4721-8fd9-6e12a30010bc",
+          "type": "text",
+          "rich": [
+            {
+              "text": "The term is used to distinguish the logically or physically connected parts of a territory from its exclaves. In the US, it is essential for distinguishing the 'lower 48' from the non-contiguous states.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "02c833d9-d433-470e-a757-b3ae8fdbe0f8",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "8e8b5748-8fcc-450d-b984-d7ef79fe36ac",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Often confused with 'contiguous', which carries the same meaning of sharing a border. In geographic contexts, conterminous emphasizes the sharing of a boundary edge.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "24b77d6f-056d-43df-82c8-dcde031757df",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "7e716f0a-1618-4941-976a-74cb91c8eaf8",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "1 original record preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "e9872c21-86da-49bd-8971-07ed37ed9657",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"Conterminous\",\n      \"slug\": \"conterminous\",\n      \"category\": \"Geography\",\n      \"subthemes\": [\n        \"Boundaries\",\n        \"Cartography\",\n        \"Geopolitics\"\n      ],\n      \"summary\": \"Sharing a common boundary, or contained within the same boundaries. Synonym of contiguous. E.g. 'the conterminous United States' refers to the 48 states excluding Alaska and Hawaii.\",\n      \"whyItMatters\": \"The term is used to distinguish the logically or physically connected parts of a territory from its exclaves. In the US, it is essential for distinguishing the 'lower 48' from the non-contiguous states.\",\n      \"notes\": \"Often confused with 'contiguous', which carries the same meaning of sharing a border. In geographic contexts, conterminous emphasizes the sharing of a boundary edge.\",\n      \"keywords\": [\n        \"conterminous\",\n        \"contiguous\",\n        \"geography\",\n        \"boundaries\",\n        \"United States\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"User entry\"\n      },\n      \"addedVia\": \"manual\",\n      \"submittedAt\": \"2026-06-28T13:05:25.831Z\",\n      \"_source_file\": \"content/terms/conterminous.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Boundaries",
+        "Cartography",
+        "Geopolitics"
+      ],
+      "keywords": [
+        "conterminous",
+        "contiguous",
+        "geography",
+        "boundaries",
+        "United States"
+      ],
+      "whyItMatters": "The term is used to distinguish the logically or physically connected parts of a territory from its exclaves. In the US, it is essential for distinguishing the 'lower 48' from the non-contiguous states.",
+      "notes": "Often confused with 'contiguous', which carries the same meaning of sharing a border. In geographic contexts, conterminous emphasizes the sharing of a boundary edge.",
+      "source": {
+        "type": "term",
+        "label": "User entry"
+      },
+      "addedVia": "manual",
+      "type": "term",
+      "category": "Geography",
+      "related": [],
+      "artwork": {
+        "full": "/artwork/conterminous.webp",
+        "thumbnail": "/artwork/conterminous-thumb.webp"
+      }
+    },
+    {
+      "title": "crib",
+      "slug": "crib",
+      "notionId": "3fb314f9-feab-813b-9db7-df0310c28c80",
+      "summary": "A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.",
+      "body": [
+        {
+          "id": "0fba3e92-811f-4c2d-b0a6-853ccab3a792",
+          "type": "image",
+          "rich": [
+            {
+              "text": "crib-paper-glass.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/crib.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "2c6228f6-5bfb-48a8-8e1a-33cf8011d56a",
+          "type": "text",
+          "rich": [
+            {
+              "text": "A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "8ec16776-b0cc-46c1-bc30-c3269ade91a7",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "726c1848-c36c-4d61-a0f6-8e1c01441908",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "ee0c7b6f-e064-489d-af7c-86ea73d1f87c",
+          "type": "text",
+          "rich": [
+            {
+              "text": "In UK and university slang, a crib or crib sheet is an aide-mémoire: formulas, steps, what to say. On a file titled “Q1 crib” it means personal notes, not the slide they asked for.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "cf1e465c-a143-448b-b99d-0c8ae7cf401f",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "a7446156-a19f-496d-944c-eda787142558",
+          "type": "text",
+          "rich": [
+            {
+              "text": "If the word sounds odd in a prompt, write “personal notes PDF” or “logic write-up” instead. Distinct from crib as a baby's bed, and from cribbing as copying.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "3324031b-2b2a-454d-a4c2-ef1c46aea4cb",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "a125f0f0-01fe-4520-ac2b-ea37ec3bacc1",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "2 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "c0d1a3d0-379a-47e2-98d4-2d178d02e2c2",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"crib\",\n      \"slug\": \"crib\",\n      \"category\": \"Vocabulary\",\n      \"subthemes\": [\n        \"University slang\",\n        \"Study methods\",\n        \"Writing\"\n      ],\n      \"summary\": \"A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"crib: A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.\",\n      \"keywords\": [\n        \"vocabulary\",\n        \"university\",\n        \"slang\",\n        \"study\",\n        \"methods\",\n        \"writing\",\n        \"compact\",\n        \"private\",\n        \"cheat\",\n        \"sheet\"\n      ],\n      \"related\": [\n        \"aesthete\",\n        \"crustaceous\",\n        \"snippy\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"antoine\",\n      \"submittedAt\": \"2026-08-13T02:43:01.119+00:00\"\n    }\n  },\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"crib\",\n      \"slug\": \"crib\",\n      \"category\": \"Vocabulary\",\n      \"subthemes\": [\n        \"University slang\",\n        \"Study methods\",\n        \"Writing\"\n      ],\n      \"summary\": \"A compact private cheat sheet — short notes you keep for yourself to remember the logic, not something you hand in.\",\n      \"whyItMatters\": \"In UK and university slang, a crib or crib sheet is an aide-mémoire: formulas, steps, what to say. On a file titled “Q1 crib” it means personal notes, not the slide they asked for.\",\n      \"notes\": \"If the word sounds odd in a prompt, write “personal notes PDF” or “logic write-up” instead. Distinct from crib as a baby's bed, and from cribbing as copying.\",\n      \"keywords\": [\n        \"crib\",\n        \"crib sheet\",\n        \"cheat sheet\",\n        \"aide-mémoire\",\n        \"study notes\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"manual\",\n      \"submittedAt\": \"2026-08-13T02:33:00.000Z\",\n      \"_source_file\": \"content/terms/crib.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "University slang",
+        "Study methods",
+        "Writing"
+      ],
+      "keywords": [
+        "vocabulary",
+        "university",
+        "slang",
+        "study",
+        "methods",
+        "writing",
+        "compact",
+        "private",
+        "cheat",
+        "sheet",
+        "crib",
+        "crib sheet",
+        "cheat sheet",
+        "aide-mémoire",
+        "study notes"
+      ],
+      "whyItMatters": "In UK and university slang, a crib or crib sheet is an aide-mémoire: formulas, steps, what to say. On a file titled “Q1 crib” it means personal notes, not the slide they asked for.",
+      "notes": "If the word sounds odd in a prompt, write “personal notes PDF” or “logic write-up” instead. Distinct from crib as a baby's bed, and from cribbing as copying.",
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "manual",
+      "type": "term",
+      "category": "Vocabulary",
+      "related": [
+        "aesthete",
+        "crustaceous",
+        "snippy"
+      ],
+      "artwork": {
+        "full": "/artwork/crib.webp",
+        "thumbnail": "/artwork/crib-thumb.webp"
+      }
+    },
+    {
+      "title": "crustaceous",
+      "slug": "crustaceous",
+      "notionId": "3fb314f9-feab-812f-914d-c36eb0b1eed0",
+      "summary": "Hard-shelled or crust-like; the adjective for crabs, lobsters, shrimp, and other crustaceans.",
+      "body": [
+        {
+          "id": "a69f2cc4-ccd1-42eb-b184-7a711446a4e3",
+          "type": "image",
+          "rich": [
+            {
+              "text": "crustaceous-paper-glass.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/crustaceous.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "0dfa6cc2-480d-496d-a945-2a40f82b2b59",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Hard-shelled or crust-like; the adjective for crabs, lobsters, shrimp, and other crustaceans.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "20bfd47f-8c8b-41e9-a603-0676c509f764",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "63948b76-b982-4fb4-bcf0-0743671283b8",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "e427ef2e-a1a4-4da7-9850-4ce98ca7f93d",
+          "type": "text",
+          "rich": [
+            {
+              "text": "In botany it can also describe a hard, brittle seed coat, including on some legumes. For eating texture, English usually wants crunchy, crisp, or snap, not this word.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "ab00d452-b324-4f5f-a004-5c93f2c5bafc",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "041011af-b92c-47d9-ae80-9c02bcbf4578",
+          "type": "text",
+          "rich": [
+            {
+              "text": "A crossword clue like “crunchy legumes” is looking for snap beans, not crustaceous.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "286105a5-d329-436a-a2a0-534705fba317",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "39f6e3af-2f59-4184-95a3-998feccc7df1",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "2 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "643f728c-4461-4818-93ee-76ec313c2c57",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"crustaceous\",\n      \"slug\": \"crustaceous\",\n      \"category\": \"Vocabulary\",\n      \"subthemes\": [\n        \"Zoology\",\n        \"Botany\",\n        \"Diction\"\n      ],\n      \"summary\": \"Hard-shelled or crust-like; the adjective for crabs, lobsters, shrimp, and other crustaceans.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"crustaceous: Hard-shelled or crust-like; the adjective for crabs, lobsters, shrimp, and other crustaceans. In botany it can also describe a hard, brittle seed coat, including on some legumes. For eating texture, English usually wants crunchy, crisp, or snap, not this word.\",\n      \"keywords\": [\n        \"vocabulary\",\n        \"zoology\",\n        \"botany\",\n        \"diction\",\n        \"hard-shelled\",\n        \"crust-like\",\n        \"adjective\",\n        \"crabs\",\n        \"lobsters\",\n        \"shrimp\"\n      ],\n      \"related\": [\n        \"snippy\",\n        \"aesthete\",\n        \"crib\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"antoine\",\n      \"submittedAt\": \"2026-08-13T02:47:14.301+00:00\"\n    }\n  },\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"crustaceous\",\n      \"slug\": \"crustaceous\",\n      \"category\": \"Vocabulary\",\n      \"subthemes\": [\n        \"Zoology\",\n        \"Botany\",\n        \"Diction\"\n      ],\n      \"summary\": \"Hard-shelled or crust-like; the adjective for crabs, lobsters, shrimp, and other crustaceans.\",\n      \"whyItMatters\": \"In botany it can also describe a hard, brittle seed coat, including on some legumes. For eating texture, English usually wants crunchy, crisp, or snap, not this word.\",\n      \"notes\": \"A crossword clue like “crunchy legumes” is looking for snap beans, not crustaceous.\",\n      \"keywords\": [\n        \"crustaceous\",\n        \"crustacean\",\n        \"hard-shelled\",\n        \"seed coat\",\n        \"crunchy\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"manual\",\n      \"submittedAt\": \"2026-08-13T02:45:00.000Z\",\n      \"_source_file\": \"content/terms/crustaceous.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Zoology",
+        "Botany",
+        "Diction"
+      ],
+      "keywords": [
+        "vocabulary",
+        "zoology",
+        "botany",
+        "diction",
+        "hard-shelled",
+        "crust-like",
+        "adjective",
+        "crabs",
+        "lobsters",
+        "shrimp",
+        "crustaceous",
+        "crustacean",
+        "seed coat",
+        "crunchy"
+      ],
+      "whyItMatters": "In botany it can also describe a hard, brittle seed coat, including on some legumes. For eating texture, English usually wants crunchy, crisp, or snap, not this word.",
+      "notes": "A crossword clue like “crunchy legumes” is looking for snap beans, not crustaceous.",
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "manual",
+      "type": "term",
+      "category": "Vocabulary",
+      "related": [
+        "snippy",
+        "aesthete",
+        "crib"
+      ],
+      "artwork": {
+        "full": "/artwork/crustaceous.webp",
+        "thumbnail": "/artwork/crustaceous-thumb.webp"
+      }
+    },
+    {
+      "title": "In the Money (ITM)",
+      "slug": "in-the-money-itm",
+      "notionId": "3fb314f9-feab-8176-a545-ed4fa24878bd",
+      "summary": "An option that possesses intrinsic value. For a call option, this occurs when the strike price is below the market price of the underlying asset.",
+      "body": [
+        {
+          "id": "0a0ab6b1-0054-4dfa-8b1e-99cd97fc68d7",
+          "type": "image",
+          "rich": [
+            {
+              "text": "in-the-money-itm-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/in-the-money-itm.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "771c4fcd-c50d-45f6-a2eb-d6b1795b91eb",
+          "type": "text",
+          "rich": [
+            {
+              "text": "An option that possesses intrinsic value. For a call option, this occurs when the strike price is below the market price of the underlying asset.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "e9dc5dd2-e4ef-4a2b-8afe-88a462783557",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "cf5317fb-924d-4ed5-ab19-d4440fc2ae50",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "38548f7b-b8c9-45e2-bc51-91be478fd229",
+          "type": "text",
+          "rich": [
+            {
+              "text": "In-the-money status determines whether an option can be exercised for immediate value.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "1c8395c9-951d-492e-a38b-93c212886f6f",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "196b3167-06db-46d8-9b59-f96766357efd",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Used in derivatives pricing and trading to describe options with positive intrinsic value.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "928980dd-1f43-447d-b8f0-eeb516bbbed7",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "7578f31d-fedc-4111-af55-f108fbbb4b36",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "1 original record preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "e3a971e5-a45a-471f-b4ba-2771458c9e9c",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"In the Money (ITM)\",\n      \"slug\": \"in-the-money-itm\",\n      \"category\": \"Finance\",\n      \"subthemes\": [\n        \"Options\",\n        \"Moneyness\",\n        \"Intrinsic value\"\n      ],\n      \"summary\": \"An option that possesses intrinsic value. For a call option, this occurs when the strike price is below the market price of the underlying asset.\",\n      \"whyItMatters\": \"In-the-money status determines whether an option can be exercised for immediate value.\",\n      \"notes\": \"Used in derivatives pricing and trading to describe options with positive intrinsic value.\",\n      \"keywords\": [\n        \"ITM\",\n        \"options\",\n        \"intrinsic value\",\n        \"call option\",\n        \"strike price\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-07T18:30:16.745Z\",\n      \"_source_file\": \"content/terms/in-the-money-itm.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Options",
+        "Moneyness",
+        "Intrinsic value"
+      ],
+      "keywords": [
+        "ITM",
+        "options",
+        "intrinsic value",
+        "call option",
+        "strike price"
+      ],
+      "whyItMatters": "In-the-money status determines whether an option can be exercised for immediate value.",
+      "notes": "Used in derivatives pricing and trading to describe options with positive intrinsic value.",
+      "source": {
+        "type": "term",
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "type": "term",
+      "category": "Finance",
+      "related": [],
+      "artwork": {
+        "full": "/artwork/in-the-money-itm.webp",
+        "thumbnail": "/artwork/in-the-money-itm-thumb.webp"
+      }
+    },
+    {
+      "title": "Jean-François Lyotard",
+      "slug": "jean-francois-lyotard",
+      "notionId": "3fb314f9-feab-817c-ba5d-dfcb314b4e83",
+      "summary": "French philosopher (1924–1998) who treated desire as an economy and later named the postmodern as incredulity toward grand narratives.",
+      "body": [
+        {
+          "id": "113c8f90-4356-4ee0-a5dd-964534de3c3e",
+          "type": "image",
+          "rich": [
+            {
+              "text": "jean-francois-lyotard-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/jean-francois-lyotard.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "df159e51-90a4-45df-812e-92f9ba751064",
+          "type": "text",
+          "rich": [
+            {
+              "text": "French philosopher (1924–1998) who treated desire as an economy and later named the postmodern as incredulity toward grand narratives.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "bd7b7458-0c75-4502-97d9-151a01b23b10",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "7298016b-7c2e-4348-9760-e7b5d6e3734f",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "6dde1f2d-4cc0-4e27-b389-68b954bf09aa",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Two books travel: Économie libidinale (1974) is the libidinal-economy move; The Postmodern Condition (1979) is why people say ‘metanarrative.’",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "7ff35953-e01e-490c-82bb-6254dcf10ecd",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "3bfcd91c-86e4-4d08-afd4-e7c53bc95b5a",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Not a system-builder. Read him for those two interventions, not for a complete theory of society. Économie libidinale is the libidinal-economy book.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "92c2b02e-fc87-4fb2-ab9c-e2c45cb86e4c",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "537325fd-5901-460e-bef2-e69f6beb9d61",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "3 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "1166d721-b543-47b0-bbd1-f1f7dea70f07",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"Jean-François Lyotard\",\n      \"slug\": \"jean-fran-ois-lyotard\",\n      \"category\": \"Politics\",\n      \"subthemes\": [\n        \"Political theory\",\n        \"Postmodernism\",\n        \"Philosophy\"\n      ],\n      \"summary\": \"French philosopher (1924-1998) who treated desire as an economy and later named the postmodern as incredulity toward grand narratives.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"Jean-François Lyotard: French philosopher (1924-1998) who treated desire as an economy and later named the postmodern as incredulity toward grand narratives.\",\n      \"keywords\": [\n        \"politics\",\n        \"political\",\n        \"theory\",\n        \"postmodernism\",\n        \"philosophy\",\n        \"french\",\n        \"philosopher\",\n        \"1924-1998\",\n        \"treated\",\n        \"desire\"\n      ],\n      \"related\": [\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2\",\n        \"libidinal-economy\",\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite\",\n        \"mackinder-s-heartland-theory\",\n        \"nicholas-spykman-s-rimland-theory\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"EnzoSim\"\n      },\n      \"addedVia\": \"antoine\",\n      \"submittedAt\": \"2026-08-26T17:28:23.473+00:00\"\n    }\n  },\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"Publish this as a wiki TERM (not a queued paper). Use this copy, do not rewrite\",\n      \"slug\": \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2\",\n      \"category\": \"Politics\",\n      \"subthemes\": [\n        \"Political theory\",\n        \"Postmodernism\",\n        \"Philosophy\"\n      ],\n      \"summary\": \"Publish this as a wiki TERM (not a queued paper).\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"Publish this as a wiki TERM (not a queued paper). Use this copy, do not rewrite the definition.  title: Jean-François Lyotard slug: jean-francois-lyotard category: Politics subthemes: Political theory, Postmodernism, Philosophy summary: French philosopher (1924–1998) who treated desire as an economy and later named the postmodern as incredulity toward grand narratives. whyItMatters: Two books travel: Économie libidinale (1974) is the libidinal-economy move; The Postmodern Condition (1979) is why people say ‘metanarrative.’ notes: Not a system-builder. Read him for those two interventions, not for a complete theory of society. keywords: lyotard, postmodern, metanarrative, libidinal economy, political theory source: Curated note addedVia: antoine\",\n      \"keywords\": [\n        \"politics\",\n        \"political\",\n        \"theory\",\n        \"postmodernism\",\n        \"philosophy\",\n        \"publish\",\n        \"wiki\",\n        \"term\",\n        \"queued\",\n        \"paper\"\n      ],\n      \"related\": [\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite\",\n        \"jean-fran-ois-lyotard\",\n        \"libidinal-economy\",\n        \"mackinder-s-heartland-theory\",\n        \"nicholas-spykman-s-rimland-theory\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"EnzoSim\"\n      },\n      \"addedVia\": \"antoine\",\n      \"submittedAt\": \"2026-08-26T17:17:25.482+00:00\"\n    }\n  },\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"Jean-François Lyotard\",\n      \"slug\": \"jean-francois-lyotard\",\n      \"category\": \"Politics\",\n      \"subthemes\": [\n        \"Political theory\",\n        \"Postmodernism\",\n        \"Philosophy\"\n      ],\n      \"summary\": \"French philosopher (1924–1998) who treated desire as an economy and later named the postmodern as incredulity toward grand narratives.\",\n      \"whyItMatters\": \"Two books travel: Économie libidinale (1974) is the libidinal-economy move; The Postmodern Condition (1979) is why people say ‘metanarrative.’\",\n      \"notes\": \"Not a system-builder. Read him for those two interventions, not for a complete theory of society. Économie libidinale is the libidinal-economy book.\",\n      \"keywords\": [\n        \"lyotard\",\n        \"postmodern\",\n        \"metanarrative\",\n        \"libidinal economy\",\n        \"political theory\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"antoine\",\n      \"submittedAt\": \"2026-08-26T17:08:00.000Z\",\n      \"_source_file\": \"content/terms/jean-francois-lyotard.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Political theory",
+        "Postmodernism",
+        "Philosophy"
+      ],
+      "keywords": [
+        "politics",
+        "political",
+        "theory",
+        "postmodernism",
+        "philosophy",
+        "french",
+        "philosopher",
+        "1924-1998",
+        "treated",
+        "desire",
+        "publish",
+        "wiki",
+        "term",
+        "queued",
+        "paper",
+        "lyotard",
+        "postmodern",
+        "metanarrative",
+        "libidinal economy",
+        "political theory"
+      ],
+      "whyItMatters": "Two books travel: Économie libidinale (1974) is the libidinal-economy move; The Postmodern Condition (1979) is why people say ‘metanarrative.’",
+      "notes": "Not a system-builder. Read him for those two interventions, not for a complete theory of society. Économie libidinale is the libidinal-economy book.",
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "antoine",
+      "type": "term",
+      "category": "Politics",
+      "related": [
+        "libidinal-economy",
+        "mackinder-s-heartland-theory",
+        "nicholas-spykman-s-rimland-theory"
+      ],
+      "artwork": {
+        "full": "/artwork/jean-francois-lyotard.webp",
+        "thumbnail": "/artwork/jean-francois-lyotard-thumb.webp"
+      }
+    },
+    {
+      "title": "libidinal economy",
+      "slug": "libidinal-economy",
+      "notionId": "3fb314f9-feab-814c-b929-e4c595416b99",
+      "summary": "A reading of social life in which desire is treated as a scarce, investable force — circulated, hoarded, and spent the way capital is.",
+      "body": [
+        {
+          "id": "ce99ca46-8262-44fb-b310-c5eca5099b5d",
+          "type": "image",
+          "rich": [
+            {
+              "text": "libidinal-economy-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/libidinal-economy.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "2816260a-5af6-4967-a56e-d89cb83f8824",
+          "type": "text",
+          "rich": [
+            {
+              "text": "A reading of social life in which desire is treated as a scarce, investable force — circulated, hoarded, and spent the way capital is.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "22b4c0e5-ea62-4c9f-b08c-22deeb94988a",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "3795bc8d-c69a-4e6f-9ff6-447790c2a2fd",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "23e2b16c-4a15-4684-85a5-6ca47d076d68",
+          "type": "text",
+          "rich": [
+            {
+              "text": "It names why attention, status, and sexual energy show up in markets and politics as if they were prices, not leftovers. Useful when a ‘rational’ model keeps missing what people are actually allocating.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "11c55526-8189-4051-94c4-0bc921d41e3b",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "dd73d967-d60a-4489-92ee-c90a8f38ffc1",
+          "type": "text",
+          "rich": [
+            {
+              "text": "The phrase is locked to Lyotard’s Économie libidinale (1974), though the move is older: Freud already talked about psychic ‘economics.’ A sharp lens; easy to over-apply as a just-so story about every institution.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "93897b3a-658a-42ea-9871-f58e0b908220",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "06d0ecec-1d06-483a-8e07-255986d542b5",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "3 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "88f55051-a289-458c-8dfe-2df6b5c90c3c",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"libidinal economy\",\n      \"slug\": \"libidinal-economy\",\n      \"category\": \"Economics\",\n      \"subthemes\": [\n        \"Political economy\",\n        \"Desire\",\n        \"Critical theory\"\n      ],\n      \"summary\": \"A reading of social life in which desire is treated as a scarce, investable force, circulated, hoarded, and spent the way capital is.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"libidinal economy: A reading of social life in which desire is treated as a scarce, investable force, circulated, hoarded, and spent the way capital is.\",\n      \"keywords\": [\n        \"economics\",\n        \"political\",\n        \"economy\",\n        \"desire\",\n        \"critical\",\n        \"theory\",\n        \"reading\",\n        \"social\",\n        \"life\",\n        \"treated\"\n      ],\n      \"related\": [\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite\",\n        \"jean-fran-ois-lyotard\",\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2\",\n        \"ceteris-paribus\",\n        \"ceteris-paribus-2\",\n        \"mackinder-s-heartland-theory\",\n        \"nicholas-spykman-s-rimland-theory\",\n        \"svar-structural-vector-autoregression\",\n        \"svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"EnzoSim\"\n      },\n      \"addedVia\": \"antoine\",\n      \"submittedAt\": \"2026-08-26T17:24:15.465+00:00\"\n    }\n  },\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"Publish this as a wiki TERM (not a queued paper). Use this copy, do not rewrite\",\n      \"slug\": \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite\",\n      \"category\": \"Economics\",\n      \"subthemes\": [\n        \"Political economy\",\n        \"Desire\",\n        \"Critical theory\"\n      ],\n      \"summary\": \"Publish this as a wiki TERM (not a queued paper).\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"Publish this as a wiki TERM (not a queued paper). Use this copy, do not rewrite the definition.  title: libidinal economy slug: libidinal-economy category: Economics subthemes: Political economy, Desire, Critical theory summary: A reading of social life in which desire is treated as a scarce, investable force — circulated, hoarded, and spent the way capital is. whyItMatters: It names why attention, status, and sexual energy show up in markets and politics as if they were prices, not leftovers. Useful when a ‘rational’ model keeps missing what people are actually allocating. notes: The phrase is locked to Lyotard’s Économie libidinale (1974), though the move is older: Freud already talked about psychic ‘economics.’ A sharp lens; easy to over-apply as a just-so story about every institution. keywords: libidinal economy, desire, lyotard, political economy, attention source: Curated note addedVia: antoine\",\n      \"keywords\": [\n        \"economics\",\n        \"political\",\n        \"economy\",\n        \"desire\",\n        \"critical\",\n        \"theory\",\n        \"publish\",\n        \"wiki\",\n        \"term\",\n        \"queued\"\n      ],\n      \"related\": [\n        \"libidinal-economy\",\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2\",\n        \"jean-fran-ois-lyotard\",\n        \"ceteris-paribus\",\n        \"ceteris-paribus-2\",\n        \"mackinder-s-heartland-theory\",\n        \"nicholas-spykman-s-rimland-theory\",\n        \"svar-structural-vector-autoregression\",\n        \"svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"EnzoSim\"\n      },\n      \"addedVia\": \"antoine\",\n      \"submittedAt\": \"2026-08-26T17:11:24.804+00:00\"\n    }\n  },\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"libidinal economy\",\n      \"slug\": \"libidinal-economy\",\n      \"category\": \"Economics\",\n      \"subthemes\": [\n        \"Political economy\",\n        \"Desire\",\n        \"Critical theory\"\n      ],\n      \"summary\": \"A reading of social life in which desire is treated as a scarce, investable force — circulated, hoarded, and spent the way capital is.\",\n      \"whyItMatters\": \"It names why attention, status, and sexual energy show up in markets and politics as if they were prices, not leftovers. Useful when a ‘rational’ model keeps missing what people are actually allocating.\",\n      \"notes\": \"The phrase is locked to Lyotard’s Économie libidinale (1974), though the move is older: Freud already talked about psychic ‘economics.’ A sharp lens; easy to over-apply as a just-so story about every institution.\",\n      \"keywords\": [\n        \"libidinal economy\",\n        \"desire\",\n        \"lyotard\",\n        \"political economy\",\n        \"attention\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"antoine\",\n      \"submittedAt\": \"2026-08-26T17:05:00.000Z\",\n      \"_source_file\": \"content/terms/libidinal-economy.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Political economy",
+        "Desire",
+        "Critical theory"
+      ],
+      "keywords": [
+        "economics",
+        "political",
+        "economy",
+        "desire",
+        "critical",
+        "theory",
+        "reading",
+        "social",
+        "life",
+        "treated",
+        "publish",
+        "wiki",
+        "term",
+        "queued",
+        "libidinal economy",
+        "lyotard",
+        "political economy",
+        "attention"
+      ],
+      "whyItMatters": "It names why attention, status, and sexual energy show up in markets and politics as if they were prices, not leftovers. Useful when a ‘rational’ model keeps missing what people are actually allocating.",
+      "notes": "The phrase is locked to Lyotard’s Économie libidinale (1974), though the move is older: Freud already talked about psychic ‘economics.’ A sharp lens; easy to over-apply as a just-so story about every institution.",
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "antoine",
+      "type": "term",
+      "category": "Economics",
+      "related": [
+        "jean-francois-lyotard",
+        "ceteris-paribus",
+        "mackinder-s-heartland-theory",
+        "nicholas-spykman-s-rimland-theory",
+        "svar-structural-vector-autoregression"
+      ],
+      "artwork": {
+        "full": "/artwork/libidinal-economy.webp",
+        "thumbnail": "/artwork/libidinal-economy-thumb.webp"
+      }
+    },
+    {
+      "title": "Mackinder's Heartland theory",
+      "slug": "mackinder-s-heartland-theory",
+      "notionId": "3fb314f9-feab-8128-ab3f-cd31976cd01c",
+      "summary": "A geopolitical concept proposing that control over Central Asia (the 'Heartland') allows for dominance over the 'World Island' (Eurasia and Africa), and thus the entire world.",
+      "body": [
+        {
+          "id": "2f840be0-3850-4b0c-89b5-b43e8801543d",
+          "type": "image",
+          "rich": [
+            {
+              "text": "mackinder-s-heartland-theory-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/mackinder-s-heartland-theory.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "0b3a7d43-c50d-4e37-bda3-b77f37b7b5ac",
+          "type": "text",
+          "rich": [
+            {
+              "text": "A geopolitical concept proposing that control over Central Asia (the 'Heartland') allows for dominance over the 'World Island' (Eurasia and Africa), and thus the entire world.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "1027f4ee-190b-45a8-9bf6-88f9d66845bf",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "8980c38b-d50e-487b-a112-18c42be303a2",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "f8f88464-b5f2-4f92-8cf2-1d8d664750b3",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Mackinder's Heartland theory: A geopolitical concept proposing that control over Central Asia (the 'Heartland') allows for dominance over the 'World Island' (Eurasia and Africa), and thus the entire world.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "9602f63f-2b22-4c97-8081-a576dbdaea2b",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "4d3119df-b5e0-4b57-a517-eec264564c04",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "1 original record preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "f4e5b8a9-3301-4af2-94f3-fba3f3d76b06",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"Mackinder's Heartland theory\",\n      \"slug\": \"mackinder-s-heartland-theory\",\n      \"category\": \"Geopolitics\",\n      \"subthemes\": [\n        \"Strategic Theory\",\n        \"Eurasia\"\n      ],\n      \"summary\": \"A geopolitical concept proposing that control over Central Asia (the 'Heartland') allows for dominance over the 'World Island' (Eurasia and Africa), and thus the entire world.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"Mackinder's Heartland theory: A geopolitical concept proposing that control over Central Asia (the 'Heartland') allows for dominance over the 'World Island' (Eurasia and Africa), and thus the entire world.\",\n      \"keywords\": [\n        \"geopolitics\",\n        \"strategic\",\n        \"theory\",\n        \"eurasia\",\n        \"geopolitical\",\n        \"concept\",\n        \"proposing\",\n        \"control\",\n        \"over\",\n        \"central\"\n      ],\n      \"related\": [\n        \"nicholas-spykman-s-rimland-theory\",\n        \"jean-fran-ois-lyotard\",\n        \"libidinal-economy\",\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite\",\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-13T20:56:07.47+00:00\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Strategic Theory",
+        "Eurasia"
+      ],
+      "keywords": [
+        "geopolitics",
+        "strategic",
+        "theory",
+        "eurasia",
+        "geopolitical",
+        "concept",
+        "proposing",
+        "control",
+        "over",
+        "central"
+      ],
+      "notes": "Mackinder's Heartland theory: A geopolitical concept proposing that control over Central Asia (the 'Heartland') allows for dominance over the 'World Island' (Eurasia and Africa), and thus the entire world.",
+      "source": {
+        "type": "term",
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "type": "term",
+      "category": "Geopolitics",
+      "related": [
+        "nicholas-spykman-s-rimland-theory",
+        "jean-francois-lyotard",
+        "libidinal-economy"
+      ],
+      "artwork": {
+        "full": "/artwork/mackinder-s-heartland-theory.webp",
+        "thumbnail": "/artwork/mackinder-s-heartland-theory-thumb.webp"
+      }
+    },
+    {
+      "title": "Nicholas Spykman's Rimland theory",
+      "slug": "nicholas-spykman-s-rimland-theory",
+      "notionId": "3fb314f9-feab-8115-8617-da27f6c1650e",
+      "summary": "A geopolitical theory stating that control over the coastal fringes of Eurasia (the Rimland) is the key to global power, as it contains the majority of the world's population and resources.",
+      "body": [
+        {
+          "id": "d13b2a8d-1a67-4b00-b4c8-ead48887d8a6",
+          "type": "image",
+          "rich": [
+            {
+              "text": "nicholas-spykman-s-rimland-theory-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/nicholas-spykman-s-rimland-theory.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "e4760740-9353-4552-8c75-70a9df59987b",
+          "type": "text",
+          "rich": [
+            {
+              "text": "A geopolitical theory stating that control over the coastal fringes of Eurasia (the Rimland) is the key to global power, as it contains the majority of the world's population and resources.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "4329419c-4b23-45d5-b64f-11de025cbab4",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "029bda73-8ab9-4792-9480-3ff030f95d96",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "fdde8c96-754b-42a6-bb72-0cd5eeb81dd2",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Nicholas Spykman's Rimland theory: A geopolitical theory stating that control over the coastal fringes of Eurasia (the Rimland) is the key to global power, as it contains the majority of the world's population and resources. It was developed to counter Mackinder's Heartland theory.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "92786cb9-aacb-4cbf-ab8b-9729b940cbff",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "6d81ec6c-6051-45e4-a806-ecd4fb89d42b",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "1 original record preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "d5d8a9ab-c679-45c5-9db1-c70cf8cfa023",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"Nicholas Spykman's Rimland theory\",\n      \"slug\": \"nicholas-spykman-s-rimland-theory\",\n      \"category\": \"Geopolitics\",\n      \"subthemes\": [\n        \"Strategic Theory\",\n        \"Eurasia\"\n      ],\n      \"summary\": \"A geopolitical theory stating that control over the coastal fringes of Eurasia (the Rimland) is the key to global power, as it contains the majority of the world's population and resources.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"Nicholas Spykman's Rimland theory: A geopolitical theory stating that control over the coastal fringes of Eurasia (the Rimland) is the key to global power, as it contains the majority of the world's population and resources. It was developed to counter Mackinder's Heartland theory.\",\n      \"keywords\": [\n        \"geopolitics\",\n        \"strategic\",\n        \"theory\",\n        \"eurasia\",\n        \"geopolitical\",\n        \"stating\",\n        \"control\",\n        \"over\",\n        \"coastal\",\n        \"fringes\"\n      ],\n      \"related\": [\n        \"mackinder-s-heartland-theory\",\n        \"jean-fran-ois-lyotard\",\n        \"libidinal-economy\",\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite\",\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite-2\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-13T20:55:44.19+00:00\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Strategic Theory",
+        "Eurasia"
+      ],
+      "keywords": [
+        "geopolitics",
+        "strategic",
+        "theory",
+        "eurasia",
+        "geopolitical",
+        "stating",
+        "control",
+        "over",
+        "coastal",
+        "fringes"
+      ],
+      "notes": "Nicholas Spykman's Rimland theory: A geopolitical theory stating that control over the coastal fringes of Eurasia (the Rimland) is the key to global power, as it contains the majority of the world's population and resources. It was developed to counter Mackinder's Heartland theory.",
+      "source": {
+        "type": "term",
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "type": "term",
+      "category": "Geopolitics",
+      "related": [
+        "mackinder-s-heartland-theory",
+        "jean-francois-lyotard",
+        "libidinal-economy"
+      ],
+      "artwork": {
+        "full": "/artwork/nicholas-spykman-s-rimland-theory.webp",
+        "thumbnail": "/artwork/nicholas-spykman-s-rimland-theory-thumb.webp"
+      }
+    },
+    {
+      "title": "NIMBYism",
+      "slug": "nimbyism",
+      "notionId": "3fb314f9-feab-81a8-a6c5-fc0bb8934032",
+      "summary": "An acronym for \"Not In My Back Yard,\" referring to opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally.",
+      "body": [
+        {
+          "id": "9a637629-2d5a-4908-a3fd-6b5a668af862",
+          "type": "image",
+          "rich": [
+            {
+              "text": "nimbyism-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/nimbyism.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "33590f12-7814-40be-a480-1b11d2270d13",
+          "type": "text",
+          "rich": [
+            {
+              "text": "An acronym for \"Not In My Back Yard,\" referring to opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "435b94a9-4fef-4a7c-bab3-12ff79bd543c",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "26865066-a336-4844-a669-2f7cf30f9d7f",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "a87879af-be2d-4321-a9e1-18886c30a128",
+          "type": "text",
+          "rich": [
+            {
+              "text": "The term matters because it captures the gap between abstract support for growth and concrete resistance to nearby change. It is especially useful in arguments about housing supply, infrastructure bottlenecks, and local veto power.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "fea3775d-fcbe-4f4b-80af-3f7d99a15b75",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "3518212f-54c4-448b-a338-af4f08679b06",
+          "type": "text",
+          "rich": [
+            {
+              "text": "The label can illuminate a real pattern, but it can also oversimplify local concerns by treating every objection as selfish or irrational. The most interesting debates are often about where genuine externalities end and exclusionary politics begin.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "605f0770-5bef-4a7b-9898-49ea24f14e9f",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "267ed1d9-b3a6-45b0-a72f-994826da2845",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "2 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "95aa1986-34f7-4d05-92df-e27320644b50",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"NIMBYism\",\n      \"slug\": \"nimbyism\",\n      \"category\": \"Urban Economics\",\n      \"subthemes\": [\n        \"Housing\",\n        \"Land use\",\n        \"Local politics\"\n      ],\n      \"summary\": \"An acronym for \\\"Not In My Back Yard,\\\" referring to opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally.\",\n      \"whyItMatters\": \"The term matters because it captures the gap between abstract support for growth and concrete resistance to nearby change. It is especially useful in arguments about housing supply, infrastructure bottlenecks, and local veto power.\",\n      \"notes\": \"The label can illuminate a real pattern, but it can also oversimplify local concerns by treating every objection as selfish or irrational. The most interesting debates are often about where genuine externalities end and exclusionary politics begin.\",\n      \"keywords\": [\n        \"nimbyism\",\n        \"urban economics\",\n        \"housing\",\n        \"land use\",\n        \"local veto\"\n      ],\n      \"related\": [],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"manual\",\n      \"submittedAt\": \"2026-03-31T12:00:00+00:00\"\n    }\n  },\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"NIMBYism\",\n      \"slug\": \"nimbyism\",\n      \"category\": \"Urban Economics\",\n      \"subthemes\": [\n        \"Housing\",\n        \"Land use\",\n        \"Local politics\"\n      ],\n      \"summary\": \"An acronym for \\\"Not In My Back Yard,\\\" referring to opposition by residents to proposed real estate, infrastructure, or development projects in their local area, even if they agree with the need for such projects generally.\",\n      \"whyItMatters\": \"The term matters because it captures the gap between abstract support for growth and concrete resistance to nearby change. It is especially useful in arguments about housing supply, infrastructure bottlenecks, and local veto power.\",\n      \"notes\": \"The label can illuminate a real pattern, but it can also oversimplify local concerns by treating every objection as selfish or irrational. The most interesting debates are often about where genuine externalities end and exclusionary politics begin.\",\n      \"keywords\": [\n        \"nimbyism\",\n        \"urban economics\",\n        \"housing\",\n        \"land use\",\n        \"local veto\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"manual\",\n      \"submittedAt\": \"2026-03-31T12:00:00.000Z\",\n      \"_source_file\": \"content/terms/nimbyism.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Housing",
+        "Land use",
+        "Local politics"
+      ],
+      "keywords": [
+        "nimbyism",
+        "urban economics",
+        "housing",
+        "land use",
+        "local veto"
+      ],
+      "whyItMatters": "The term matters because it captures the gap between abstract support for growth and concrete resistance to nearby change. It is especially useful in arguments about housing supply, infrastructure bottlenecks, and local veto power.",
+      "notes": "The label can illuminate a real pattern, but it can also oversimplify local concerns by treating every objection as selfish or irrational. The most interesting debates are often about where genuine externalities end and exclusionary politics begin.",
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "manual",
+      "type": "term",
+      "category": "Urban Economics",
+      "related": [],
+      "artwork": {
+        "full": "/artwork/nimbyism.webp",
+        "thumbnail": "/artwork/nimbyism-thumb.webp"
+      }
+    },
+    {
+      "title": "Out of the Money (OTM)",
+      "slug": "out-of-the-money-otm",
+      "notionId": "3fb314f9-feab-8175-9c3d-c5acba244c3f",
+      "summary": "An option that has no intrinsic value, consisting only of time value. For a call option, this occurs when the strike price is above the market price.",
+      "body": [
+        {
+          "id": "cbc861fb-b046-4192-aaac-0f1d55db3cbe",
+          "type": "image",
+          "rich": [
+            {
+              "text": "out-of-the-money-otm-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/out-of-the-money-otm.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "54d5db73-f5fa-444b-bf14-13d040d63776",
+          "type": "text",
+          "rich": [
+            {
+              "text": "An option that has no intrinsic value, consisting only of time value. For a call option, this occurs when the strike price is above the market price.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "c3789579-59f3-4c6f-83fb-00fefc29114b",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "49b4a2ac-4b30-4d7a-99a2-03a421a99b62",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "f0295312-b200-49eb-9a10-d5e9c03e8cdf",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Out-of-the-money options are valued only for their remaining time value and optionality.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "0d4ec776-9964-4832-9c34-7a75d9f9cfee",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "5b1fccd8-ca43-4e0b-97a5-2175e638079a",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Used in derivatives pricing and trading to describe options with zero intrinsic value.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "c23a7473-9f97-4568-bf67-0fb457fa1457",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "20a12722-0814-4287-82bc-828a2133e1e8",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "1 original record preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "4f0f22e2-a4ca-4e72-b678-a4b3ef65adc0",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"Out of the Money (OTM)\",\n      \"slug\": \"out-of-the-money-otm\",\n      \"category\": \"Finance\",\n      \"subthemes\": [\n        \"Options\",\n        \"Moneyness\",\n        \"Time value\"\n      ],\n      \"summary\": \"An option that has no intrinsic value, consisting only of time value. For a call option, this occurs when the strike price is above the market price.\",\n      \"whyItMatters\": \"Out-of-the-money options are valued only for their remaining time value and optionality.\",\n      \"notes\": \"Used in derivatives pricing and trading to describe options with zero intrinsic value.\",\n      \"keywords\": [\n        \"OTM\",\n        \"options\",\n        \"time value\",\n        \"call option\",\n        \"strike price\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-07T18:30:16.745Z\",\n      \"_source_file\": \"content/terms/out-of-the-money-otm.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Options",
+        "Moneyness",
+        "Time value"
+      ],
+      "keywords": [
+        "OTM",
+        "options",
+        "time value",
+        "call option",
+        "strike price"
+      ],
+      "whyItMatters": "Out-of-the-money options are valued only for their remaining time value and optionality.",
+      "notes": "Used in derivatives pricing and trading to describe options with zero intrinsic value.",
+      "source": {
+        "type": "term",
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "type": "term",
+      "category": "Finance",
+      "related": [],
+      "artwork": {
+        "full": "/artwork/out-of-the-money-otm.webp",
+        "thumbnail": "/artwork/out-of-the-money-otm-thumb.webp"
+      }
+    },
+    {
+      "title": "plutocrat",
+      "slug": "plutocrat",
+      "notionId": "3fb314f9-feab-8174-a3a7-cf555fb45b17",
+      "summary": "A person whose power or influence comes from their wealth.",
+      "body": [
+        {
+          "id": "5454712c-f054-48d7-910c-f77cef2b28a3",
+          "type": "image",
+          "rich": [
+            {
+              "text": "plutocrat-paper-glass.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/plutocrat.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "cead5f59-19cf-4570-8948-fd5e8f8081aa",
+          "type": "text",
+          "rich": [
+            {
+              "text": "A person whose power or influence comes from their wealth.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "1409d03d-2795-4a9b-8017-51f0f9ad9711",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "29be83b0-7e30-4989-b116-8b4234b43672",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "3ee6d7ea-8c53-4f2c-bdcc-6520808bd94e",
+          "type": "text",
+          "rich": [
+            {
+              "text": "It names a recurring political pattern in which money converts into influence, access, or authority.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "b69f30cb-ab5b-4e31-8f0c-091725e55db1",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "a1040650-4e3a-4fa9-be1b-61cdc171d612",
+          "type": "text",
+          "rich": [
+            {
+              "text": "The term is often used critically, especially when wealth appears to override merit, representation, or democratic accountability.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "e200f77f-5fd4-4347-809a-07afacc8b88d",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "6c41305a-dc1f-4688-aee9-b6406e4d5568",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "2 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "e85129b7-e605-43f9-aeb6-634bc1a2b65c",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"plutocrat\",\n      \"slug\": \"plutocrat\",\n      \"category\": \"Politics\",\n      \"subthemes\": [\n        \"Wealth\",\n        \"Power\",\n        \"Political influence\"\n      ],\n      \"summary\": \"A person whose power or influence comes from their wealth.\",\n      \"whyItMatters\": \"It names a recurring political pattern in which money converts into influence, access, or authority.\",\n      \"notes\": \"The term is often used critically, especially when wealth appears to override merit, representation, or democratic accountability.\",\n      \"keywords\": [\n        \"plutocrat\",\n        \"wealth\",\n        \"power\",\n        \"influence\",\n        \"elite\"\n      ],\n      \"related\": [],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Poke submission\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-06T21:15:00+00:00\"\n    }\n  },\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"plutocrat\",\n      \"slug\": \"plutocrat\",\n      \"category\": \"Politics\",\n      \"subthemes\": [\n        \"Wealth\",\n        \"Power\",\n        \"Political influence\"\n      ],\n      \"summary\": \"A person whose power or influence comes from their wealth.\",\n      \"whyItMatters\": \"It names a recurring political pattern in which money converts into influence, access, or authority.\",\n      \"notes\": \"The term is often used critically, especially when wealth appears to override merit, representation, or democratic accountability.\",\n      \"keywords\": [\n        \"plutocrat\",\n        \"wealth\",\n        \"power\",\n        \"influence\",\n        \"elite\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Poke submission\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-06T21:15:00.000Z\",\n      \"_source_file\": \"content/terms/plutocrat.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Wealth",
+        "Power",
+        "Political influence"
+      ],
+      "keywords": [
+        "plutocrat",
+        "wealth",
+        "power",
+        "influence",
+        "elite"
+      ],
+      "whyItMatters": "It names a recurring political pattern in which money converts into influence, access, or authority.",
+      "notes": "The term is often used critically, especially when wealth appears to override merit, representation, or democratic accountability.",
+      "source": {
+        "type": "term",
+        "label": "Poke submission"
+      },
+      "addedVia": "poke",
+      "type": "term",
+      "category": "Politics",
+      "related": [],
+      "artwork": {
+        "full": "/artwork/plutocrat.webp",
+        "thumbnail": "/artwork/plutocrat-thumb.webp"
+      }
+    },
+    {
+      "title": "renege",
+      "slug": "renege",
+      "notionId": "3fb314f9-feab-81c5-a04f-cd3033fe51d7",
+      "summary": "In the context of central banking, to renege refers to a policy pivot where the Fed fails to follow through on its previous forward guidance or implicit commitments (e.g., backing out of signaled interest rate cuts due to persistent inflation).",
+      "body": [
+        {
+          "id": "1dbe4f89-098b-4f6b-ad94-1c4d414fbe51",
+          "type": "image",
+          "rich": [
+            {
+              "text": "renege-paper-glass.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/renege.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "0bb01dd1-3d4a-4c8f-8d13-affd332b2338",
+          "type": "text",
+          "rich": [
+            {
+              "text": "In the context of central banking, to renege refers to a policy pivot where the Fed fails to follow through on its previous forward guidance or implicit commitments (e.g., backing out of signaled interest rate cuts due to persistent inflation).",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "d5e08001-eb8b-4f04-9fb5-901dd3f4a89d",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "c57f74ea-862e-4d89-a816-779b37102829",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "d77e8568-423b-4c83-b4ad-6e40d46b7354",
+          "type": "text",
+          "rich": [
+            {
+              "text": "It captures the tension between market expectations and policy credibility when central banks shift away from previously signaled actions.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "8ec49aa6-5318-4208-8f19-c3bfe7a66dd0",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "c6b7e224-0f0e-49c0-bda3-de61da3a45ee",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Used here in a specialized policy context rather than the more general sense of failing to keep a promise.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "e3ccca9d-4307-43a2-8623-dc9b943f9f63",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "c49cc26f-8bd6-4a83-97e1-e1b3a1ea1a45",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "2 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "14edc5a9-4b19-456a-a385-4842613aac9f",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"renege\",\n      \"slug\": \"renege\",\n      \"category\": \"Finance\",\n      \"subthemes\": [\n        \"Central banking\",\n        \"Forward guidance\",\n        \"Monetary policy\"\n      ],\n      \"summary\": \"In the context of central banking, to renege refers to a policy pivot where the Fed fails to follow through on its previous forward guidance or implicit commitments (e.g., backing out of signaled interest rate cuts due to persistent inflation).\",\n      \"whyItMatters\": \"It captures the tension between market expectations and policy credibility when central banks shift away from previously signaled actions.\",\n      \"notes\": \"Used here in a specialized policy context rather than the more general sense of failing to keep a promise.\",\n      \"keywords\": [\n        \"renege\",\n        \"Fed\",\n        \"central banking\",\n        \"forward guidance\",\n        \"monetary policy\"\n      ],\n      \"related\": [],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Poke submission\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-07T17:41:00+00:00\"\n    }\n  },\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"renege\",\n      \"slug\": \"renege\",\n      \"category\": \"Finance\",\n      \"subthemes\": [\n        \"Central banking\",\n        \"Forward guidance\",\n        \"Monetary policy\"\n      ],\n      \"summary\": \"In the context of central banking, to renege refers to a policy pivot where the Fed fails to follow through on its previous forward guidance or implicit commitments (e.g., backing out of signaled interest rate cuts due to persistent inflation).\",\n      \"whyItMatters\": \"It captures the tension between market expectations and policy credibility when central banks shift away from previously signaled actions.\",\n      \"notes\": \"Used here in a specialized policy context rather than the more general sense of failing to keep a promise.\",\n      \"keywords\": [\n        \"renege\",\n        \"Fed\",\n        \"central banking\",\n        \"forward guidance\",\n        \"monetary policy\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Poke submission\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-07T17:41:00.000Z\",\n      \"_source_file\": \"content/terms/renege.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Central banking",
+        "Forward guidance",
+        "Monetary policy"
+      ],
+      "keywords": [
+        "renege",
+        "Fed",
+        "central banking",
+        "forward guidance",
+        "monetary policy"
+      ],
+      "whyItMatters": "It captures the tension between market expectations and policy credibility when central banks shift away from previously signaled actions.",
+      "notes": "Used here in a specialized policy context rather than the more general sense of failing to keep a promise.",
+      "source": {
+        "type": "term",
+        "label": "Poke submission"
+      },
+      "addedVia": "poke",
+      "type": "term",
+      "category": "Finance",
+      "related": [],
+      "artwork": {
+        "full": "/artwork/renege.webp",
+        "thumbnail": "/artwork/renege-thumb.webp"
+      }
+    },
+    {
+      "title": "safetyism",
+      "slug": "safetyism",
+      "notionId": "3fb314f9-feab-81eb-9178-e0b25fb43463",
+      "summary": "The tacit ideology that the government’s main goal should be to minimize risks rather than balance them against benefits.",
+      "body": [
+        {
+          "id": "38850538-9671-4405-a4a0-5427901ccfc7",
+          "type": "image",
+          "rich": [
+            {
+              "text": "safetyism-paper-glass.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/safetyism.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "be0ac67e-12d6-43e0-9454-b573e2d7e8e9",
+          "type": "text",
+          "rich": [
+            {
+              "text": "The tacit ideology that the government’s main goal should be to minimize risks rather than balance them against benefits.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "833e4dab-fe5f-4df8-85f5-e96c977fb03e",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "d2742d43-e4cf-4cfe-8bc6-4dd581a33660",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "f501fa67-d754-41ec-b27f-f48156f509ef",
+          "type": "text",
+          "rich": [
+            {
+              "text": "The concept is useful because it names a governing style in which caution becomes the default answer even when tradeoffs are unavoidable. It often appears in debates about regulation, public health, speech, and education.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "1e2f1f8d-3e6d-445d-a789-f86475e82d3b",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "24d41736-2860-4917-9a58-d5048b8c5065",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Used carefully, the term points to a real tension between resilience and protection. Used lazily, it can flatten serious moral disagreements into a single accusation of overprotection.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "91632f41-5e58-4205-b714-266d427cfaab",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "d47924d1-9469-4c87-9db9-730d9da93bf9",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "2 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "b25c92ea-d4d0-4ec0-a4ac-8b2f5c53e166",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"safetyism\",\n      \"slug\": \"safetyism\",\n      \"category\": \"Public policy\",\n      \"subthemes\": [\n        \"Risk management\",\n        \"Institutional culture\",\n        \"Political psychology\"\n      ],\n      \"summary\": \"The tacit ideology that the government’s main goal should be to minimize risks rather than balance them against benefits.\",\n      \"whyItMatters\": \"The concept is useful because it names a governing style in which caution becomes the default answer even when tradeoffs are unavoidable. It often appears in debates about regulation, public health, speech, and education.\",\n      \"notes\": \"Used carefully, the term points to a real tension between resilience and protection. Used lazily, it can flatten serious moral disagreements into a single accusation of overprotection.\",\n      \"keywords\": [\n        \"safetyism\",\n        \"risk management\",\n        \"public policy\",\n        \"precaution\",\n        \"institutional culture\"\n      ],\n      \"related\": [],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"manual\",\n      \"submittedAt\": \"2026-03-31T12:00:00+00:00\"\n    }\n  },\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"safetyism\",\n      \"slug\": \"safetyism\",\n      \"category\": \"Public policy\",\n      \"subthemes\": [\n        \"Risk management\",\n        \"Institutional culture\",\n        \"Political psychology\"\n      ],\n      \"summary\": \"The tacit ideology that the government’s main goal should be to minimize risks rather than balance them against benefits.\",\n      \"whyItMatters\": \"The concept is useful because it names a governing style in which caution becomes the default answer even when tradeoffs are unavoidable. It often appears in debates about regulation, public health, speech, and education.\",\n      \"notes\": \"Used carefully, the term points to a real tension between resilience and protection. Used lazily, it can flatten serious moral disagreements into a single accusation of overprotection.\",\n      \"keywords\": [\n        \"safetyism\",\n        \"risk management\",\n        \"public policy\",\n        \"precaution\",\n        \"institutional culture\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"manual\",\n      \"submittedAt\": \"2026-03-31T12:00:00.000Z\",\n      \"_source_file\": \"content/terms/safetyism.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Risk management",
+        "Institutional culture",
+        "Political psychology"
+      ],
+      "keywords": [
+        "safetyism",
+        "risk management",
+        "public policy",
+        "precaution",
+        "institutional culture"
+      ],
+      "whyItMatters": "The concept is useful because it names a governing style in which caution becomes the default answer even when tradeoffs are unavoidable. It often appears in debates about regulation, public health, speech, and education.",
+      "notes": "Used carefully, the term points to a real tension between resilience and protection. Used lazily, it can flatten serious moral disagreements into a single accusation of overprotection.",
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "manual",
+      "type": "term",
+      "category": "Public policy",
+      "related": [],
+      "artwork": {
+        "full": "/artwork/safetyism.webp",
+        "thumbnail": "/artwork/safetyism-thumb.webp"
+      }
+    },
+    {
+      "title": "Snippy",
+      "slug": "snippy",
+      "notionId": "3fb314f9-feab-8166-a5f4-cc564292adca",
+      "summary": "an adjective describing someone who is rudely curt, impatient, or sharp-tongued, often reacting with unnecessary brevity or irritation.",
+      "body": [
+        {
+          "id": "b45c2275-655e-4956-ba04-892d32d0d9fd",
+          "type": "image",
+          "rich": [
+            {
+              "text": "snippy-paper-glass.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/snippy.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "1fc748db-03f3-4a4d-85af-72ab9b5a8143",
+          "type": "text",
+          "rich": [
+            {
+              "text": "an adjective describing someone who is rudely curt, impatient, or sharp-tongued, often reacting with unnecessary brevity or irritation.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "6b12dc53-1a21-4227-aa50-991493034b17",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "cf286c6c-c805-4d8e-94a2-8ee726ca2858",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "59d53650-f9fa-4edd-9d74-39636a5da1b4",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Snippy: an adjective describing someone who is rudely curt, impatient, or sharp-tongued, often reacting with unnecessary brevity or irritation. It is commonly used to describe someone \"putting on airs\" or acting snappish.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "39c613a9-ccba-45e2-a9d2-64691539a12e",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "84d8aeb9-d91e-4eb2-b1d0-aedd541e50ca",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "1 original record preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "6be3ceb1-fa29-446a-a89f-766f1e993701",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"Snippy\",\n      \"slug\": \"snippy\",\n      \"category\": \"Vocabulary\",\n      \"subthemes\": [\n        \"Temperament\",\n        \"Behavior\"\n      ],\n      \"summary\": \"an adjective describing someone who is rudely curt, impatient, or sharp-tongued, often reacting with unnecessary brevity or irritation.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"Snippy: an adjective describing someone who is rudely curt, impatient, or sharp-tongued, often reacting with unnecessary brevity or irritation. It is commonly used to describe someone \\\"putting on airs\\\" or acting snappish.\",\n      \"keywords\": [\n        \"vocabulary\",\n        \"temperament\",\n        \"behavior\",\n        \"adjective\",\n        \"describing\",\n        \"someone\",\n        \"rudely\",\n        \"curt\",\n        \"impatient\",\n        \"sharp-tongued\"\n      ],\n      \"related\": [\n        \"aesthete\",\n        \"crustaceous\",\n        \"atrabilaire\",\n        \"crib\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Poke\"\n      },\n      \"addedVia\": \"iMessage\",\n      \"submittedAt\": \"2026-04-20T03:48:15.776+00:00\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Temperament",
+        "Behavior"
+      ],
+      "keywords": [
+        "vocabulary",
+        "temperament",
+        "behavior",
+        "adjective",
+        "describing",
+        "someone",
+        "rudely",
+        "curt",
+        "impatient",
+        "sharp-tongued"
+      ],
+      "notes": "Snippy: an adjective describing someone who is rudely curt, impatient, or sharp-tongued, often reacting with unnecessary brevity or irritation. It is commonly used to describe someone \"putting on airs\" or acting snappish.",
+      "source": {
+        "type": "term",
+        "label": "Poke"
+      },
+      "addedVia": "iMessage",
+      "type": "term",
+      "category": "Vocabulary",
+      "related": [
+        "aesthete",
+        "crustaceous",
+        "atrabilaire",
+        "crib"
+      ],
+      "artwork": {
+        "full": "/artwork/snippy.webp",
+        "thumbnail": "/artwork/snippy-thumb.webp"
+      }
+    },
+    {
+      "title": "SVAR (Structural Vector Autoregression)",
+      "slug": "svar-structural-vector-autoregression",
+      "notionId": "3fb314f9-feab-81e9-bd93-e007a471cd65",
+      "summary": "SVAR (Structural Vector Autoregression): SVAR is an econometric tool that separates tangled economic data into the underlying independent surprises, or shocks, that drove it, so you can simulate what happens if one of those shocks hits again.",
+      "body": [
+        {
+          "id": "226fa5f6-2c89-4d80-81c5-d201e631850c",
+          "type": "image",
+          "rich": [
+            {
+              "text": "svar-structural-vector-autoregression-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/svar-structural-vector-autoregression.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "2281db0a-0e3c-486c-8304-d43e0f25878a",
+          "type": "text",
+          "rich": [
+            {
+              "text": "SVAR (Structural Vector Autoregression): SVAR is an econometric tool that separates tangled economic data into the underlying independent surprises, or shocks, that drove it, so you can simulate what happens if one of those shocks hits again.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "3159fcd8-158d-41f8-888f-7f3c8b7e9a58",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "e424e3d6-a227-4b07-b66a-8fc8e6dd41db",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "37987562-9bbe-454f-af25-487f51dc05be",
+          "type": "text",
+          "rich": [
+            {
+              "text": "SVAR (Structural Vector Autoregression): SVAR is an econometric tool that separates tangled economic data into the underlying independent surprises, or shocks, that drove it, so you can simulate what happens if one of those shocks hits again.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "25ffd86b-6e13-4150-987d-817b6a3e85e4",
+          "type": "text",
+          "rich": [
+            {
+              "text": "When two economic variables move together, you usually cannot tell from the data alone whether A caused B or B caused A. Interest rates and unemployment may move in the same direction, but both causal stories can fit the same numbers. That is the identification problem.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "add10ff1-785c-4319-9323-8b442a479b3e",
+          "type": "text",
+          "rich": [
+            {
+              "text": "A standard VAR predicts today's values from past values across multiple variables at once. It is good at describing the dance between variables, but it does not tell you why the dance is happening. It tells you what tends to happen next, not who is leading.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "9253f53c-17ee-4341-ac95-f7ede4a498ea",
+          "type": "text",
+          "rich": [
+            {
+              "text": "The structural part adds the discipline needed to decompose comovements into clean, independent causes called structural shocks. These are the original surprises in the economy: an oil price spike, a surprise Fed move, a productivity boom. Once the shock hits, GDP, unemployment, inflation, and other variables adjust as the economy digests it.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "9d9d6dc6-b9f4-4408-a198-e302c3ed4792",
+          "type": "text",
+          "rich": [
+            {
+              "text": "To move from a VAR to an SVAR, you need identifying restrictions. These are extra assumptions that let you unmix the signal into its pure components. They are not fully testable, which is why two economists can look at the same data and disagree about what counts as a pure monetary shock. SVARs are not magic; they are a disciplined way of making assumptions explicit.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "f961ae38-9a9e-4bc0-a51d-12dd524e4a37",
+          "type": "text",
+          "rich": [
+            {
+              "text": "A good analogy is a cocktail. A VAR tells you what the drink tastes like: sweet, citrusy, bitter. An SVAR tries to reverse-engineer the recipe, such as 30ml gin and 15ml lime. To do that, you have to assume the bartender only used a limited set of ingredients.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "543ef56c-0452-47ed-ab67-458d395defc5",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Another analogy is a sound engineer. The raw recording with drums, guitar, and vocals mixed together is the VAR. Separating it back into individual tracks is what an SVAR does, but only if you are willing to make assumptions about how the tracks were mixed in the first place.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "eb51dca5-ee3c-4721-bcda-a276f991c010",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Once you have clean shocks, you can run impulse response functions, which show how the economy reacts over time to one pure shock while holding the others fixed. That is why central banks, the IMF, and finance teams use SVARs to answer questions like what happens if the Fed surprises markets with a rate hike.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "3abc6f36-37a0-4b26-b22a-cb7614a5a7a9",
+          "type": "text",
+          "rich": [
+            {
+              "text": "In short, an SVAR is a statistical tool that separates tangled economic data into the independent shocks that drove it, allowing causal what-if simulations.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "184ee370-44f8-4ebf-b628-b5e9588312fc",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "4aa990a9-d5c5-4e6d-8690-e8c52fa8af0b",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "2 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "67c98735-db15-411c-ac15-d1e5bc1aa427",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"SVAR (Structural Vector Autoregression)\",\n      \"slug\": \"svar-structural-vector-autoregression\",\n      \"category\": \"Economics\",\n      \"subthemes\": [\n        \"Econometrics\",\n        \"Macroeconomics\",\n        \"Methodology\",\n        \"Causal Inference\"\n      ],\n      \"summary\": \"SVAR (Structural Vector Autoregression): SVAR is an econometric tool that separates tangled economic data into the underlying independent surprises, or shocks, that drove it, so you can simulate what happens if one of those shocks hits again.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"SVAR (Structural Vector Autoregression): SVAR is an econometric tool that separates tangled economic data into the underlying independent surprises, or shocks, that drove it, so you can simulate what happens if one of those shocks hits again.\\n\\nWhen two economic variables move together, you usually cannot tell from the data alone whether A caused B or B caused A. Interest rates and unemployment may move in the same direction, but both causal stories can fit the same numbers. That is the identification problem.\\n\\nA standard VAR predicts today's values from past values across multiple variables at once. It is good at describing the dance between variables, but it does not tell you why the dance is happening. It tells you what tends to happen next, not who is leading.\\n\\nThe structural part adds the discipline needed to decompose comovements into clean, independent causes called structural shocks. These are the original surprises in the economy: an oil price spike, a surprise Fed move, a productivity boom. Once the shock hits, GDP, unemployment, inflation, and other variables adjust as the economy digests it.\\n\\nTo move from a VAR to an SVAR, you need identifying restrictions. These are extra assumptions that let you unmix the signal into its pure components. They are not fully testable, which is why two economists can look at the same data and disagree about what counts as a pure monetary shock. SVARs are not magic; they are a disciplined way of making assumptions explicit.\\n\\nA good analogy is a cocktail. A VAR tells you what the drink tastes like: sweet, citrusy, bitter. An SVAR tries to reverse-engineer the recipe, such as 30ml gin and 15ml lime. To do that, you have to assume the bartender only used a limited set of ingredients.\\n\\nAnother analogy is a sound engineer. The raw recording with drums, guitar, and vocals mixed together is the VAR. Separating it back into individual tracks is what an SVAR does, but only if you are willing to make assumptions about how the tracks were mixed in the first place.\\n\\nOnce you have clean shocks, you can run impulse response functions, which show how the economy reacts over time to one pure shock while holding the others fixed. That is why central banks, the IMF, and finance teams use SVARs to answer questions like what happens if the Fed surprises markets with a rate hike.\\n\\nIn short, an SVAR is a statistical tool that separates tangled economic data into the independent shocks that drove it, allowing causal what-if simulations.\",\n      \"keywords\": [\n        \"economics\",\n        \"econometrics\",\n        \"macroeconomics\",\n        \"methodology\",\n        \"causal\",\n        \"inference\",\n        \"svar\",\n        \"structural\",\n        \"vector\",\n        \"autoregression\"\n      ],\n      \"related\": [\n        \"svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep\",\n        \"ceteris-paribus-2\",\n        \"ceteris-paribus\",\n        \"libidinal-economy\",\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-21T02:32:50.581+00:00\"\n    }\n  },\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"SVAR (Structural Vector Autoregression) is an econometric tool that tries to sep\",\n      \"slug\": \"svar-structural-vector-autoregression-is-an-econometric-tool-that-tries-to-sep\",\n      \"category\": \"Economics\",\n      \"subthemes\": [\n        \"Econometrics\",\n        \"Macroeconomics\",\n        \"Methodology\",\n        \"Causal Inference\"\n      ],\n      \"summary\": \"SVAR (Structural Vector Autoregression) is an econometric tool that tries to separate tangled economic data into the underlying independent surprises — called shocks — that drove it, so you can simulate what happens if one of those surprises hits again.\",\n      \"whyItMatters\": \"Submitted through the ingestion workflow. Review and refine the category and supporting notes before treating it as a settled entry.\",\n      \"notes\": \"SVAR (Structural Vector Autoregression) is an econometric tool that tries to separate tangled economic data into the underlying independent surprises — called shocks — that drove it, so you can simulate what happens if one of those surprises hits again.\\n\\nThe motivating problem\\nWhen two things move together in the economy (e.g., interest rates and unemployment), you can't tell from the data alone whether A caused B or B caused A. Both causal stories fit the same numbers. This is the core identification problem.\\n\\nWhat a VAR does\\nA VAR (vector autoregression) predicts today's values from recent past values across multiple variables simultaneously. It's a correlation machine across time — it tells you what tends to happen next but not why. It captures the dance between variables without knowing who's leading.\\n\\nWhat the \\\"S\\\" adds\\nThe S stands for Structural. An SVAR forces the model to decompose comovements into clean, independent causes — structural shocks. These are the economy's original surprises: a surprise oil price spike, a surprise Fed decision, a surprise productivity boom. Everything else (downstream movements in GDP, unemployment, prices) is just the economy digesting those shocks.\\n\\nIdentifying restrictions\\nTo go from a VAR to an SVAR, you need extra assumptions called identifying restrictions. These are what allow you to decompose the mixed signal into its pure components. They are never fully testable — two economists can take the same data and disagree about what counts as a \\\"pure monetary shock\\\" based on different assumptions. SVARs aren't magic; they're a disciplined way of being explicit about your assumptions.\\n\\nAnalogies\\n- Cocktail: A VAR describes what you taste (sweet, citrusy, bitter). An SVAR reverse-engineers the recipe (30ml gin, 15ml lime). To do that, you need assumptions — like knowing the bartender only uses three ingredients.\\n- Sound engineer: The raw recording with drums, guitar, and vocals mixed together is the VAR. Separating it back into individual tracks is what an SVAR does — but you need assumptions to un-mix the signal.\\n\\nWhy it matters\\nOnce you have clean shocks, you can run impulse response functions — graphs showing how the economy reacts over time to one pure shock, holding others fixed. Central banks, the IMF, and finance shops use SVARs to answer \\\"what if the Fed does a surprise rate hike tomorrow?\\\" type questions.\\n\\nTL;DR\\nA statistical tool that separates tangled economic data into the independent surprises that drove it, enabling causal what-if simulations.\",\n      \"keywords\": [\n        \"economics\",\n        \"econometrics\",\n        \"macroeconomics\",\n        \"methodology\",\n        \"causal\",\n        \"inference\",\n        \"svar\",\n        \"structural\",\n        \"vector\",\n        \"autoregression\"\n      ],\n      \"related\": [\n        \"svar-structural-vector-autoregression\",\n        \"ceteris-paribus-2\",\n        \"ceteris-paribus\",\n        \"libidinal-economy\",\n        \"publish-this-as-a-wiki-term-not-a-queued-paper-use-this-copy-do-not-rewrite\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Enzo\"\n      },\n      \"addedVia\": \"poke\",\n      \"submittedAt\": \"2026-04-21T02:31:27.976+00:00\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Econometrics",
+        "Macroeconomics",
+        "Methodology",
+        "Causal Inference"
+      ],
+      "keywords": [
+        "economics",
+        "econometrics",
+        "macroeconomics",
+        "methodology",
+        "causal",
+        "inference",
+        "svar",
+        "structural",
+        "vector",
+        "autoregression"
+      ],
+      "notes": "SVAR (Structural Vector Autoregression): SVAR is an econometric tool that separates tangled economic data into the underlying independent surprises, or shocks, that drove it, so you can simulate what happens if one of those shocks hits again.",
+      "source": {
+        "type": "term",
+        "label": "Enzo"
+      },
+      "addedVia": "poke",
+      "type": "term",
+      "category": "Economics",
+      "related": [
+        "ceteris-paribus",
+        "libidinal-economy"
+      ],
+      "artwork": {
+        "full": "/artwork/svar-structural-vector-autoregression.webp",
+        "thumbnail": "/artwork/svar-structural-vector-autoregression-thumb.webp"
+      }
+    },
+    {
+      "title": "terra nullius",
+      "slug": "terra-nullius",
+      "notionId": "3fb314f9-feab-81f0-bc72-dbabf7dfbd61",
+      "summary": "Latin for \"nobody's land\"; a principle used in international law to describe territory that has never been subject to the sovereignty of any state.",
+      "body": [
+        {
+          "id": "b10fc7e2-cc94-4d8a-8e75-aad47be6660d",
+          "type": "image",
+          "rich": [
+            {
+              "text": "terra-nullius-explained.png",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/artwork/terra-nullius.webp",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "8ba32756-320b-4e7f-ab27-42e8845efe5b",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Latin for \"nobody's land\"; a principle used in international law to describe territory that has never been subject to the sovereignty of any state.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "ee9ff99c-13b3-46c0-827b-2632736e123c",
+          "type": "divider",
+          "rich": [],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "a35c17e5-baeb-4bf1-af21-0c0337e5776b",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "ae9b7b0f-a956-4b7e-a37b-a81c76e672d3",
+          "type": "text",
+          "rich": [
+            {
+              "text": "The phrase matters because it reveals how legal language was used to turn inhabited places into supposedly empty territory. It remains central to debates about colonization, recognition, and the legitimacy of historical land claims.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "95ed0629-0548-461c-ab2d-3268e40e18ea",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "0f41aaa7-575d-4f3a-ab31-353004d3c332",
+          "type": "text",
+          "rich": [
+            {
+              "text": "In practice, the doctrine has been heavily criticized for erasing Indigenous presence and political order. It now often appears as an example of how legal categories can naturalize conquest.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "b9ab20e1-1ca0-45ec-b689-f9e2bf13a7c9",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source records",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "0836adb0-266c-479d-938f-461b75609b79",
+              "type": "text",
+              "rich": [
+                {
+                  "text": "2 original records preserved from the public wiki and repository.",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            },
+            {
+              "id": "4211042b-91ab-48c2-986d-dd6b90bd3b33",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "[\n  {\n    \"origin\": \"live\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"terra nullius\",\n      \"slug\": \"terra-nullius\",\n      \"category\": \"Law\",\n      \"subthemes\": [\n        \"Colonial law\",\n        \"Sovereignty\",\n        \"Imperial doctrine\"\n      ],\n      \"summary\": \"Latin for \\\"nobody's land\\\"; a principle used in international law to describe territory that has never been subject to the sovereignty of any state.\",\n      \"whyItMatters\": \"The phrase matters because it reveals how legal language was used to turn inhabited places into supposedly empty territory. It remains central to debates about colonization, recognition, and the legitimacy of historical land claims.\",\n      \"notes\": \"In practice, the doctrine has been heavily criticized for erasing Indigenous presence and political order. It now often appears as an example of how legal categories can naturalize conquest.\",\n      \"keywords\": [\n        \"terra nullius\",\n        \"colonial law\",\n        \"sovereignty\",\n        \"indigenous dispossession\",\n        \"land claims\"\n      ],\n      \"related\": [],\n      \"source\": {\n        \"type\": \"term\",\n        \"url\": null,\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"manual\",\n      \"submittedAt\": \"2026-03-31T12:00:00+00:00\"\n    }\n  },\n  {\n    \"origin\": \"repository\",\n    \"record\": {\n      \"type\": \"term\",\n      \"title\": \"terra nullius\",\n      \"slug\": \"terra-nullius\",\n      \"category\": \"Law\",\n      \"subthemes\": [\n        \"Colonial law\",\n        \"Sovereignty\",\n        \"Imperial doctrine\"\n      ],\n      \"summary\": \"Latin for \\\"nobody's land\\\"; a principle used in international law to describe territory that has never been subject to the sovereignty of any state.\",\n      \"whyItMatters\": \"The phrase matters because it reveals how legal language was used to turn inhabited places into supposedly empty territory. It remains central to debates about colonization, recognition, and the legitimacy of historical land claims.\",\n      \"notes\": \"In practice, the doctrine has been heavily criticized for erasing Indigenous presence and political order. It now often appears as an example of how legal categories can naturalize conquest.\",\n      \"keywords\": [\n        \"terra nullius\",\n        \"colonial law\",\n        \"sovereignty\",\n        \"indigenous dispossession\",\n        \"land claims\"\n      ],\n      \"source\": {\n        \"type\": \"term\",\n        \"label\": \"Curated note\"\n      },\n      \"addedVia\": \"manual\",\n      \"submittedAt\": \"2026-03-31T12:00:00.000Z\",\n      \"_source_file\": \"content/terms/terra-nullius.json\"\n    }\n  }\n]",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Colonial law",
+        "Sovereignty",
+        "Imperial doctrine"
+      ],
+      "keywords": [
+        "terra nullius",
+        "colonial law",
+        "sovereignty",
+        "indigenous dispossession",
+        "land claims"
+      ],
+      "whyItMatters": "The phrase matters because it reveals how legal language was used to turn inhabited places into supposedly empty territory. It remains central to debates about colonization, recognition, and the legitimacy of historical land claims.",
+      "notes": "In practice, the doctrine has been heavily criticized for erasing Indigenous presence and political order. It now often appears as an example of how legal categories can naturalize conquest.",
+      "source": {
+        "type": "term",
+        "label": "Curated note"
+      },
+      "addedVia": "manual",
+      "type": "term",
+      "category": "Law",
+      "related": [],
+      "artwork": {
+        "full": "/artwork/terra-nullius.webp",
+        "thumbnail": "/artwork/terra-nullius-thumb.webp"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "title": "Complete biosynthesis of nicotine",
+      "slug": "complete-biosynthesis-of-nicotine",
+      "notionId": "3fb314f9-feab-81f9-9203-e96a9f14d9f4",
+      "summary": "This Cell paper completes the nicotine biosynthesis pathway by identifying the final coupling reaction, a 5-component metabolon, and a MATE transporter required for efficient nicotine production and transport.",
+      "body": [
+        {
+          "id": "de76d75a-0058-4a36-96e6-1bdde7d23669",
+          "type": "text",
+          "rich": [
+            {
+              "text": "This Cell paper completes the nicotine biosynthesis pathway by identifying the final coupling reaction, a 5-component metabolon, and a MATE transporter required for efficient nicotine production and transport.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "67c31efc-e999-4b57-ad26-e72b5df31932",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Why it matters",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "091413ee-9d59-44cf-a846-3ba078263fab",
+          "type": "text",
+          "rich": [
+            {
+              "text": "It clarifies a major plant alkaloid pathway and offers useful ideas for engineering pest resistance in crops.",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "378ffaa5-de84-464f-903d-a66eedbb4039",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Notes",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "f5303059-b330-4132-a372-92235db65fb3",
+          "type": "text",
+          "rich": [
+            {
+              "text": "Source: ",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            },
+            {
+              "text": "https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false,
+              "href": "https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1"
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "1e2a5eb0-cb2e-4023-8a18-23a458d78897",
+          "type": "sub_header",
+          "rich": [
+            {
+              "text": "Original document",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "a338a800-61b6-419a-93eb-f649e36077d6",
+          "type": "pdf",
+          "rich": [
+            {
+              "text": "complete-biosynthesis-of-nicotine.pdf",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "source": "/pdfs/complete-biosynthesis-of-nicotine.pdf",
+          "caption": "",
+          "children": []
+        },
+        {
+          "id": "06126b0d-d38b-4561-9f32-c3eacf061421",
+          "type": "toggle",
+          "rich": [
+            {
+              "text": "Original source record",
+              "bold": false,
+              "italic": false,
+              "code": false,
+              "strike": false
+            }
+          ],
+          "caption": "",
+          "children": [
+            {
+              "id": "5378a5db-90d8-4b54-abbe-4bb6ce332aed",
+              "type": "code",
+              "rich": [
+                {
+                  "text": "{\n  \"type\": \"read\",\n  \"title\": \"Complete biosynthesis of nicotine\",\n  \"slug\": \"complete-biosynthesis-of-nicotine\",\n  \"theme\": \"Biology\",\n  \"subthemes\": [\n    \"Plant biochemistry\",\n    \"Natural products\",\n    \"Metabolism\"\n  ],\n  \"summary\": \"This Cell paper completes the nicotine biosynthesis pathway by identifying the final coupling reaction, a 5-component metabolon, and a MATE transporter required for efficient nicotine production and transport.\",\n  \"whyItMatters\": \"It clarifies a major plant alkaloid pathway and offers useful ideas for engineering pest resistance in crops.\",\n  \"notes\": \"Source: https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1\",\n  \"keywords\": [\n    \"nicotine\",\n    \"biosynthesis\",\n    \"plants\",\n    \"alkaloids\",\n    \"metabolism\"\n  ],\n  \"status\": \"to-read\",\n  \"source\": {\n    \"type\": \"paper\",\n    \"url\": \"https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1\"\n  },\n  \"addedVia\": \"poke\",\n  \"submittedAt\": \"2026-04-03T23:08:12.741Z\",\n  \"pdfUrl\": \"/pdfs/complete-biosynthesis-of-nicotine.pdf\",\n  \"_source_file\": \"content/reads/complete-biosynthesis-of-nicotine.json\"\n}",
+                  "bold": false,
+                  "italic": false,
+                  "code": false,
+                  "strike": false
+                }
+              ],
+              "caption": "",
+              "children": []
+            }
+          ]
+        }
+      ],
+      "subthemes": [
+        "Plant biochemistry",
+        "Natural products",
+        "Metabolism"
+      ],
+      "keywords": [
+        "nicotine",
+        "biosynthesis",
+        "plants",
+        "alkaloids",
+        "metabolism"
+      ],
+      "whyItMatters": "It clarifies a major plant alkaloid pathway and offers useful ideas for engineering pest resistance in crops.",
+      "notes": "Source: https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1",
+      "source": {
+        "type": "paper",
+        "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00335-1"
+      },
+      "addedVia": "poke",
+      "type": "read",
+      "theme": "Biology",
+      "status": "to-read",
+      "pdfUrl": "/pdfs/complete-biosynthesis-of-nicotine.pdf"
+    }
+  ]
+}

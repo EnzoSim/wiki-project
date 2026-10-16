@@ -7,3 +7,5 @@ output
 .env.*.local
 .DS_Store
 *.swp
+
+*.tsbuildinfo

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import styles from './page.module.css';
 import { getReadingBySlug, groupReadingsByTheme, loadReadingQueue } from '../../../lib/wiki';
+import NotionContent from '../../../components/notion-content';
 
 type ReadPageProps = {
   params: Promise<{ slug: string }>;
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: ReadPageProps): Promise<Metad
     description: entry.summary,
     keywords: [entry.theme, ...entry.subthemes, ...entry.keywords],
     openGraph: {
-      title: `${entry.title} | Wiki Master`,
+      title: `${entry.title} | Reference index`,
       description: entry.summary,
       type: 'article',
     },
@@ -39,37 +40,46 @@ export default async function ReadPage({ params }: ReadPageProps) {
   const related = groupReadingsByTheme(await loadReadingQueue('all'))
     .flatMap((theme) => theme.items)
     .filter((item) => item.slug !== entry.slug)
-    .filter((item) => item.theme === entry.theme || item.subthemes.some((subtheme) => entry.subthemes.includes(subtheme)))
+    .filter(
+      (item) =>
+        item.theme === entry.theme ||
+        item.subthemes.some((subtheme) => entry.subthemes.includes(subtheme)),
+    )
     .slice(0, 4);
 
   return (
-    <main className={styles.page}>
+    <main id="main" className={styles.page}>
       <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
         <Link href="/">Back to index</Link>
       </nav>
 
       <header className={styles.header}>
-        <p className={styles.category}>To read</p>
+        <p className={styles.category}>{entry.theme}</p>
         <h1>{entry.title}</h1>
-        <p className={styles.lead}>{entry.summary}</p>
-        <p className={styles.credit}>Classified for Enzo Simier.</p>
+        {!entry.body?.length ? <p className={styles.lead}>{entry.summary}</p> : null}
       </header>
 
       <div className={styles.layout}>
         <article className={styles.article}>
-          {entry.whyItMatters ? (
-            <section className={styles.section}>
-              <h2>Why it was queued</h2>
-              <p>{entry.whyItMatters}</p>
-            </section>
-          ) : null}
+          {entry.body?.length ? (
+            <NotionContent nodes={entry.body} />
+          ) : (
+            <>
+              {entry.whyItMatters ? (
+                <section className={styles.section}>
+                  <h2>Why it matters</h2>
+                  <p>{entry.whyItMatters}</p>
+                </section>
+              ) : null}
 
-          {entry.notes ? (
-            <section className={styles.section}>
-              <h2>Classifier notes</h2>
-              <p>{entry.notes}</p>
-            </section>
-          ) : null}
+              {entry.notes ? (
+                <section className={styles.section}>
+                  <h2>Notes</h2>
+                  <p>{entry.notes}</p>
+                </section>
+              ) : null}
+            </>
+          )}
 
           {related.length > 0 ? (
             <section className={styles.section}>
@@ -127,12 +137,6 @@ export default async function ReadPage({ params }: ReadPageProps) {
                     Open PDF
                   </a>
                 </dd>
-              </div>
-            ) : null}
-            {entry.addedVia ? (
-              <div>
-                <dt>Added via</dt>
-                <dd>{entry.addedVia}</dd>
               </div>
             ) : null}
           </dl>

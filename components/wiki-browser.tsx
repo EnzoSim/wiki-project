@@ -1,148 +1,120 @@
 'use client';
 
-import { startTransition, useDeferredValue, useMemo, useState } from 'react';
+import { useDeferredValue, useMemo, useState } from 'react';
 import Link from 'next/link';
 import styles from './wiki-browser.module.css';
 import type { Concept } from '../lib/wiki';
 
-function scoreConcept(concept: Concept, query: string) {
-  if (!query) return 0;
+type Card = Pick<Concept, 'title' | 'slug' | 'category' | 'summary' | 'keywords' | 'artwork'>;
 
-  const haystacks = {
-    title: concept.title.toLowerCase(),
-    category: concept.category.toLowerCase(),
-    summary: concept.summary.toLowerCase(),
-    keywords: concept.keywords.join(' ').toLowerCase(),
-  };
-
-  let score = 0;
-
-  if (haystacks.title.includes(query)) score += 5;
-  if (haystacks.category.includes(query)) score += 3;
-  if (haystacks.summary.includes(query)) score += 2;
-  if (haystacks.keywords.includes(query)) score += 4;
-
-  return score;
-}
-
-export default function WikiBrowser({ concepts }: { concepts: Concept[] }) {
+export default function WikiBrowser({ concepts }: { concepts: Card[] }) {
   const [query, setQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [view, setView] = useState<'gallery' | 'index'>('gallery');
   const deferredQuery = useDeferredValue(query);
-  const hasActiveFilters = query.trim().length > 0 || selectedCategory !== 'All';
-
   const categories = useMemo(
-    () => ['All', ...new Set(concepts.map((concept) => concept.category))],
+    () => [...new Set(concepts.map((concept) => concept.category))].sort(),
     [concepts],
   );
-
   const filtered = useMemo(() => {
-    const normalizedQuery = deferredQuery.toLowerCase().trim();
-
-    return concepts
-      .filter((concept) => {
-        const matchesCategory =
-          selectedCategory === 'All' || concept.category === selectedCategory;
-        const matchesQuery =
-          !normalizedQuery ||
-          [
-            concept.title,
-            concept.category,
-            concept.summary,
-            concept.keywords.join(' '),
-          ]
+    const term = deferredQuery.toLowerCase().trim();
+    return concepts.filter(
+      (concept) =>
+        (selectedCategory === 'All' || concept.category === selectedCategory) &&
+        (!term ||
+          [concept.title, concept.category, concept.summary, ...concept.keywords]
             .join(' ')
             .toLowerCase()
-            .includes(normalizedQuery);
-
-        return matchesCategory && matchesQuery;
-      })
-      .sort((left, right) => {
-        const scoreDelta =
-          scoreConcept(right, normalizedQuery) - scoreConcept(left, normalizedQuery);
-
-        if (scoreDelta !== 0) return scoreDelta;
-
-        return left.title.localeCompare(right.title);
-      });
+            .includes(term)),
+    );
   }, [concepts, deferredQuery, selectedCategory]);
-
   return (
     <div className={styles.browser}>
       <div className={styles.controls}>
-        <div className={styles.searchRow}>
-          <label className={styles.searchLabel} htmlFor="concept-search">
-            Search
-          </label>
-          <input
-            id="concept-search"
-            value={query}
-            onChange={(event) => {
-              const nextQuery = event.target.value;
-              startTransition(() => setQuery(nextQuery));
-            }}
-            placeholder="Search terms, categories, or keywords"
-            className={styles.searchInput}
-          />
-        </div>
-
-        <div className={styles.filterBlock}>
-          <span className={styles.filterLabel}>Filter by category</span>
-          <div className={styles.filterGroup} aria-label="Filter by category">
-            {categories.map((category) => (
-              <button
-                key={category}
-                type="button"
-                className={category === selectedCategory ? styles.filterActive : styles.filter}
-                onClick={() => {
-                  startTransition(() => setSelectedCategory(category));
-                }}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.statusRow}>
-        <p>
-          Showing <strong>{filtered.length}</strong> of <strong>{concepts.length}</strong> entries
-        </p>
-        {hasActiveFilters ? (
+        <div className={styles.views} aria-label="View">
           <button
             type="button"
-            className={styles.resetButton}
+            aria-pressed={view === 'gallery'}
+            onClick={() => setView('gallery')}
+          >
+            Gallery
+          </button>
+          <button type="button" aria-pressed={view === 'index'} onClick={() => setView('index')}>
+            Index
+          </button>
+        </div>
+        <div className={styles.filters}>
+          <label>
+            <span className={styles.label}>Category</span>
+            <select
+              aria-label="Category"
+              value={selectedCategory}
+              onChange={(event) => setSelectedCategory(event.target.value)}
+            >
+              <option value="All">All categories</option>
+              {categories.map((category) => (
+                <option key={category}>{category}</option>
+              ))}
+            </select>
+          </label>
+          <label>
+            <span className={styles.label}>Search concepts</span>
+            <input
+              type="search"
+              aria-label="Search concepts"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Search the index…"
+            />
+          </label>
+        </div>
+      </div>
+      {query || selectedCategory !== 'All' ? (
+        <p className={styles.status} role="status">
+          {filtered.length} {filtered.length === 1 ? 'entry' : 'entries'} found{' '}
+          <button
             onClick={() => {
-              startTransition(() => {
-                setQuery('');
-                setSelectedCategory('All');
-              });
+              setQuery('');
+              setSelectedCategory('All');
             }}
           >
             Clear filters
           </button>
-        ) : null}
-      </div>
-
-      {filtered.length > 0 ? (
-        <div className={styles.list}>
-          {filtered.map((concept) => (
+        </p>
+      ) : null}
+      {filtered.length ? (
+        <div className={view === 'gallery' ? styles.gallery : styles.index}>
+          {filtered.map((concept, index) => (
             <article key={concept.slug} className={styles.item}>
-              <div className={styles.itemHeader}>
-                <Link className={styles.itemTitle} href={`/concepts/${concept.slug}`}>
-                  {concept.title}
-                </Link>
-                <span className={styles.itemCategory}>{concept.category}</span>
-              </div>
-              <p className={styles.itemSummary}>{concept.summary}</p>
+              <Link
+                className={styles.card}
+                aria-label={concept.title}
+                href={`/concepts/${concept.slug}`}
+              >
+                {view === 'gallery' && concept.artwork ? (
+                  <div className={styles.image}>
+                    <img
+                      src={concept.artwork.thumbnail || concept.artwork.full}
+                      alt={`${concept.title} — ${concept.summary}`}
+                      width={720}
+                      height={480}
+                      loading={index < 3 ? 'eager' : 'lazy'}
+                    />
+                  </div>
+                ) : null}
+                <div className={styles.copy}>
+                  <span className={styles.category}>{concept.category}</span>
+                  <h3>{concept.title}</h3>
+                  <p>{concept.summary}</p>
+                </div>
+              </Link>
             </article>
           ))}
         </div>
       ) : (
-        <div className={styles.emptyState}>
-          <h3>No entries match that search.</h3>
-          <p>Try a broader term or clear the filters to return to the full index.</p>
+        <div className={styles.empty}>
+          <h3>No concepts found.</h3>
+          <p>Try another term or clear the filters.</p>
         </div>
       )}
     </div>

@@ -30,5 +30,8 @@ jobs:
       - name: Validate structured content
         run: npm run validate:content
 
+      - name: Test published Notion reader
+        run: npm test
+
       - name: Build application
         run: npm run build
