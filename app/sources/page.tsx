@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { loadPublicLibrary } from '../../lib/notion';
 import styles from '../concepts/[slug]/page.module.css';
-export const metadata = { title: 'Source archive' };
+export const metadata = { title: 'Archive' };
 export const dynamic = 'force-dynamic';
 export default async function SourcesPage() {
   if (!(await loadPublicLibrary()).available) notFound();
@@ -12,7 +12,7 @@ export default async function SourcesPage() {
         <Link href="/">Back to index</Link>
       </nav>
       <header className={styles.header}>
-        <h1>Source archive</h1>
+        <h1>Archive</h1>
         <p className={styles.lead}>Original records and documents behind this personal library.</p>
       </header>
       <article className={`${styles.article} ${styles.sourceArticle}`}>
