@@ -32,7 +32,7 @@ export default async function HomePage() {
       </header>
       <section className={styles.indexSection} aria-labelledby="index-heading">
         <div className={styles.sectionHeader}>
-          <h2 id="index-heading">Concepts</h2>
+          <h2 id="index-heading">Lexicon</h2>
           <p>{concepts.length} entries</p>
         </div>
         <WikiBrowser concepts={cards} />
@@ -48,7 +48,7 @@ export default async function HomePage() {
       </section>
       <footer className={styles.footer}>
         <span>Enzo Simier</span>
-        <Link href="/sources">Source archive</Link>
+        <Link href="/sources">Archive</Link>
       </footer>
     </main>
   );

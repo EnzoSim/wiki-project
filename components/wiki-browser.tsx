@@ -58,13 +58,13 @@ export default function WikiBrowser({ concepts }: { concepts: Card[] }) {
             </select>
           </label>
           <label>
-            <span className={styles.label}>Search concepts</span>
+            <span className={styles.label}>Search the lexicon</span>
             <input
               type="search"
-              aria-label="Search concepts"
+              aria-label="Search the lexicon"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Search the index…"
+              placeholder="Search the lexicon…"
             />
           </label>
         </div>
@@ -113,7 +113,7 @@ export default function WikiBrowser({ concepts }: { concepts: Card[] }) {
         </div>
       ) : (
         <div className={styles.empty}>
-          <h3>No concepts found.</h3>
+          <h3>No entries found.</h3>
           <p>Try another term or clear the filters.</p>
         </div>
       )}
